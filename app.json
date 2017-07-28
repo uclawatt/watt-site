@@ -1,0 +1,8 @@
+{
+  "name": "WATT",
+  "description": "Website for WATT (Women Advancing through Technology and Teamwork). This is an advocacy group for women and minorities in electrical engineering, operating as a branch of IEEE’s WIE. ",
+  "repository": "https://github.com/tanzeelak/watt-site",
+  "logo": "https://raw.githubusercontent.com/tanzeelak/watt-site/master/public/img/watt-logo-green.png",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

@@ -12,6 +12,18 @@
     "handlebars": "^4.0.10",
     "hbs": "^4.0.1"
   },
+  "engines": {
+    "node": "6.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanzeelak/watt-site"
+  },
   "author": "",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "license": "ISC"
 }
