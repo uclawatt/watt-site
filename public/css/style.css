@@ -35,7 +35,7 @@ body{
 
 .waves-full-background
 {
-	background-color: rgba(89, 154, 242, 1);
+	background-color: rgba(79, 192, 170, 1);
     background-image: url(../img/main-image-green.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -208,4 +208,44 @@ body{
 
 .button:hover {
     background-color: #555;
+}
+
+/*404 page*/
+
+h1 {
+  font-size: 70px;
+  color: #000120;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.img-err{
+    width: 400px;
+    margin-bottom: -50px;
+}
+
+.background-404 {
+    	background-color: rgba(79, 192, 170, 1);
+        /*background-image: url(../img/main-image-green.png);*/
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-size: cover;
+    	height: 100vh;
+
+        /*CENTER DIV!!*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*background:
+            linear-gradient(
+              rgba(79,192,170, 0.45),
+              rgba(79,192,170, 0.45)
+            ),
+            url(../img/tanzeela.jpg);*/
+
 }
