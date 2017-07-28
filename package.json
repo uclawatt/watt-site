@@ -1,0 +1,17 @@
+{
+  "name": "watt-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "handlebars": "^4.0.10",
+    "hbs": "^4.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

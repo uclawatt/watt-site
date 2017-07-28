@@ -1,0 +1,211 @@
+body{
+    background-color: rgb(79, 192, 170);
+    line-height: 1.428571;
+    margin-top: 50px;
+}
+
+.page-body{
+    background-color: rgb(168, 215, 206);
+    margin-left: 10%;
+    margin-right: 10%;
+    /*height: 100%;*/
+    box-shadow: .5px 0px 13px #000000;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.page-content {
+    background-color: white;
+    box-shadow: .5px 0px 13px #000000;
+}
+
+.page-cover-photo {
+    background-image: url(../img/group-photo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waves-full-background
+{
+	background-color: rgba(89, 154, 242, 1);
+    background-image: url(../img/main-image-green.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+
+    /*CENTER DIV!!*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*background:
+        linear-gradient(
+          rgba(79,192,170, 0.45),
+          rgba(79,192,170, 0.45)
+        ),
+        url(../img/tanzeela.jpg);*/
+
+}
+
+.site-wrapper
+{
+	max-width: 90%;
+	margin: auto;
+    /*opacity: 1;*/
+}
+
+.navbar {
+    margin-bottom: 0px;
+    color: rgb(68, 43, 85);
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar.transparent.navbar-inverse {
+   background: rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .navbar-default .navbar-nav>li>a {
+     color: rgb(166, 152, 171);
+ }
+
+ .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: rgb(68, 43, 85);
+}
+
+#navbar-brand {
+    color: rgb(79,192,170);
+}
+
+#nav-logo{
+    display: inline-block;
+    width: 33px;
+}
+
+.about-cover-heading{
+    color: white;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-cover-sub {
+    color: yellow;
+    border-style: solid;
+    border-color: yellow;
+    width: 26%;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.home-text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.member-cards
+{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.member
+{
+  margin: 25px 0;
+  /*// width: 475px;
+  // margin-right: 10px;*/
+}
+.member-desc
+{
+  display: inline;
+  text-align: left;
+}
+.member-desc small
+{
+  font-weight: 300;
+}
+.member-desc p
+{
+  overflow: hidden;
+}
+.member-cards img
+{
+  width: 150px;
+  display: inline;
+  float: left;
+  margin-right: 20px;
+}
+
+
+/*try again*/
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
