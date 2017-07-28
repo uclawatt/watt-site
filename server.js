@@ -4,6 +4,8 @@ var router = express.Router();
 var path = __dirname + '/views/';
 var hbs = require('hbs');
 
+app.set('port', (process.env.PORT || 5000));
+
 app.set('view engine', 'hbs');
 
 hbs.registerPartials(__dirname + '/views/partials');
@@ -69,6 +71,6 @@ app.use("*",function(req,res){
     res.render('404');
 });
 
-app.listen(3000,function(){
-  console.log("Live at Port 3000");
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
