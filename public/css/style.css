@@ -40,7 +40,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100vh;
+	height: 93vh;
 
     /*CENTER DIV!!*/
     display: flex;
@@ -77,6 +77,13 @@ body{
    background: rgba(0,0,0,0.4);
 }
 
+.dropdown-menu{
+    border: 0px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; // remove the gap so it doesn't close
@@ -91,12 +98,12 @@ body{
 }
 
 #navbar-brand {
-    color: rgb(79,192,170);
+    color: rgb(0,208,175);
 }
 
 #nav-logo{
     display: inline-block;
-    width: 33px;
+    width: 24px;
 }
 
 .about-cover-heading{
@@ -234,7 +241,7 @@ a:link {
     	background-repeat: no-repeat;
     	background-attachment: fixed;
     	background-size: cover;
-    	height: 100vh;
+    	height: 93vh;
 
         /*CENTER DIV!!*/
         display: flex;
@@ -247,5 +254,6 @@ a:link {
               rgba(79,192,170, 0.45)
             ),
             url(../img/tanzeela.jpg);*/
+        text-align: center;
 
 }
