@@ -9,15 +9,13 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     /*height: 100%;*/
-    box-shadow: .5px 0px 13px #000000;
-    padding-left: 8%;
-    padding-right: 8%;
+    box-shadow: .5px 0px 4px #000000;
 }
 
 
 .page-content {
     background-color: white;
-    box-shadow: .5px 0px 13px #000000;
+    box-shadow: 0px 4px 6px #000000;
 }
 
 .page-cover-photo {
@@ -27,10 +25,17 @@ body{
     background-size: cover;
     height: 40vh;
     color: white;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 6%;
+    padding-bottom: 2%;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.page-wrapper {
+    padding: 6%;
 }
 
 .waves-full-background
@@ -215,10 +220,10 @@ a:link {
 }
 
 /*TEAM PAGE*/
-*, :after, :before, body, html {
+/**, :after, :before, body, html {
     margin: 0;
     padding: 0;
-}
+}*/
 
 .container {
     width: 100%;
@@ -485,7 +490,7 @@ section.section>.section-container>.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 32px 0;
+    /*padding: 32px 0;*/
 }
 section.section>.section-container>.container.column {
     flex-direction: column;
@@ -556,5 +561,17 @@ section.section>.section-container>.container .blurb .inner p {
     width: 192px;
     height: 192px;
     max-height: 192px;
-    max-width: 100%
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.team-subheading {
+    padding-left: 4%;
+    padding-top: 4%;
+    font-weight: bold;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }

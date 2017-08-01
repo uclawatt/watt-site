@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    // var slideIndex = 0;
-    // showSlides();
+    // Y axis scroll speed
+    // var velocity = 0.5;
     //
-    // function showSlides() {
-    //     var i;
-    //     var slides = document.getElementsByClassName("mySlides");
-    //     //var dots = document.getElementsByClassName("dot");
-    //     for (i = 0; i < slides.length; i++) {
-    //        slides[i].style.display = "none";
-    //     }
-    //     slideIndex++;
-    //     if (slideIndex> slides.length) {slideIndex = 1}
-    //     // for (i = 0; i < dots.length; i++) {
-    //     //     dots[i].className = dots[i].className.replace(" active", "");
-    //     // }
-    //     slides[slideIndex-1].style.display = "block";
-    //     //dots[slideIndex-1].className += " active";
-    //     setTimeout(showSlides, 2000); // Change image every 2 seconds
-    // }
+    // function update(){
+    //     var pos = $(window).scrollTop();
+    //     $('.container').each(function() {
+    //         var $element = $(this);
+    //         // subtract some from the height b/c of the padding
+    //         var height = $element.height()-18;
+    //         $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px');
+    //     });
+    // };
+    //
+    // $(window).bind('scroll', update);
+
+    // $('.parallax').parallax();
+
+    $('.parallax-window').parallax({imageSrc: 'img/group-photo.jpg'});
+
 });
