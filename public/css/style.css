@@ -12,7 +12,6 @@ body{
     box-shadow: .5px 0px 4px #000000;
 }
 
-
 .page-content {
     background-color: white;
     box-shadow: 0px 4px 6px #000000;
@@ -131,7 +130,27 @@ body{
 .home-text {
     padding-left: 15px;
     padding-right: 15px;
+    background-color: rgb(168, 215, 206);
 }
+
+.page-cover-photo.home {
+    height: 93.5vh;
+}
+
+
+#home-text {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.home-join-card{
+    margin-right: 4%;
+}
+
+.home-learn-img{
+    margin-right: 4%;
+}
+
 
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 650px) {
