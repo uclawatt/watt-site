@@ -18,7 +18,7 @@ router.use(function (req,res,next) {
 router.get("/",function(req,res){
     res.render('index');
 });
-//
+
 // router.get("/team",function(req,res){
 //     res.render('team');
 // });
