@@ -173,12 +173,13 @@ body{
 }
 
 /* Some left and right padding inside the container */
-.container {
+.home-container {
     padding: 0 16px;
+    width: 100%;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.home-container::after, .row::after {
     content: "";
     clear: both;
     display: table;
@@ -250,11 +251,11 @@ a:link {
     padding: 0;
 }*/
 
-.container {
+.team-container {
     width: 100%;
     margin: auto;
 }
-.container.constrained {
+.team-container.constrained {
     max-width: 1024px;
 }
 .grid, .grid-strict {
@@ -376,10 +377,10 @@ a:link {
     width: 95.83333%}
 .col.sm-24 {
     width: 100%}
-.container {
+.team-container {
     max-width: 720px;
 }
-.container.constrained {
+.team-container.constrained {
     max-width: 1024px;
 }
 }@media (min-width:1152px) {
@@ -431,10 +432,10 @@ a:link {
     width: 95.83333%}
 .col.md-24 {
     width: 100%}
-.container {
+.team-container {
     max-width: 1080px;
 }
-.container.constrained {
+.team-container.constrained {
     max-width: 1024px;
 }
 }@media (min-width:1728px) {
@@ -486,10 +487,10 @@ a:link {
     width: 95.83333%}
 .col.lg-24 {
     width: 100%}
-.container {
+.team-container {
     max-width: 1620px;
 }
-.container.constrained {
+.team-container.constrained {
     max-width: 1024px;
 }
 }
@@ -502,32 +503,32 @@ section.section {
     align-items: center;
     background: no-repeat bottom/contain;
 }
-section.section.large>.section-container>.container {
+section.section.large>.section-container>.team-container {
     min-height: 768px;
 }
 @media (min-width:768px) {
-    section.section.large>.section-container>.container {
+    section.section.large>.section-container>.team-container {
     min-height: 100vh;
 }
 }section.section>.section-container {
     width: 100%}
-section.section>.section-container>.container {
+section.section>.section-container>.team-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     /*padding: 32px 0;*/
 }
-section.section>.section-container>.container.column {
+section.section>.section-container>.team-container.column {
     flex-direction: column;
 }
-section.section>.section-container>.container .head {
+section.section>.section-container>.team-container .head {
     display: inline-block;
 }
-section.section>.section-container>.container .head .title {
+section.section>.section-container>.team-container .head .title {
     text-align: center;
     margin-bottom: .5em;
 }
-section.section>.section-container>.container .head .title:after {
+section.section>.section-container>.team-container .head .title:after {
     display: block;
     content: "";
     bottom: 0;
@@ -537,22 +538,22 @@ section.section>.section-container>.container .head .title:after {
     border-radius: 2px;
     background-color: #4abf9f;
 }
-section.section>.section-container>.container .blurb {
+section.section>.section-container>.team-container .blurb {
     text-align: center;
 }
-section.section>.section-container>.container .blurb .inner {
+section.section>.section-container>.team-container .blurb .inner {
     display: inline-block;
     max-width: 20em;
     text-align: left;
 }
-section.section>.section-container>.container .blurb .inner p {
+section.section>.section-container>.team-container .blurb .inner p {
     max-width: 24em;
 }
 @media (max-width:1151px) {
-    section.section>.section-container>.container .image-aside {
+    section.section>.section-container>.team-container .image-aside {
     order: 1;
 }
-}section.section>.section-container>.container .image-aside img {
+}section.section>.section-container>.team-container .image-aside img {
     display: block;
     max-width: 100%;
     max-height: 384px;
@@ -560,7 +561,7 @@ section.section>.section-container>.container .blurb .inner p {
     margin: auto;
 }
 @media (max-width:1151px) {
-    section.section>.section-container>.container .image-aside img {
+    section.section>.section-container>.team-container .image-aside img {
     max-height: 256px;
 }
 }section.section>img.section-divider {
@@ -632,6 +633,10 @@ section.section>.section-container>.container .blurb .inner p {
     margin-bottom: 3%;
 }
 
+.fam-container{
+    width: 100%;
+}
+
 .row {
   display: flex; /* equal height of the children */
   margin-left: 2%;
@@ -656,9 +661,4 @@ section.section>.section-container>.container .blurb .inner p {
 }
 .fam-card-description{
     color: rgb(141,141,141);
-}
-
-/*CALENDAR*/
-tr{
-    background: bisque;
 }
