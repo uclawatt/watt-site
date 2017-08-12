@@ -629,7 +629,6 @@ section.section>.section-container>.team-container .blurb .inner p {
 }
 
 .fam-card {
-    margin-top: 3%;
     margin-bottom: 3%;
 }
 
@@ -641,6 +640,11 @@ section.section>.section-container>.team-container .blurb .inner p {
   display: flex; /* equal height of the children */
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.fam-row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .col {
@@ -661,4 +665,24 @@ section.section>.section-container>.team-container .blurb .inner p {
 }
 .fam-card-description{
     color: rgb(141,141,141);
+}
+
+/*GALLERY*/
+
+.gallery-container{
+    width: 100%;
+}
+
+.flickrwrap {position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
+.flickrwrap iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+ .gallery-album-title{
+     margin-top: 1%;
+     margin-bottom: 1%;
+     text-align: center;
+ }
+
+.gallery-card {
+    margin-bottom: 3%;
+    padding: 3.5% 3.5% 0 3.5%;
 }
