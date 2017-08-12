@@ -19,49 +19,49 @@ router.get("/",function(req,res){
     res.render('index');
 });
 
-// router.get("/team",function(req,res){
-//     res.render('team');
-// });
-//
-// router.get("/families",function(req,res){
-//     res.render('families');
-// });
-// router.get("/join",function(req,res){
-//     res.render('join');
-// });
-// router.get("/contact",function(req,res){
-//     res.render('contact');
-// });
-// router.get("/calendar",function(req,res){
-//     res.render('calendar');
-// });
-// router.get("/gallery",function(req,res){
-//     res.render('gallery');
-// });
-//
-// router.get("/projects",function(req,res){
-//   res.render('projects');
-// });
-//
-// router.get("/sponsors",function(req,res){
-//   res.render('sponsors');
-// });
-//
-// router.get("/donate",function(req,res){
-//   res.render('donate');
-// });
-//
-// router.get("/memes",function(req,res){
-//   res.render('memes');
-// });
-//
-// router.get("/blog",function(req,res){
-//   res.render('blog');
-// });
-//
-// router.get("/shop",function(req,res){
-//   res.render('shop');
-// });
+router.get("/team",function(req,res){
+    res.render('team');
+});
+
+router.get("/families",function(req,res){
+    res.render('families');
+});
+router.get("/join",function(req,res){
+    res.render('join');
+});
+router.get("/contact",function(req,res){
+    res.render('contact');
+});
+router.get("/calendar",function(req,res){
+    res.render('calendar');
+});
+router.get("/gallery",function(req,res){
+    res.render('gallery');
+});
+
+router.get("/projects",function(req,res){
+  res.render('projects');
+});
+
+router.get("/sponsors",function(req,res){
+  res.render('sponsors');
+});
+
+router.get("/donate",function(req,res){
+  res.render('donate');
+});
+
+router.get("/memes",function(req,res){
+  res.render('memes');
+});
+
+router.get("/blog",function(req,res){
+  res.render('blog');
+});
+
+router.get("/shop",function(req,res){
+  res.render('shop');
+});
 
 app.use("/",router);
 
