@@ -26,12 +26,11 @@ router.get("/team",function(req,res){
 router.get("/families",function(req,res){
     res.render('families');
 });
-router.get("/join",function(req,res){
-    res.render('join');
-});
+
 router.get("/contact",function(req,res){
     res.render('contact');
 });
+
 router.get("/calendar",function(req,res){
     res.render('calendar');
 });
