@@ -1,4 +1,36 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
+    var user, to, subject, text;
+    $("#send_email").click(function () {
+        // enter your email account that you want to recieve emails at.
+        to = "alexonej@gmail.com";
+        name = $("#name").val();
+        user = $("#user_email").val();
+        text = $("#textarea1").val();
+        // $("#message").text("Sending E-mail...Please wait");
+        $.get("http://localhost:8080/send", {
+            to: to,
+            name: name,
+            user: user,
+            text: text
+        }, function (data) {
+            if (data == "sent") {
+                console.log("Email sent");
+            }
+        });
+    });
+
+    $('.modal-trigger').leanModal();
+
+    // var submitButton = document.getElementById("submit_form");
+    // var form = document.getElementById("email_form");
+    // form.addEventListener("submit", function (e) {
+    //     setTimeout(function() {
+    //         submitButton.value = "Sending...";
+    //         submitButton.disabled = true;
+    //     }, 1);
+    // });
+
     // Y axis scroll speed
     // var velocity = 0.5;
     //
@@ -17,5 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // $('.parallax').parallax();
 
     $('.parallax-window').parallax({imageSrc: 'img/group-photo.jpg'});
+
+
 
 });

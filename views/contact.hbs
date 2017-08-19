@@ -6,7 +6,68 @@
     </div>
     <div class="page-wrapper fam-container container">
 
-        <form class="form-horizontal" role="form" style="width: 50%;">
+        <form action="/contact" method="post" id=contactform class="well form-horizontal">
+
+          <!-- Form group for name -->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Name</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="inputname" placeholder="Your name" class="form-control" type="text" maxlength="80" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form group for email -->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">E-Mail</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="inputemail" placeholder="Email address" class="form-control" type="email" maxlength="80" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form group for comment -->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Comment</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea name="inputcomment" placeholder="Your comment" class="form-control" maxlength="1000" required></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form group for company name -->
+
+          <div class="form-group" id="company-group">
+            <label class="col-md-4 control-label">Company</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                <input name="inputcompany" placeholder="Company" class="form-control" type="text" maxlength="80">
+              </div>
+            </div>
+          </div>
+
+          <!-- Form group for button  -->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-primary">Send message <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- <form class="form-horizontal" role="form" style="width: 50%;">
             <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
@@ -16,7 +77,7 @@
             <div class="form-group">
                 <label for="email" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                    <input type="email" class="form-control" id="email" name="mail" placeholder="example@domain.com" value="">
                 </div>
             </div>
             <div class="form-group">
@@ -35,7 +96,7 @@
                     <!-- <! Will be used to display an alert to the user> -->
                 </div>
             </div>
-        </form>
+        </form> -->
     </div>
 
 </div>
