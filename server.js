@@ -40,6 +40,10 @@ router.get("/",function(req,res){
     res.render('index');
 });
 
+router.get("/agenda",function(req,res){
+    res.render('agenda');
+});
+
 router.get("/team",function(req,res){
     res.render('team');
 });
@@ -100,6 +104,10 @@ router.get("/sponsors",function(req,res){
   res.render('sponsors');
 });
 
+router.get("/sponsorus",function(req,res){
+  res.render('sponsorus');
+});
+
 router.get("/donate",function(req,res){
   res.render('donate');
 });
@@ -110,10 +118,6 @@ router.get("/memes",function(req,res){
 
 router.get("/blog",function(req,res){
   res.render('blog');
-});
-
-router.get("/shop",function(req,res){
-  res.render('shop');
 });
 
 app.use("/",router);

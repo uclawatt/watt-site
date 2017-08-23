@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 40vh;
+    height: 70vh;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -686,8 +686,8 @@ section.section>.section-container>.team-container .blurb .inner p {
 .flickrwrap iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
 
  .gallery-album-title{
-     margin-top: 1%;
-     margin-bottom: 1%;
+     margin-top: 2.5%;
+     margin-bottom: 2.5%;
      text-align: center;
  }
 
