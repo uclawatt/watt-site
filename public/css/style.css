@@ -174,7 +174,6 @@ body{
 
 /* Some left and right padding inside the container */
 .home-container {
-    padding: 0 16px;
     width: 100%;
 }
 
@@ -184,6 +183,16 @@ body{
     clear: both;
     display: table;
 }
+
+.home-div{
+    display: flex;
+}
+
+/*@media (min-width: 1024px){
+    .home-div{
+        display: block;
+    }
+}*/
 
 .title {
     color: grey;

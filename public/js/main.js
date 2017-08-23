@@ -1,26 +1,42 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    var user, to, subject, text;
-    $("#send_email").click(function () {
-        // enter your email account that you want to recieve emails at.
-        to = "alexonej@gmail.com";
-        name = $("#name").val();
-        user = $("#user_email").val();
-        text = $("#textarea1").val();
-        // $("#message").text("Sending E-mail...Please wait");
-        $.get("http://localhost:8080/send", {
-            to: to,
-            name: name,
-            user: user,
-            text: text
-        }, function (data) {
-            if (data == "sent") {
-                console.log("Email sent");
-            }
-        });
-    });
+    // var user, to, subject, text;
+    // $("#send_email").click(function () {
+    //     // enter your email account that you want to recieve emails at.
+    //     to = "alexonej@gmail.com";
+    //     name = $("#name").val();
+    //     user = $("#user_email").val();
+    //     text = $("#textarea1").val();
+    //     // $("#message").text("Sending E-mail...Please wait");
+    //     $.get("http://localhost:8080/send", {
+    //         to: to,
+    //         name: name,
+    //         user: user,
+    //         text: text
+    //     }, function (data) {
+    //         if (data == "sent") {
+    //             console.log("Email sent");
+    //         }
+    //     });
+    // });
+    //
+    // $('.modal-trigger').leanModal();
 
-    $('.modal-trigger').leanModal();
+
+    // var from,to,subject,text;
+    // $("#send_email").click(function(){
+    //     console.log("haah main");
+    //     to=$("#to").val();
+    //     subject=$("#subject").val();
+    //     text=$("#content").val();
+    //     $("#message").text("Sending E-mail...Please wait");
+    //     $.get("http://localhost:5000/send",{to:to,subject:subject,text:text},function(data){
+    //     if(data=="sent")
+    //     {
+    //         $("#message").empty().html("Email is been sent at "+to+" . Please check inbox!");
+    //     }});
+    // });
+
 
     // var submitButton = document.getElementById("submit_form");
     // var form = document.getElementById("email_form");

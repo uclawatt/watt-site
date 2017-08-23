@@ -2,7 +2,7 @@ var express = require("express");
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
-var path = require("path");
+// var path = require("path");
 var fs = require('fs')
 var logger = require("morgan");
 var mg = require('nodemailer-mailgun-transport');
@@ -53,16 +53,12 @@ router.get("/contact",function(req,res){
 });
 
 // http POST /contact
-app.post("/contact", function (req, res) {
+router.post("/contact", function (req, res) {
   var name = req.body.inputname;
   var email = req.body.inputemail;
-  var company = req.body.inputcompany;
   var comment = req.body.inputcomment;
   var isError = false;
 
-  if (company) {
-    isError = true;
-  }
   console.log('\nCONTACT FORM DATA: '+ name + ' '+email + ' '+ comment+'\n');
 
   // create transporter object capable of sending email using the default SMTP transport
