@@ -6,10 +6,8 @@
     </div>
     <div class="page-wrapper fam-container container">
 
-        <form action="/contact" method="post" id=contactform class="well form-horizontal">
-
-          <!-- Form group for name -->
-
+<!-- NODE VERSION -->
+        <!-- <form action="/contact" method="post" id=contactform class="well form-horizontal">
           <div class="form-group">
             <label class="col-md-4 control-label">Name</label>
             <div class="col-md-4 inputGroupContainer">
@@ -19,9 +17,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Form group for email -->
-
           <div class="form-group">
             <label class="col-md-4 control-label">E-Mail</label>
             <div class="col-md-4 inputGroupContainer">
@@ -31,9 +26,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Form group for comment -->
-
           <div class="form-group">
             <label class="col-md-4 control-label">Comment</label>
             <div class="col-md-4 inputGroupContainer">
@@ -43,9 +35,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Form group for button  -->
-
           <div class="form-group">
             <label class="col-md-4 control-label"></label>
             <div class="col-md-4">
@@ -53,19 +42,26 @@
             </div>
           </div>
 
-        </form>
+        </form> -->
 
-        <!-- <form class="form-horizontal" role="form" style="width: 50%;">
+        <!-- <form method="POST" action="http://formspree.io/wie.ieee.ucla@gmail.com">
+          <input type="email" name="email" placeholder="Your email">
+          <input type="name" name="name" placeholder="Your name">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form> -->
+
+        <form method="POST" action="http://formspree.io/wie.ieee.ucla@gmail.com" class="form-horizontal" role="form" style="width: 50%;">
             <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                    <input type="name" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
                 </div>
             </div>
             <div class="form-group">
                 <label for="email" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="mail" placeholder="example@domain.com" value="">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
                 </div>
             </div>
             <div class="form-group">
@@ -83,7 +79,7 @@
                 <div class="col-sm-10 col-sm-offset-2">
                 </div>
             </div>
-        </form> -->
+        </form>
     </div>
 
 </div>

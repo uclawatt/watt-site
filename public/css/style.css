@@ -10,12 +10,12 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     /*height: 100%;*/
-    box-shadow: .5px 0px 4px #000000;
+    box-shadow: 0px 1px 3px #000000;
 }
 
 .page-content {
     background-color: white;
-    box-shadow: 0px 4px 6px #000000;
+    box-shadow: 0px 1px 3px #000000;
     padding: 2%;
 }
 
@@ -33,6 +33,10 @@ body{
     padding-bottom: 2%;
     font-size: 25px;
     font-weight: 300;
+}
+
+.page-heading {
+    text-align: 1px 1px gray;
 }
 
 .page-wrapper {
@@ -694,4 +698,9 @@ section.section>.section-container>.team-container .blurb .inner p {
 .gallery-card {
     margin-bottom: 3%;
     padding: 3.5% 3.5% 0 3.5%;
+}
+
+/*SPONSOR*/
+.sponsor-container{
+    width: 100%;
 }
