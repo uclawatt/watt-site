@@ -700,6 +700,22 @@ section.section>.section-container>.team-container .blurb .inner p {
     padding: 3.5% 3.5% 0 3.5%;
 }
 
+/*CONTACT*/
+.btn-contact {
+    background-color: rgb(79,192,170);
+    border-color: rgb(79, 192, 170);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+    background-color: rgb(168,215,206);
+    border-color: rgb(168,215,206);
+}
+
+.form-contact {
+    color: rgb(140, 140, 140);
+    margin-bottom: -1em;
+}
+
 /*SPONSOR*/
 .sponsor-container{
     width: 100%;
