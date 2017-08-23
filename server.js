@@ -58,10 +58,6 @@ router.get("/",function(req,res){
 // router.get("/blog",function(req,res){
 //   res.render('blog');
 // });
-//
-// router.get("/shop",function(req,res){
-//   res.render('shop');
-// });
 
 app.use("/",router);
 
