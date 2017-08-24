@@ -9,8 +9,8 @@ body{
     background-color: rgb(168, 215, 206);
     margin-left: 10%;
     margin-right: 10%;
-    /*height: 100%;*/
     box-shadow: 0px 1px 3px #000000;
+    min-width: 840px;
 }
 
 .page-content {
@@ -192,11 +192,15 @@ body{
     display: flex;
 }
 
-/*@media (min-width: 1024px){
+@media (max-width: 786px){
     .home-div{
         display: block;
     }
-}*/
+
+    .home-join-img, .home-learn-img{
+        height: 40%;
+    }
+}
 
 .title {
     color: grey;
@@ -719,4 +723,77 @@ section.section>.section-container>.team-container .blurb .inner p {
 /*SPONSOR*/
 .sponsor-container{
     width: 100%;
+}
+
+/*PARALLAX AGAIN*/
+
+
+.parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+}
+
+.parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+}
+
+.parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+}
+
+.parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+}
+
+
+
+/* style the groups
+--------------------------------------------- */
+
+
+#group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+}
+#group2 .parallax__layer--back {
+    background-image:url('http://2.bp.blogspot.com/_RBWp1IAT0ZI/TPeaOKFEcAI/AAAAAAAABBc/2BzJE6r0CgI/s1600/black%black%252Band%252Bwhite%252Baspen%252Bforest%252Bwall%252Bink_bluesky.png');
+    background-position: center;
+}
+
+#group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+}
+#group3 .parallax__layer--base {
+    background: rgb(153,216,101);
 }
