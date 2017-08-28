@@ -1,3 +1,8 @@
+$watt-green: rgb(168,215,206);
+$watt-light-green: rgb(79,192,170);
+
+
+
 body{
     background-color: rgb(79, 192, 170);
     line-height: 1.428571;
@@ -9,8 +14,8 @@ body{
     background-color: rgb(168, 215, 206);
     margin-left: 10%;
     margin-right: 10%;
+    /*height: 100%;*/
     box-shadow: 0px 1px 3px #000000;
-    min-width: 840px;
 }
 
 .page-content {
@@ -22,7 +27,7 @@ body{
 .page-cover-photo {
     background-image: url(../img/group-photo.jpg);
     background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-size: cover;
     height: 70vh;
     color: white;
@@ -192,15 +197,11 @@ body{
     display: flex;
 }
 
-@media (max-width: 786px){
+/*@media (min-width: 1024px){
     .home-div{
         display: block;
     }
-
-    .home-join-img, .home-learn-img{
-        height: 40%;
-    }
-}
+}*/
 
 .title {
     color: grey;
