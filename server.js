@@ -40,10 +40,6 @@ router.get("/",function(req,res){
     res.render('index');
 });
 
-router.get("/agenda",function(req,res){
-    res.render('agenda');
-});
-
 router.get("/team",function(req,res){
     res.render('team');
 });
