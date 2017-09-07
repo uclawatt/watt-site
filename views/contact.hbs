@@ -1,39 +1,84 @@
 {{> header}}
-        <form class="form-horizontal" role="form" style="width: 50%;">
+
+<div class="page-body">
+    <div class="page-cover-photo">
+        <div class="page-heading">Contact</div>
+    </div>
+    <div class="page-wrapper fam-container container">
+
+<!-- NODE VERSION -->
+        <!-- <form action="/contact" method="post" id=contactform class="well form-horizontal">
+          <div class="form-group">
+            <label class="col-md-4 control-label">Name</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="inputname" placeholder="Your name" class="form-control" type="text" maxlength="80" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label">E-Mail</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="inputemail" placeholder="Email address" class="form-control" type="email" maxlength="80" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label">Comment</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea name="inputcomment" placeholder="Your comment" class="form-control" maxlength="1000" required></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-primary">Send message <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+
+        </form> -->
+
+        <!-- <form method="POST" action="http://formspree.io/wie.ieee.ucla@gmail.com">
+          <input type="email" name="email" placeholder="Your email">
+          <input type="name" name="name" placeholder="Your name">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form> -->
+
+<div class="page-content">
+        <form method="POST" action="http://formspree.io/wie.ieee.ucla@gmail.com" class="form-horizontal form-contact" role="form">
             <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                <label for="name" class="col-sm-2 col-md-2 control-label">Name</label>
+                <div class="col-sm-10 col-md-10">
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Your Name" value="">
                 </div>
             </div>
             <div class="form-group">
-                <label for="email" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                <label for="email" class="col-sm-2 col-md-2 control-label">Email</label>
+                <div class="col-sm-10 col-md-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" value="">
                 </div>
             </div>
             <div class="form-group">
-                <label for="message" class="col-sm-2 control-label">Message</label>
-                <div class="col-sm-10">
+                <label for="message" class="col-sm-2 col-md-2 control-label">Message</label>
+                <div class="col-sm-10 col-md-10">
                     <textarea class="form-control" rows="4" name="message"></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                </div>
-            </div>
-            <div class="form-group">
                 <div class="col-sm-10 col-sm-offset-2">
-                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                    <!-- <! Will be used to display an alert to the user> -->
+                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary btn-contact">
                 </div>
             </div>
         </form>
     </div>
+</div>
+
+</div>
 {{> footer}}
