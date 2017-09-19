@@ -20,7 +20,7 @@ body{
 }
 
 .page-cover-photo {
-    background-image: url(../img/charlotte-tinker.jpg);
+    background-image: url(../img/backgroundphotos/charlotte-tinker.jpg);
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
@@ -46,7 +46,7 @@ body{
 .waves-full-background
 {
 	background-color: rgba(79, 192, 170, 1);
-    background-image: url(../img/lineup.jpg);
+    background-image: url(../img/backgroundphotos/lineup.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -724,4 +724,27 @@ section.section>.section-container>.team-container .blurb .inner p {
 /*SPONSOR*/
 .sponsor-container{
     width: 100%;
+}
+
+/*PROJECTS*/
+.projectwrap {
+    position:relative;
+    padding-top:56.25%;
+    padding-bottom:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.project-title{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.project-date{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    font-size: 14px;
 }

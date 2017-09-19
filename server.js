@@ -40,81 +40,77 @@ router.get("/",function(req,res){
     res.render('index');
 });
 
-// router.get("/team",function(req,res){
-//     res.render('team');
-// });
-//
-// router.get("/families",function(req,res){
-//     res.render('families');
-// });
-//
-// router.get("/contact",function(req,res){
-//     res.render('contact');
-// });
-//
-// // http POST /contact
-// router.post("/contact", function (req, res) {
-//   var name = req.body.inputname;
-//   var email = req.body.inputemail;
-//   var comment = req.body.inputcomment;
-//   var isError = false;
-//
-//   console.log('\nCONTACT FORM DATA: '+ name + ' '+email + ' '+ comment+'\n');
-//
-//   // create transporter object capable of sending email using the default SMTP transport
-//   var transporter = nodemailer.createTransport(mg(auth));
-//
-//   // setup e-mail data with unicode symbols
-//   var mailOptions = {
-//     from: name +  " <" + email + ">", // sender address
-//     to: 'tnkhan8042@gmail.com', // list of receivers
-//     subject: 'Message from Website Contact page', // Subject line
-//     text: comment,
-//     err: isError
-//
-//   };
-//   // send mail with defined transport object
-//   transporter.sendMail(mailOptions, function (error, info) {
-//     if (error) {
-//       console.log('\nERROR: ' + error+'\n');
-//       //   res.json({ yo: 'error' });
-//     } else {
-//          console.log('\nRESPONSE SENT: ' + info.response+'\n');
-//       //   res.json({ yo: info.response });
-//     }
-//   });
-// });
-//
-// router.get("/calendar",function(req,res){
-//     res.render('calendar');
-// });
-// router.get("/gallery",function(req,res){
-//     res.render('gallery');
-// });
-//
-// router.get("/projects",function(req,res){
-//   res.render('projects');
-// });
-//
-// router.get("/sponsors",function(req,res){
-//   res.render('sponsors');
-// });
-//
-// router.get("/sponsorus",function(req,res){
-//   res.render('sponsorus');
-// });
-//
-// router.get("/donate",function(req,res){
-//   res.render('donate');
-// });
-//
-// router.get("/memes",function(req,res){
-//   res.render('memes');
-// });
-//
-// router.get("/blog",function(req,res){
-//   res.render('blog');
-// });
+router.get("/team",function(req,res){
+    res.render('team');
+});
+
+router.get("/families",function(req,res){
+    res.render('families');
+});
+
+router.get("/contact",function(req,res){
+    res.render('contact');
+});
+
+// http POST /contact
+router.post("/contact", function (req, res) {
+  var name = req.body.inputname;
+  var email = req.body.inputemail;
+  var comment = req.body.inputcomment;
+  var isError = false;
+
+  console.log('\nCONTACT FORM DATA: '+ name + ' '+email + ' '+ comment+'\n');
+
+  // create transporter object capable of sending email using the default SMTP transport
+  var transporter = nodemailer.createTransport(mg(auth));
+
+  // setup e-mail data with unicode symbols
+  var mailOptions = {
+    from: name +  " <" + email + ">", // sender address
+    to: 'tnkhan8042@gmail.com', // list of receivers
+    subject: 'Message from Website Contact page', // Subject line
+    text: comment,
+    err: isError
+
+  };
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log('\nERROR: ' + error+'\n');
+      //   res.json({ yo: 'error' });
+    } else {
+         console.log('\nRESPONSE SENT: ' + info.response+'\n');
+      //   res.json({ yo: info.response });
+    }
+  });
+});
+
+router.get("/calendar",function(req,res){
+    res.render('calendar');
+});
+router.get("/gallery",function(req,res){
+    res.render('gallery');
+});
+
+router.get("/projects",function(req,res){
+  res.render('projects');
+});
+
+router.get("/sponsors",function(req,res){
+  res.render('sponsors');
+});
+
+router.get("/donate",function(req,res){
+  res.render('donate');
+});
+
+router.get("/memes",function(req,res){
+  res.render('memes');
+});
+
+router.get("/blog",function(req,res){
+  res.render('blog');
+});
 
 app.use("/",router);
 
