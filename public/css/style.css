@@ -749,7 +749,7 @@ section.section>.section-container>.team-container .blurb .inner p {
 }
 
 .form-contact {
-    /*color: rgb(140, 140, 140);*/
+    color: rgb(140, 140, 140);
     margin-bottom: -1em;
     display: inline-block;
     width: 49%
