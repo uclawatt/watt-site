@@ -35,6 +35,38 @@ body{
     font-weight: 300;
 }
 
+.team-photo{
+    background-image: url(../img/backgroundphotos/charlotte-tinker.jpg);
+}
+.family-photo{
+    background-image: url(../img/backgroundphotos/mathew-tinker.jpg);
+}
+.contact-photo{
+    background-image: url(../img/backgroundphotos/jenny-tinker.jpg);
+}
+
+.calendar-photo{
+    background-image: url(../img/backgroundphotos/tanvi-tinker.jpg);
+}
+
+.gallery-photo{
+    background-image: url(../img/backgroundphotos/guy-tinker.jpg);
+}
+
+.projects-photo{
+    background-image: url(../img/backgroundphotos/charlotte-tinker.jpg);
+}
+
+.sponsors-photo{
+    background-image: url(../img/backgroundphotos/jenny-tinker.jpg);
+}
+
+.memes-photo{
+    background-image: url(../img/backgroundphotos/mathew-tinker.jpg);
+}
+
+
+
 .page-heading {
     text-align: 1px 1px gray;
 }
@@ -717,9 +749,25 @@ section.section>.section-container>.team-container .blurb .inner p {
 }
 
 .form-contact {
-    color: rgb(140, 140, 140);
+    /*color: rgb(140, 140, 140);*/
     margin-bottom: -1em;
+    display: inline-block;
+    width: 49%
 }
+
+.contact-list{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    margin-left: 4%;
+}
+
+@media (min-width: 650px) {
+    .contact-list {
+        margin-left: 0px;
+    }
+}
+
 
 /*SPONSOR*/
 .sponsor-container{
