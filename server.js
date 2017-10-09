@@ -96,6 +96,10 @@ router.get("/projects",function(req,res){
   res.render('projects');
 });
 
+router.get("/applytosponsor",function(req,res){
+  res.render('applytosponsor');
+});
+
 router.get("/sponsors",function(req,res){
   res.render('sponsors');
 });
