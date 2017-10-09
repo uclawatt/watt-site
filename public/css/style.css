@@ -332,6 +332,8 @@ a:link {
 .team-container {
     width: 100%;
     margin: auto;
+    padding-right: 0;
+    padding-left: 0;
 }
 .team-container.constrained {
     max-width: 1024px;
@@ -672,7 +674,7 @@ section.section>.section-container>.team-container .blurb .inner p {
 .team-subheading {
     padding-left: 4%;
     padding-top: 4%;
-    font-weight: bold;
+    font-size: medium;
 }
 
 .parallax-window {
