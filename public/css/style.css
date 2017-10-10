@@ -207,6 +207,13 @@ body{
     min-height: 292px;
 }
 
+.home-do-img {
+    margin-right: 4%;
+    background-image: url(../img/silly-pic.jpg);
+    background-size: cover;
+    min-height: 197px;
+}
+
 .home-learn-img{
     margin-right: 4%;
     background-image: url(../img/ideahacks.jpg);
@@ -909,6 +916,15 @@ section.section>.section-container>.team-container .blurb .inner p {
     height: 33%;
 }
 
+/*SUBSCRIBE*/
+
+#mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    /*width:750px;*/
+}
+
 /*FOOTER*/
 
 .footer-container{
@@ -919,6 +935,10 @@ section.section>.section-container>.team-container .blurb .inner p {
 
 .footer-block{
     margin-bottom: 1%;
+}
+
+.footer-text {
+    color: rgb(166, 152, 171)
 }
 
 .social:hover {
