@@ -901,10 +901,12 @@ section.section>.section-container>.team-container .blurb .inner p {
 
 #northrop-img{
     background-image: url(../img/sponsors/northrop.jpg);
+    height: 24%;
 }
 
 #wysebridge-img{
     background-image: url(../img/sponsors/wysebridge.png);
+    height: 33%;
 }
 
 /*FOOTER*/
