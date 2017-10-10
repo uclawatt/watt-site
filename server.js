@@ -104,21 +104,13 @@ router.get("/applytosponsor",function(req,res){
   res.render('applytosponsor');
 });
 
-router.get("/sponsors",function(req,res){
-  res.render('sponsors');
-});
-
-router.get("/donate",function(req,res){
-  res.render('donate');
-});
-
-router.get("/memes",function(req,res){
-  res.render('memes');
-});
-
-router.get("/blog",function(req,res){
-  res.render('blog');
-});
+// router.get("/sponsors",function(req,res){
+//   res.render('sponsors');
+// });
+//
+// router.get("/memes",function(req,res){
+//   res.render('memes');
+// });
 
 app.use("/",router);
 

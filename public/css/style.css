@@ -209,7 +209,7 @@ body{
 
 .home-learn-img{
     margin-right: 4%;
-    background-image: url(../img/silly-pic.jpg);
+    background-image: url(../img/ideahacks.jpg);
     background-size: cover;
     min-height: 197px;
 }
@@ -941,7 +941,9 @@ section.section>.section-container>.team-container .blurb .inner p {
 /*
     Multicoloured Hover Variations
 */
-
+#social-nl:hover {
+    color: rgb(68, 43, 85);
+}
  #social-fb:hover {
      color: #3B5998;
  }
