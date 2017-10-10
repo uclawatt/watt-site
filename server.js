@@ -40,6 +40,10 @@ router.get("/",function(req,res){
     res.render('index');
 });
 
+router.get("/mission",function(req,res){
+    res.render('mission');
+});
+
 router.get("/team",function(req,res){
     res.render('team');
 });

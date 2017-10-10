@@ -204,12 +204,14 @@ body{
 .home-join-img{
     background-image: url(../img/social-house.jpg);
     background-size: cover;
+    min-height: 292px;
 }
 
 .home-learn-img{
     margin-right: 4%;
     background-image: url(../img/silly-pic.jpg);
     background-size: cover;
+    min-height: 197px;
 }
 
 .home-date{
@@ -704,8 +706,38 @@ section.section>.section-container>.team-container .blurb .inner p {
 /*FAMILY PAGE*/
 .fam-pic {
     margin-right: 8%;
-    background-image: url(../img/silly-pic.jpg);
     background-size: cover;
+}
+
+.raven-pic{
+    background-image: url(../img/fun1.jpg);
+}
+
+.slyther-pic{
+    background-image: url(../img/fun2.jpg);
+}
+
+.gryf-pic{
+    background-image: url(../img/fun3.jpg);
+}
+
+.huffle-pic{
+    background-image: url(../img/fun4.jpg);
+}
+
+.mentor-main-card{
+    /*margin-right: 8%;*/
+    margin-bottom: 3%;
+}
+
+.mentor-main-pic{
+    max-height: 262px;
+}
+
+.mentor-inner-left{
+    display: inline-block;
+    width: 62%;
+    vertical-align: top;
 }
 
 .fam-card {
@@ -774,7 +806,8 @@ section.section>.section-container>.team-container .blurb .inner p {
     color: rgb(140, 140, 140);
     margin-bottom: -1em;
     display: inline-block;
-    width: 49%
+    /*width: 49%  use when officer contacts availalbe*/
+    width: 99%;
 }
 
 .contact-list{
@@ -873,3 +906,49 @@ section.section>.section-container>.team-container .blurb .inner p {
 #wysebridge-img{
     background-image: url(../img/sponsors/wysebridge.png);
 }
+
+/*FOOTER*/
+
+.footer-container{
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    width: 100%;
+}
+
+.footer-block{
+    margin-bottom: 2%;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+     color: rgb(0,208,175);
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
