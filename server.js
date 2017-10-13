@@ -96,9 +96,9 @@ router.get("/gallery",function(req,res){
     res.render('gallery');
 });
 
-// router.get("/projects",function(req,res){
-//   res.render('projects');
-// });
+router.get("/projects",function(req,res){
+  res.render('projects');
+});
 
 // router.get("/applytosponsor",function(req,res){
 //   res.render('applytosponsor');
@@ -107,7 +107,7 @@ router.get("/gallery",function(req,res){
 // router.get("/sponsors",function(req,res){
 //   res.render('sponsors');
 // });
-//
+
 // router.get("/memes",function(req,res){
 //   res.render('memes');
 // });
