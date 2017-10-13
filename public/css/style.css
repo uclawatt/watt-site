@@ -5,6 +5,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .row {
   display: flex; /* equal height of the children */
   margin-left: 2%;
