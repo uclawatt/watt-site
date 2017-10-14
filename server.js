@@ -104,9 +104,9 @@ router.get("/applytosponsor",function(req,res){
   res.render('applytosponsor');
 });
 
-router.get("/sponsors",function(req,res){
-  res.render('sponsors');
-});
+// router.get("/sponsors",function(req,res){
+//   res.render('sponsors');
+// });
 
 // router.get("/memes",function(req,res){
 //   res.render('memes');
