@@ -65,11 +65,11 @@ h2 {
 }
 
 .gallery-photo{
-    background-image: url(../img/backgroundphotos/guy-tinker.jpg);
+    background-image: url(../img/backgroundphotos/charlotte-tinker.jpg);
 }
 
 .projects-photo{
-    background-image: url(../img/backgroundphotos/charlotte-tinker.jpg);
+    background-image: url(../img/backgroundphotos/guy-tinker.jpg);
 }
 
 .sponsors-photo{
@@ -420,7 +420,9 @@ a:link {
 .col.xs-23 {
     width: 95.83333%}
 .col.xs-24 {
-    width: 100%}
+    width: 100%;
+    float: left;
+}
 @media (min-width:768px) {
     .col.sm-1 {
     width: 4.16667%}
@@ -742,12 +744,14 @@ section.section>.section-container>.team-container .blurb .inner p {
 }
 
 .mentor-main-pic{
-    max-height: 262px;
+    max-height: 210px;
+float: left;
+margin-right: 2%;
 }
 
 .mentor-inner-left{
     display: inline-block;
-    width: 62%;
+    /*width: 70%;*/
     vertical-align: top;
 }
 

@@ -48,9 +48,9 @@ router.get("/team",function(req,res){
     res.render('team');
 });
 
-// router.get("/families",function(req,res){
-//     res.render('families');
-// });
+router.get("/families",function(req,res){
+    res.render('families');
+});
 
 router.get("/contact",function(req,res){
     res.render('contact');
@@ -100,13 +100,13 @@ router.get("/projects",function(req,res){
   res.render('projects');
 });
 
-// router.get("/applytosponsor",function(req,res){
-//   res.render('applytosponsor');
-// });
+router.get("/applytosponsor",function(req,res){
+  res.render('applytosponsor');
+});
 
-// router.get("/sponsors",function(req,res){
-//   res.render('sponsors');
-// });
+router.get("/sponsors",function(req,res){
+  res.render('sponsors');
+});
 
 // router.get("/memes",function(req,res){
 //   res.render('memes');
