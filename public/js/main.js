@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // }(jQuery));
     // var $mcj = jQuery.noConflict(true);
 
-    console.log("Hello")
-
-    // JavaScript
-    // window.sr = ScrollReveal();
-    // console.log("yes");
-    // sr.reveal('.foo');
-    // console.log("pls");
-    // sr.reveal('.bar');
-
-    // interval passed to reveal
-window.sr = ScrollReveal({ duration: 2000 });
-console.log("da fuck")
-sr.reveal('.page-content', 50);
+//     console.log("Hello")
+//
+//     // JavaScript
+//     // window.sr = ScrollReveal();
+//     // console.log("yes");
+//     // sr.reveal('.foo');
+//     // console.log("pls");
+//     // sr.reveal('.bar');
+//
+//     // interval passed to reveal
+// window.sr = ScrollReveal({ duration: 2000 });
+// console.log("da fuck")
+// sr.reveal('.page-content', 50);
 });
