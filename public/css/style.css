@@ -9,6 +9,10 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
+h5 {
+    margin-top: 0px;
+}
+
 .row {
   display: flex; /* equal height of the children */
   margin-left: 2%;
@@ -96,6 +100,7 @@ h2 {
 
 .page-heading {
     text-align: 1px 1px gray;
+    font-size: 45px;
 }
 
 .page-wrapper {
@@ -170,6 +175,10 @@ h2 {
     color: rgb(0,208,175);
 }
 
+/*#navbar-brand:hover{
+    color: blue;
+}*/
+
 #nav-logo{
     display: inline-block;
     width: 24px;
@@ -177,7 +186,7 @@ h2 {
 
 .about-cover-heading{
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -821,6 +830,7 @@ margin-right: 2%;
 .gallery-card {
     margin-bottom: 3%;
     padding: 3.5% 3.5% 0 3.5%;
+    text-align: center;
 }
 
 /*CONTACT*/

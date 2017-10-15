@@ -112,6 +112,11 @@ router.get("/applytosponsor",function(req,res){
 //   res.render('memes');
 // });
 
+// router.get("/haha",function(req,res){
+//   res.render('haha');
+// });
+
+
 app.use("/",router);
 
 app.use(express.static("public"));
