@@ -8,6 +8,7 @@
     "start": "node Server.js"
   },
   "dependencies": {
+    "animate-on-scroll": "^1.2.3",
     "body-parser": "^1.18.2",
     "express": "latest",
     "handlebars": "^4.0.10",

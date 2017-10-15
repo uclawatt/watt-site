@@ -40,21 +40,21 @@ router.get("/",function(req,res){
     res.render('index');
 });
 
-// router.get("/mission",function(req,res){
-//     res.render('mission');
-// });
-//
-// router.get("/team",function(req,res){
-//     res.render('team');
-// });
-//
-// router.get("/families",function(req,res){
-//     res.render('families');
-// });
-//
-// router.get("/contact",function(req,res){
-//     res.render('contact');
-// });
+router.get("/mission",function(req,res){
+    res.render('mission');
+});
+
+router.get("/team",function(req,res){
+    res.render('team');
+});
+
+router.get("/families",function(req,res){
+    res.render('families');
+});
+
+router.get("/contact",function(req,res){
+    res.render('contact');
+});
 
 // http POST /contact
 router.post("/contact", function (req, res) {
@@ -89,32 +89,32 @@ router.post("/contact", function (req, res) {
   });
 });
 
-// router.get("/calendar",function(req,res){
-//     res.render('calendar');
-// });
-// router.get("/gallery",function(req,res){
-//     res.render('gallery');
-// });
-//
-// router.get("/projects",function(req,res){
-//   res.render('projects');
-// });
-//
-// router.get("/applytosponsor",function(req,res){
-//   res.render('applytosponsor');
-// });
+router.get("/calendar",function(req,res){
+    res.render('calendar');
+});
+router.get("/gallery",function(req,res){
+    res.render('gallery');
+});
 
-// router.get("/sponsors",function(req,res){
-//   res.render('sponsors');
-// });
+router.get("/projects",function(req,res){
+  res.render('projects');
+});
 
-// router.get("/memes",function(req,res){
-//   res.render('memes');
-// });
+router.get("/applytosponsor",function(req,res){
+  res.render('applytosponsor');
+});
 
-// router.get("/haha",function(req,res){
-//   res.render('haha');
-// });
+router.get("/sponsors",function(req,res){
+  res.render('sponsors');
+});
+
+router.get("/memes",function(req,res){
+  res.render('memes');
+});
+
+router.get("/haha",function(req,res){
+  res.render('haha');
+});
 
 
 app.use("/",router);
