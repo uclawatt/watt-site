@@ -948,6 +948,13 @@ margin-right: 2%;
     margin-bottom: 2%;
 }
 
+.tiers-wrap{
+    padding-top: 0;
+    padding-bottom: 77%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
 /*SUBSCRIBE*/
 
 #mc_embed_signup{
