@@ -108,13 +108,13 @@ router.get("/sponsors",function(req,res){
   res.render('sponsors');
 });
 
-router.get("/memes",function(req,res){
-  res.render('memes');
-});
+// router.get("/memes",function(req,res){
+//   res.render('memes');
+// });
 
-router.get("/haha",function(req,res){
-  res.render('haha');
-});
+// router.get("/haha",function(req,res){
+//   res.render('haha');
+// });
 
 
 app.use("/",router);
