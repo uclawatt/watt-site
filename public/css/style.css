@@ -262,6 +262,9 @@ h5 {
     .page-cover-photo{
         height: 40vh;
     }
+    .waves-full-background{
+        height: 60vh;
+    }
 }
 
 /* Add some shadows to create a card effect */
