@@ -116,6 +116,10 @@ router.get("/sponsors",function(req,res){
 //   res.render('haha');
 // });
 
+// router.get("/handle",function(req,res){
+//   res.render('handle');
+// });
+
 
 app.use("/",router);
 

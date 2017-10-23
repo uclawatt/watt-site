@@ -887,18 +887,20 @@ margin-right: 2%;
 
 .project-title{
     margin-top: 2.5%;
-    margin-bottom: 2.5%;
     text-align: center;
     font-size: 18px;
 }
 
 .project-name{
     display: inline;
+    display: inline;
+text-align: center;
+font-size: 18px;
+margin-bottom: 0px;
 }
 
 .project-date{
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-bottom: 0;
     text-align: center;
     font-size: 14px;
 }
@@ -1015,6 +1017,11 @@ margin-right: 2%;
  #social-fb:hover {
      color: #3B5998;
  }
+
+ #social-fl:hover {
+     color: rgb(68, 43, 85);
+ }
+
  #social-tw:hover {
      color: #4099FF;
  }
