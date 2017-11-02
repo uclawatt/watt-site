@@ -23,7 +23,7 @@ h5 {
     color: black;
     font-size: medium;
     text-align: center;
-    font-size: xx-large;
+    /*font-size: xx-large;*/
     font-weight: 600;
 
 }
@@ -58,7 +58,7 @@ h5 {
     font-size: 25px;
     font-weight: 300;
     box-shadow: inset 0 0 100px #000;
-    opacity: .7;
+    /*opacity: .7;*/
 }
 
 .team-photo{
@@ -128,7 +128,7 @@ h5 {
           rgba(79,192,170, 0.45)
         ),
         url(../img/tanzeela.jpg);*/
-    opacity: .7;
+    /*opacity: .7;*/
 }
 
 .site-wrapper
@@ -928,7 +928,7 @@ margin-bottom: 0px;
 .sponsor-card-title{
     color: rgb(255, 206, 0);
     text-align: center;
-    font-size: xx-large;
+    /*font-size: xx-large;*/
     font-weight: 600;
 }
 
