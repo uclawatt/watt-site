@@ -23,7 +23,7 @@ h5 {
     color: black;
     font-size: medium;
     text-align: center;
-    /*font-size: xx-large;*/
+    font-size: x-large;
     font-weight: 600;
 
 }
@@ -972,6 +972,7 @@ margin-bottom: 0px;
 
 #mc_embed_signup h2{
     font-size: x-large;
+    font-weight: 600px;
 }
 
 /*FOOTER*/
