@@ -12,7 +12,8 @@
                     <div class="container team-container column">
                         <div class="container team-container constrained">
                             <div class="grid align-start">
-                                <div class="col sm-12 md-8">
+                                <div id="officers-mount"></div>
+                                <!-- <div class="col sm-12 md-8">
                                     <div class="person-card">
                                         <img class="profile-picture" src="img/boardmembers/allison.jpg">
                                         <h4>Allison Doami</h4>
@@ -120,7 +121,8 @@
                                         <p>Rubia is a second year Computer Science major slowly sneaking into the Electrical Engineering major. She likes to daydream unfinished stories, coat her room with origami stars and cranes, and dismantle bigotry with passive aggression.<p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+                            
                         </div>
                 </div>
             </section>
@@ -128,4 +130,19 @@
     </div>
 
 </div>
+
+<!--  OFFICERS HANDLEBARS SCRIPT -->
+<script id="officers-template" type="text/x-handlebars-template">
+        \{{#each officers}}
+        <div class="col sm-12 md-8 lg-8 person-wrapper">
+            <div class="person-card">
+                <img class="profile-picture" src="\{{this.imgUrl}}">
+                <h4>\{{this.name}}</h4>
+                <h5>\{{this.role}}</h5>
+                <a href="\{{this.email}}"><i id="social-em" class="fa fa-envelope fa-2x social"></i></a>
+                <p>\{{this.bio}}</p>
+            </div>
+        </div>
+        \{{/each}}
+</script>
 {{> footer}}
