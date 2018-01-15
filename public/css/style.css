@@ -13,6 +13,10 @@ h5 {
     margin-top: 0px;
 }
 
+.fam-card-description a .fa {
+    font-size: 20px;
+}
+
 .row {
   display: flex; /* equal height of the children */
   margin-left: 2%;
@@ -353,6 +357,10 @@ h1 {
   color: #000120;
   line-height: 1.5em;
   margin: 0px;
+}
+
+a {
+    color: rgb(0,208,175);
 }
 
 a:link {
@@ -841,7 +849,6 @@ margin-right: 2%;
 
 }
 .fam-card-description{
-    color: rgb(141,141,141);
 }
 
 /*GALLERY*/
