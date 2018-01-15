@@ -1,8 +1,80 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+    let eventsSource = $("#events-template").html();
+    let eventsTemplate = Handlebars.compile(eventsSource);
     let officersSource = $("#officers-template").html();
     let officersTemplate = Handlebars.compile(officersSource);
-    
+
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         10/3/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Fall General Meeting</p>
+    //         <p>Maxwell Room | Welcome to WATT! It's time to kick off the year with some exciting announcements of our upcoming events as well as games to ignite friendships, both old and new. New members are welcome! *There may be free pizza*</p>
+    //     </div>
+    // </div>
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         10/10/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Ice-Breaking and Blocking</p>
+    //         <p>Bottom of Janss Steps | Come and meet some fellow engineers at our first event of the school year! Get a chance to make some new WATT friends and race them down the Janss Steps' hill! *Diddy Riese will be provided!*</p>
+    //     </div>
+    // </div>
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         10/13/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Mentorship Reveal</p>
+    //         <p>Boelter 4760 | All aboard the HogWATTs express! If you applied to be a part of the mentorship program come join us for an evening of icebreakers, pizza, and fun! You'll be sorted into houses and meet your family for the rest of the year!</p>
+    //     </div>
+    // </div>
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         10/19/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Wearables Worshop</p>
+    //         <p>Boelter 4760 | All aboard the HogWATTs express! If you applied to be a part of the mentorship program come join us for an evening of icebreakers, pizza, and fun! You'll be sorted into houses and meet your family for the rest of the year!</p>
+    //     </div>
+    // </div>
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         11/7/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Study Session</p>
+    //         <p>Need a place on campus to study for midterms? Come by and join other fellow members in the struggle of the midterm season. Snacks will be provided! Update: The room has been changed to the Faraday Room. See you all there!</p>
+    //     </div>
+    // </div>
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         11/14/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Depression and Anxiety Workshop</p>
+    //         <p>What are depression and anxiety? How does it feel to you or people you know who have depression or anxiety? What are some tips to make us or others feel better when depressed or anxious? Take a deep breath, and come share your story. We will be alternating between a presentation and discussion. Food to boost your mood will be provided (nuts, dark chocolate, green tea)!</p>
+    //     </div>
+    // </div>
+    // <div class="row home-row">
+    //     <div class="col xs-3 sm-3 md-2 home-date">
+    //         11/17/17
+    //     </div>
+    //     <div class="col xs-21 sm-21 md-22">
+    //         <p class="home-event-name">Board Games and Riddles</p>
+    //         <p>Swing by for a chance to play board games and get your mind blown with some fun riddles! Bring riddles to share and enjoy fun board and card games. Also a great way to self-care and meet some cool people during midterm season. Snacks and games will be provided!</p>
+    //     </div>
+    // </div>
+
+
     let dataObj = {
+        events: [
+            {name: "WATT Winter GM", eventUrl: "https://www.facebook.com/events/543293826036231/", date: "1/11/18", location: "Maxwell Room (Eng IV 57-124)", description: "*Welcome back! It’s time to kick off the new year with some exciting announcements of our upcoming socials, info sessions, and workshops as well as some games to ignite friendships, both old and new. New members are welcome! Diddy Riese will be provided!"},
+            {name: "Google Resume Workshop", eventUrl: "https://www.facebook.com/events/1568474673239901/", date: "1/16/18", location: "Engineering 6 Room 289", description: "*Want advice and practical suggestions for improving your resume? Join Google engineers and recruiters for a resume review session that will cover topics ranging from formatting and content selection, to techniques to highlight your skills. This will be an interactive session so please bring a copy of your resume. *RSVP at goo.gl/jREQpX *Note: the location has been changed to Eng VI Room 289."},
+            {name: "Athena Hacks", eventUrl: "https://www.facebook.com/events/141764676445799/", date: "2/24/18", location: "USC Leavey Library", description: "*AthenaHacks 2.0 is happening! Join us on Feb 24-25 for a weekend filled with learning, exploring new topics, and building! AthenaHacks is Southern California's largest all-female hackathon. We work to make it an open and supportive environment for beginners or experienced hackers alike."},
+        ],
         officers: [
             {name: "Allison Doami", imgUrl: "img/boardmembers/allison.jpg", role: "External Co-President", email: "mailto:externalpresident@ieeewatt.com", bio: "Allison is a third year Electrical Engineering major. She is an avid frisbee, tennis, and soccer player who also loves to play the violin, piano, and ukulele in her spare time. Catch her making weird faces as she's doing her homework or eating Ike's in Westwood when she gets sick of campus food."},
             {name: "Tanvi Rane", imgUrl: "img/boardmembers/tanvi.jpg", role: "Internal Co-President", email: "mailto:internalpresident@ieeewatt.com", bio: "Tanvi is a fourth year Electrical Engineering major. She loves math, food, memes, dance, and her friends. As a chronic over-commiter, she has held many leadership positions in her time at UCLA, so for the sake of her sanity, she is slowly learning to say 'no' and prioritize her committments."},
@@ -18,11 +90,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             {name: "Rubia Liu", imgUrl: "img/boardmembers/rubia.jpg", role: "Workshops Chair", email: "mailto:workshops@ieeewatt.com", bio: "Rubia is a second year Computer Science major slowly sneaking into the Electrical Engineering major. She likes to daydream unfinished stories, coat her room with origami stars and cranes, and dismantle bigotry with passive aggression."},
         ]
     };
-    
+
+    $.each(dataObj.events,function(i,item){reformatToPs(i,item);})
+    $('#events-mount').html(eventsTemplate({
+        events: dataObj.events
+    }));
+
     $('#officers-mount').html(officersTemplate({
         officers: dataObj.officers
     }));
-    // 
+    //
     // (function($) {window.fnames = new Array();
     //     window.ftypes = new Array();
     //     fnames[0]='EMAIL';
@@ -33,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //     ftypes[2]='text';
     // }(jQuery));
     // var $mcj = jQuery.noConflict(true);
-    
+
     //     console.log("Hello")
     //
     //     // JavaScript
@@ -47,8 +124,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // window.sr = ScrollReveal({ duration: 2000 });
     // console.log("da fuck")
     // sr.reveal('.page-content', 50);
-    
-    
+
+
     // showImage() {
     //   var theImages = [ 'img/fun1.jpg', 'img/fun1.jpg', 'img/fun1.jpg', 'img/fun1.jpg', 'img/fun1.jpg' ];
     //   var img = theImages[Math.round(Math.random() * (theImages.length - 1))];
@@ -56,14 +133,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // }
     //
     // showImage();
-    
-    
+
+
     // window.onload = choosePic;
-    // 
+    //
     // var myPix = new Array("img/fun1.jpg","img/fun2.jpg","img/fun3.jpg");
-    // 
+    //
     // function choosePic() {
     //     randomNum = Math.floor((Math.random() * myPix.length));
     //     document.getElementById("myPicture").src = myPix[randomNum];
     // }
 });
+
+function reformatToPs(i, item){
+    let list = item.description.split('*');
+    let html = '';
+     for(let i=0; i<list.length; i++) {
+        html += '<p>' + list[i] + '</p>';
+      }
+    // html += '</ul>';
+    item.description = html;
+}

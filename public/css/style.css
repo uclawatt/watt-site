@@ -138,6 +138,27 @@ h5 {
     /*opacity: 1;*/
 }
 
+/* ---------------------------------------LOADING PAGE ---------------------------------------*/
+
+#loader-wrapper .loader-section{
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222;
+    z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left{
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-left{
+    right: 0;
+}
+
+/* ---------------------------------------NAVBAR ---------------------------------------*/
+
 .navbar {
     margin-bottom: 0px;
     color: rgb(68, 43, 85);

@@ -9,6 +9,34 @@
             </div>
         </div>
 
+        <!--  EVENTS HANDLEBARS SCRIPT -->
+        <script id="events-template" type="text/x-handlebars-template">
+            \{{#each events}}
+            <div class="row home-row">
+                <div class="col xs-3 sm-3 md-2 home-date">
+                    \{{this.date}}
+                </div>
+                <div class="col xs-21 sm-21 md-22">
+                    <p class="home-event-name"> <a href="\{{this.eventUrl}}"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a> | \{{this.name}} | \{{this.location}} </p>
+                    <p>\{{{this.description}}}</p>
+                </div>
+            </div>
+            \{{/each}}
+        </script>
+        <!--  OFFICERS HANDLEBARS SCRIPT -->
+        <script id="officers-template" type="text/x-handlebars-template">
+            \{{#each officers}}
+            <div class="col sm-12 md-8 lg-8 person-wrapper">
+                <div class="person-card">
+                    <img class="profile-picture" src="\{{this.imgUrl}}">
+                    <h4>\{{this.name}}</h4>
+                    <h5>\{{this.role}}</h5>
+                    <a href="\{{this.email}}"><i id="social-em" class="fa fa-envelope fa-2x social"></i></a>
+                    <p>\{{this.bio}}</p>
+                </div>
+            </div>
+            \{{/each}}
+        </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type='text/javascript' src='js/handlebars-v4.0.11.js'></script>
@@ -19,4 +47,5 @@
         <script type="text/javascript" src="../js/anijs/anijs-min.js"></script>
         <script type="text/javascript" src="../js/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
     </body>
+
 </html>

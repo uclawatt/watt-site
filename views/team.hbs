@@ -17,22 +17,8 @@
                     </section>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>
-<!--  OFFICERS HANDLEBARS SCRIPT -->
-<script id="officers-template" type="text/x-handlebars-template">
-    \{{#each officers}}
-    <div class="col sm-12 md-8 lg-8 person-wrapper">
-        <div class="person-card">
-            <img class="profile-picture" src="\{{this.imgUrl}}">
-            <h4>\{{this.name}}</h4>
-            <h5>\{{this.role}}</h5>
-            <a href="\{{this.email}}"><i id="social-em" class="fa fa-envelope fa-2x social"></i></a>
-            <p>\{{this.bio}}</p>
-        </div>
-    </div>
-    \{{/each}}
-</script>
 {{> footer}}
