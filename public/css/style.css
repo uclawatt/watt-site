@@ -787,33 +787,22 @@ section.section>.section-container>.team-container .blurb .inner p {
 .fam-pic {
     margin-right: 8%;
     background-size: cover;
+    background-color: transparent;
+    text-align: center;
 }
 
-.raven-pic{
-    background-image: url(../img/fun1.jpg);
-}
-
-.slyther-pic{
-    background-image: url(../img/fun2.jpg);
-}
-
-.gryf-pic{
-    background-image: url(../img/fun3.jpg);
-}
-
-.huffle-pic{
-    background-image: url(../img/fun4.jpg);
+.mentor-pic{
+    max-height: 300px;
 }
 
 .mentor-main-card{
-    /*margin-right: 8%;*/
     margin-bottom: 3%;
 }
 
 .mentor-main-pic{
     max-height: 210px;
-float: left;
-margin-right: 2%;
+    float: left;
+    margin-right: 2%;
 }
 
 .mentor-inner-left{
