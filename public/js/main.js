@@ -69,11 +69,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // </div>
 
 
+
+    // let dataObj = {
+    //     events: [
+    //         {name: "WATT Winter GM", eventUrl: "https://www.facebook.com/events/543293826036231/", date: "1/11/18", location: "Maxwell Room (Eng IV 57-124)", description: "*Welcome back! It’s time to kick off the new year with some exciting announcements of our upcoming socials, info sessions, and workshops as well as some games to ignite friendships, both old and new. New members are welcome! Diddy Riese will be provided!"},
+    //         {name: "Athena Hacks", eventUrl: "https://www.facebook.com/events/141764676445799/", date: "2/24/18", location: "USC Leavey Library", description: "*AthenaHacks 2.0 is happening! Join us on Feb 24-25 for a weekend filled with learning, exploring new topics, and building! AthenaHacks is Southern California's largest all-female hackathon. We work to make it an open and supportive environment for beginners or experienced hackers alike."},
+    //     ],
+    // };
+
     let dataObj = {
         events: [
-            {name: "WATT Winter GM", eventUrl: "https://www.facebook.com/events/543293826036231/", date: "1/11/18", location: "Maxwell Room (Eng IV 57-124)", description: "*Welcome back! It’s time to kick off the new year with some exciting announcements of our upcoming socials, info sessions, and workshops as well as some games to ignite friendships, both old and new. New members are welcome! Diddy Riese will be provided!"},
             {name: "Google Resume Workshop", eventUrl: "https://www.facebook.com/events/1568474673239901/", date: "1/16/18", location: "Engineering 6 Room 289", description: "*Want advice and practical suggestions for improving your resume? Join Google engineers and recruiters for a resume review session that will cover topics ranging from formatting and content selection, to techniques to highlight your skills. This will be an interactive session so please bring a copy of your resume. *RSVP at goo.gl/jREQpX *Note: the location has been changed to Eng VI Room 289."},
-            {name: "Athena Hacks", eventUrl: "https://www.facebook.com/events/141764676445799/", date: "2/24/18", location: "USC Leavey Library", description: "*AthenaHacks 2.0 is happening! Join us on Feb 24-25 for a weekend filled with learning, exploring new topics, and building! AthenaHacks is Southern California's largest all-female hackathon. We work to make it an open and supportive environment for beginners or experienced hackers alike."},
+            {name: "Uber Interview Workshop", eventUrl: "https://www.facebook.com/events/932627573552109/", date: "1/22/18", location: "Engr IV Room 53-125", description: "Ever wonder how to ace a technical interview? Need advice on how to tackle coding questions? Join WATT and Uber representatives for a technical interview workshop where you'll go through some example coding questions and also learn tips on what interviewers look for!*There will be food!!"},
+            {name: "Oath Info Session", eventUrl: "https://www.facebook.com/events/1751602825134901/", date: "1/24/18", location: "Engr IV Room 53-125", description: "Oath is a diverse house of more than 50 media and technology brands that engages more than a billion people around the world. The Oath portfolio includes Yahoo Sports, Yahoo Finance, Yahoo Mail, Tumblr, HuffPost, AOL.com, and more, with a mission to build brands people love.*We move fast, show our personality, and are relentlessly focused on inspiring and delighting our users every day. But don't take our word for it, come join us to hear first hand from our engineers about their experiences. *Food, drinks, swag, and a raffle ticket for a chance to win a prize will be available to students who arrive early!"},
         ],
         officers: [
             {name: "Allison Doami", imgUrl: "img/boardmembers/allison.jpg", role: "External Co-President", email: "mailto:externalpresident@ieeewatt.com", bio: "Allison is a third year Electrical Engineering major. She is an avid frisbee, tennis, and soccer player who also loves to play the violin, piano, and ukulele in her spare time. Catch her making weird faces as she's doing her homework or eating Ike's in Westwood when she gets sick of campus food."},
