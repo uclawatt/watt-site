@@ -68,15 +68,20 @@ h5 {
 .team-photo{
     background-image: url(../img/backgroundphotos/group.jpg);
 }
+.mission-photo{
+    background-image: url(../img/backgroundphotos/siranush-bsls.jpg);
+
+}
+
 .family-photo{
-    background-image: url(../img/backgroundphotos/cullen-tinker-orig.jpg);
+    background-image: url(../img/backgroundphotos/allison-bsls.jpg);
 }
 .contact-photo{
-    background-image: url(../img/backgroundphotos/ale-tinker-orig.jpg);
+    background-image: url(../img/backgroundphotos/fab-google.jpg.jpg);
 }
 
 .calendar-photo{
-    background-image: url(../img/backgroundphotos/replaced-tanvi.jpg);
+    background-image: url(../img/backgroundphotos/melissa-bsls.jpg);
 }
 
 .gallery-photo{
@@ -88,7 +93,7 @@ h5 {
 }
 
 .sponsors-photo{
-    background-image: url(../img/backgroundphotos/replaced-tanvi.jpg);
+    background-image: url(../img/backgroundphotos/rubia-google.jpg);
 }
 
 .applytosponsor-photo{
@@ -793,6 +798,7 @@ section.section>.section-container>.team-container .blurb .inner p {
 
 .mentor-pic{
     max-height: 300px;
+    border-radius: 20px;
 }
 
 .mentor-main-card{
