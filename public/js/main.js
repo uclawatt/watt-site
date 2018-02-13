@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    let eventsSource = $("#events-template").html();
-    let eventsTemplate = Handlebars.compile(eventsSource);
-    let officersSource = $("#officers-template").html();
-    let officersTemplate = Handlebars.compile(officersSource);
+    var eventsSource = $("#events-template").html();
+    var eventsTemplate = Handlebars.compile(eventsSource);
+    var officersSource = $("#officers-template").html();
+    var officersTemplate = Handlebars.compile(officersSource);
 
     // <div class="row home-row">
     //     <div class="col xs-3 sm-3 md-2 home-date">
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-    // let dataObj = {
+    // var dataObj = {
     //     events: [
     //         {name: "WATT Winter GM", eventUrl: "https://www.facebook.com/events/543293826036231/", date: "1/11/18", location: "Maxwell Room (Eng IV 57-124)", description: "*Welcome back! It’s time to kick off the new year with some exciting announcements of our upcoming socials, info sessions, and workshops as well as some games to ignite friendships, both old and new. New members are welcome! Diddy Riese will be provided!"},
     //         {name: "Athena Hacks", eventUrl: "https://www.facebook.com/events/141764676445799/", date: "2/24/18", location: "USC Leavey Library", description: "*AthenaHacks 2.0 is happening! Join us on Feb 24-25 for a weekend filled with learning, exploring new topics, and building! AthenaHacks is Southern California's largest all-female hackathon. We work to make it an open and supportive environment for beginners or experienced hackers alike."},
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //     ],
     // };
 
-    let dataObj = {
+    var dataObj = {
         events: [
             {name: "LGBTQ Terminology Workshop", eventUrl: "https://www.facebook.com/events/579906702360037/", date: "1/30/18", location: "Engr IFV Room 67-124", description: "Come learn about LUG, Uhauling, a hundred footer, cruising, lipstick lesbian, pillow princess, and all the code words that you GBF or queer friends use 😉 and enjoy some dark chocolate and fruits (no gay pun intended)"},
             {name: "LED Paper Craft Workshop", eventUrl: "https://www.facebook.com/events/2111533122469306/", date: "2/8/18", location: "Engr IV Room 67-124", description: "WATT and SWE have collaborated together to present a fun, stress-relieving workshop on integrating circuits into cards. Create cards for friends/family/yourself for the upcoming Valentine's Day or other occasions. Bring your creativity and we'll provide the paint, electronics and chocolate covered strawberries! *(Recommended to bring your own pens, pencils, and any other art supplies as markers are limited)"},
@@ -158,9 +158,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function reformatToPs(i, item){
-    let list = item.description.split('*');
-    let html = '';
-     for(let i=0; i<list.length; i++) {
+    var list = item.description.split('*');
+    var html = '';
+     for(var i=0; i<list.length; i++) {
         html += '<p>' + list[i] + '</p>';
       }
     // html += '</ul>';
