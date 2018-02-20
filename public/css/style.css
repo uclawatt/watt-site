@@ -85,7 +85,7 @@ h5 {
 }
 
 .gallery-photo{
-    background-image: url(../img/backgroundphotos/ale-tinker-orig.jpg);
+    background-image: url(../img/backgroundphotos/intel-dinner.jpg);
 }
 
 .projects-photo{
@@ -98,6 +98,10 @@ h5 {
 
 .applytosponsor-photo{
     background-image: url(../img/backgroundphotos/ale-tinker-orig.jpg);
+}
+
+.sponsors-photo{
+    background-image: url(../img/backgroundphotos/valentines.jpg);
 }
 
 .memes-photo{
@@ -266,7 +270,7 @@ h5 {
 
 .home-do-img {
     margin-right: 4%;
-    background-image: url(../img/silly-pic.jpg);
+    background-image: url(../img/valentines-food.jpg);
     background-size: cover;
     min-height: 197px;
 }
@@ -994,7 +998,7 @@ margin-bottom: 0px;
 }
 
 .sponsor-img{
-    width: 40%;
+    width: 38%;
     display: inline-block;
     padding: 1%;
 }
