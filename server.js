@@ -108,6 +108,12 @@ router.get("/sponsors",function(req,res){
   res.render('sponsors');
 });
 
+// Google Site Verification
+router.get("/google8f0a9e1b6c89e557.html",function(req,res){
+  res.render('google8f0a9e1b6c89e557');
+});
+
+
 // router.get("/memes",function(req,res){
 //   res.render('memes');
 // });
