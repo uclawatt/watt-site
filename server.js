@@ -118,6 +118,7 @@ router.get("/sponsors",function(req,res){
 
 // WATT Email
 router.get("/googlea2a112487327d175.html",function(req,res){
+    console.log("whtf");
   res.render('googlea2a112487327d175');
 });
 
