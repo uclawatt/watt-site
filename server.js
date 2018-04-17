@@ -109,8 +109,16 @@ router.get("/sponsors",function(req,res){
 });
 
 // Google Site Verification
+
+//My email lol
 router.get("/google8f0a9e1b6c89e557.html",function(req,res){
   res.render('google8f0a9e1b6c89e557');
+});
+
+
+// WATT Email
+router.get("/googlea2a112487327d175.html",function(req,res){
+  res.render('googlea2a112487327d175');
 });
 
 
