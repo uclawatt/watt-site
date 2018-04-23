@@ -3,83 +3,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var eventsTemplate = Handlebars.compile(eventsSource);
     var officersSource = $("#officers-template").html();
     var officersTemplate = Handlebars.compile(officersSource);
-
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         10/3/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Fall General Meeting</p>
-    //         <p>Maxwell Room | Welcome to WATT! It's time to kick off the year with some exciting announcements of our upcoming events as well as games to ignite friendships, both old and new. New members are welcome! *There may be free pizza*</p>
-    //     </div>
-    // </div>
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         10/10/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Ice-Breaking and Blocking</p>
-    //         <p>Bottom of Janss Steps | Come and meet some fellow engineers at our first event of the school year! Get a chance to make some new WATT friends and race them down the Janss Steps' hill! *Diddy Riese will be provided!*</p>
-    //     </div>
-    // </div>
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         10/13/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Mentorship Reveal</p>
-    //         <p>Boelter 4760 | All aboard the HogWATTs express! If you applied to be a part of the mentorship program come join us for an evening of icebreakers, pizza, and fun! You'll be sorted into houses and meet your family for the rest of the year!</p>
-    //     </div>
-    // </div>
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         10/19/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Wearables Worshop</p>
-    //         <p>Boelter 4760 | All aboard the HogWATTs express! If you applied to be a part of the mentorship program come join us for an evening of icebreakers, pizza, and fun! You'll be sorted into houses and meet your family for the rest of the year!</p>
-    //     </div>
-    // </div>
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         11/7/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Study Session</p>
-    //         <p>Need a place on campus to study for midterms? Come by and join other fellow members in the struggle of the midterm season. Snacks will be provided! Update: The room has been changed to the Faraday Room. See you all there!</p>
-    //     </div>
-    // </div>
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         11/14/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Depression and Anxiety Workshop</p>
-    //         <p>What are depression and anxiety? How does it feel to you or people you know who have depression or anxiety? What are some tips to make us or others feel better when depressed or anxious? Take a deep breath, and come share your story. We will be alternating between a presentation and discussion. Food to boost your mood will be provided (nuts, dark chocolate, green tea)!</p>
-    //     </div>
-    // </div>
-    // <div class="row home-row">
-    //     <div class="col xs-3 sm-3 md-2 home-date">
-    //         11/17/17
-    //     </div>
-    //     <div class="col xs-21 sm-21 md-22">
-    //         <p class="home-event-name">Board Games and Riddles</p>
-    //         <p>Swing by for a chance to play board games and get your mind blown with some fun riddles! Bring riddles to share and enjoy fun board and card games. Also a great way to self-care and meet some cool people during midterm season. Snacks and games will be provided!</p>
-    //     </div>
-    // </div>
-
-
-
-    // var dataObj = {
-    //     events: [
-    //         {name: "WATT Winter GM", eventUrl: "https://www.facebook.com/events/543293826036231/", date: "1/11/18", location: "Maxwell Room (Eng IV 57-124)", description: "*Welcome back! It’s time to kick off the new year with some exciting announcements of our upcoming socials, info sessions, and workshops as well as some games to ignite friendships, both old and new. New members are welcome! Diddy Riese will be provided!"},
-    //         {name: "Athena Hacks", eventUrl: "https://www.facebook.com/events/141764676445799/", date: "2/24/18", location: "USC Leavey Library", description: "*AthenaHacks 2.0 is happening! Join us on Feb 24-25 for a weekend filled with learning, exploring new topics, and building! AthenaHacks is Southern California's largest all-female hackathon. We work to make it an open and supportive environment for beginners or experienced hackers alike."},
-    // {name: "Google Resume Workshop", eventUrl: "https://www.facebook.com/events/1568474673239901/", date: "1/16/18", location: "Engineering 6 Room 289", description: "*Want advice and practical suggestions for improving your resume? Join Google engineers and recruiters for a resume review session that will cover topics ranging from formatting and content selection, to techniques to highlight your skills. This will be an interactive session so please bring a copy of your resume. *RSVP at goo.gl/jREQpX *Note: the location has been changed to Eng VI Room 289."},
-    // {name: "Uber Interview Workshop", eventUrl: "https://www.facebook.com/events/932627573552109/", date: "1/22/18", location: "Engr IV Room 53-125", description: "Ever wonder how to ace a technical interview? Need advice on how to tackle coding questions? Join WATT and Uber representatives for a technical interview workshop where you'll go through some example coding questions and also learn tips on what interviewers look for!*There will be food!!"},
-    // {name: "Oath Info Session", eventUrl: "https://www.facebook.com/events/1751602825134901/", date: "1/24/18", location: "Engr IV Room 53-125", description: "Oath is a diverse house of more than 50 media and technology brands that engages more than a billion people around the world. The Oath portfolio includes Yahoo Sports, Yahoo Finance, Yahoo Mail, Tumblr, HuffPost, AOL.com, and more, with a mission to build brands people love.*We move fast, show our personality, and are relentlessly focused on inspiring and delighting our users every day. But don't take our word for it, come join us to hear first hand from our engineers about their experiences. *Food, drinks, swag, and a raffle ticket for a chance to win a prize will be available to students who arrive early!"},
-    // {name: "LGBTQ Terminology Workshop", eventUrl: "https://www.facebook.com/events/579906702360037/", date: "1/30/18", location: "Engr IFV Room 67-124", description: "Come learn about LUG, Uhauling, a hundred footer, cruising, lipstick lesbian, pillow princess, and all the code words that you GBF or queer friends use 😉 and enjoy some dark chocolate and fruits (no gay pun intended)"},
-    //     ],
-    // };
+    var projectsSource = $("#projects-template").html();
+    var projectsTemplate = Handlebars.compile(projectsSource);
 
     var dataObj = {
         events: [
@@ -99,6 +24,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
             {name: "Maurene Jiang", imgUrl: "img/boardmembers/maurene.jpg", role: "Corporate Relations", email: "mailto:corporate@ieeewatt.com", bio: "Third year Computer Science major with an unhealthy Salt & Straw obsession and slightly annoying love for cacti"},
             {name: "Melissa Cox", imgUrl: "img/boardmembers/melissa.jpg", role: "Publicity Chair", email: "mailto:publicity@ieeewatt.com", bio: "Melissa is a second year Computer Science major. She loves art, karaoke, and videogames. She does not like pollution, the quarter system, and comic sans. She hopes to travel to new destinations, especially natural wonders."},
             {name: "Rubia Liu", imgUrl: "img/boardmembers/rubia.jpg", role: "Workshops Chair", email: "mailto:workshops@ieeewatt.com", bio: "Rubia is a second year Computer Science major slowly sneaking into the Electrical Engineering major. She likes to daydream unfinished stories, coat her room with origami stars and cranes, and dismantle bigotry with passive aggression."},
+        ],
+        projects: [
+            {name: "Audio Workshop", date: "4/24/2017", eventUrl: "https://www.facebook.com/events/1710673605899546/", imgUrl: "img/eventphotos/audiows.jpg"},
+            {name: "RF Workshop", date: "4/17/2017", eventUrl: "https://www.facebook.com/events/556822414526173/", imgUrl: "img/eventphotos/rfws2.jpg"},
+            {name: "Design Concepts Workshop", date: "4/11/2017", eventUrl: "https://www.facebook.com/events/1663298890350955/", imgUrl: "img/eventphotos/designws.jpg"},
+            {name: "RF Workshop", date: "2/22/2017", eventUrl: "https://www.facebook.com/events/1199347506847311/", imgUrl: "img/eventphotos/rfws.jpg"},
+            {name: "Valentine's Workshop", date: "2/08/2017", eventUrl: "https://www.facebook.com/events/185447715269874/", imgUrl: "img/eventphotos/valentinesws.jpg"},
+            {name: "Wearables Workshop 2", date: "11/10/2016", eventUrl: "https://www.facebook.com/events/325982431127452/", imgUrl: "img/eventphotos/wearablesws2.jpg"},
+            {name: "Wearables Workshop 1", date: "10/28/2016", eventUrl: "https://www.facebook.com/events/385779441753175/", imgUrl: "img/eventphotos/wearablesws1.jpg"},
         ]
     };
 
@@ -110,7 +44,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $('#officers-mount').html(officersTemplate({
         officers: dataObj.officers
     }));
-    //
+
+    $('#projects-mount').html(projectsTemplate({
+        projects: dataObj.projects
+    }));
+
+
+
+
     // (function($) {window.fnames = new Array();
     //     window.ftypes = new Array();
     //     fnames[0]='EMAIL';

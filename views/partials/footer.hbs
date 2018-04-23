@@ -37,10 +37,26 @@
             </div>
             \{{/each}}
         </script>
+        <!--  PROJECTS HANDLEBARS SCRIPT -->
+        <script id="projects-template" type="text/x-handlebars-template">
+            \{{#each projects}}
+            <div class="page-content gallery-card col sm-24 md-24">
+                <div class="flickrwrap project-wrap">
+                    <img src="\{{this.imgUrl}}" alt="Audio Workshop Gallery" class="project-img">
+                </div>
+                <div class="project-title">
+                    <p class="project-name">\{{this.name}}</p>
+                </div>
+                <p class="project-date">\{{this.date}}</p>
+                <a href="\{{this.eventUrl}}"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                <p class="fam-card-description"></p>
+            </div>
+            \{{/each}}
+        </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type='text/javascript' src='js/handlebars-v4.0.11.js'></script>
-        <script src="../js/main.js"></script>
+        <script src="../js/main.min.js"></script>
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
         <!-- <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
         <!-- AniJS Core File -->
