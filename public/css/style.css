@@ -284,6 +284,7 @@ h5 {
 
 .home-date{
     margin-right: 1%;
+    min-width: 20%;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
