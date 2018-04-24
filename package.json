@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server.js"
+    "start": "node Server.js",
+    "minAll": "uglifycss public/css/style.css > public/css/style.min.css && uglifyjs public/js/main.js --output public/js/main.min.js",
+    "minCSS": "uglifycss public/css/style.css > public/css/style.min.css",
+    "minJS": "uglifyjs public/js/main.js --output public/js/main.min.js"
   },
   "dependencies": {
     "animate-on-scroll": "^1.2.3",

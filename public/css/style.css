@@ -210,13 +210,19 @@ h5 {
     color: rgb(0,208,175);
 }
 
-/*#navbar-brand:hover{
-    color: blue;
-}*/
-
 #nav-logo{
     display: inline-block;
     width: 24px;
+}
+
+#feedback-tab {
+  background: rgb(166, 152, 171);
+  color: #f8f8f8;
+}
+
+#feedback-tab:hover {
+  background: #f8f8f8;
+  color: rgb(68, 43, 85);
 }
 
 .about-cover-heading{
