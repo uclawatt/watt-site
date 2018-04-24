@@ -284,7 +284,6 @@ h5 {
 
 .home-date{
     margin-right: 1%;
-    min-width: 20%;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -298,6 +297,9 @@ h5 {
     }
     .waves-full-background{
         height: 60vh;
+    }
+    .home-date {
+      min-width: 20%;
     }
 }
 
