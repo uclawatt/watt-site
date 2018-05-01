@@ -153,7 +153,23 @@ h5 {
 
 /* ---------------------------------------LOADING PAGE ---------------------------------------*/
 
-#loader-wrapper .loader-section{
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loadingGifs/loader-64x/Preloader_3.gif) center no-repeat white;
+}
+
+
+/* #loader-wrapper .loader-section{
     position: fixed;
     top: 0;
     width: 51%;
@@ -168,7 +184,7 @@ h5 {
 
 #loader-wrapper .loader-section.section-left{
     right: 0;
-}
+} */
 
 /* ---------------------------------------NAVBAR ---------------------------------------*/
 
@@ -195,7 +211,7 @@ h5 {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; // remove the gap so it doesn't close
+    margin-top: 0; 
  }
 
  .navbar-default .navbar-nav>li>a {

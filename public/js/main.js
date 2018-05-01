@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut(2000);;
+    
     var eventsSource = $("#events-template").html();
     var eventsTemplate = Handlebars.compile(eventsSource);
     var officersSource = $("#officers-template").html();
@@ -8,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var dataObj = {
         events: [
-            {name: "Hiking Social", eventUrl: "https://www.facebook.com/events/1991662514432930/", date: "4/21/18", location: "De Neve Crosswalk", time: "7:30 AM - 12 PM", description: "Join us this Saturday for a chance to destress with the help of a fun hike in the Santa Monica area. This is also the perfect chance to bond with your mentor/mentee! *We will be taking the bus, so please bring change. It costs $1.75 per ride, and we will take 1 ride there and 1 back."},
-            {name: "Design Workshop", eventUrl: "https://www.facebook.com/events/325873394605450/", date: "4/24/18", location: "Engr IV Rm 67-124", time: "6 PM - 7:30 PM", description: "Are you interested in design or learning how to Photoshop? Ever wonder how memes are made? If so, come to the WATT Design Workshop to design the memes of your dreams. You'll also have the chance to create your very own house crest! ~Diddy Riese will be provided!~"},
+            {name: "Northrop Grumman Tour", eventUrl: "https://www.facebook.com/events/371421390028511/", date: "5/11/18", location: "De Neve Turnaround", time: "11 AM - 3 PM", description: "Come join WATT as we tour Northrop Grumman's campus on Friday, May 11th from noon-3pm! We will meet at De Neve Turnaround at 11am to arrange transportation to the campus. Northrop employees will take us around the site to learn more about the company and view the labs and projects that make Northrop unique! Lunch will be provided! *US Citizenship Required *BE SURE TO RSVP BY MAY 2ND *RSVP at tinyurl.com/ngcwatt"},
         ],
         officers: [
             {name: "Allison Doami", imgUrl: "img/boardmembers/allison.jpg", role: "External Co-President", email: "mailto:externalpresident@ieeewatt.com", bio: "Allison is a third year Electrical Engineering major. She is an avid frisbee, tennis, and soccer player who also loves to play the violin, piano, and ukulele in her spare time. Catch her making weird faces as she's doing her homework or eating Ike's in Westwood when she gets sick of campus food."},
