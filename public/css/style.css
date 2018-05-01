@@ -42,13 +42,12 @@ h5 {
 
 .page-content {
     background-color: white;
-    /*box-shadow: 0px 1px 3px #000000;*/
     padding: 2%;
     border-radius: 20px;
 }
 
 .page-cover-photo {
-    background-image: url(../img/backgroundphotos/charlotte-tinker-orig.jpg);
+    background-image: url(../img/backgroundphotos/erin-tinker.jpg);
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
@@ -62,11 +61,10 @@ h5 {
     font-size: 25px;
     font-weight: 300;
     box-shadow: inset 0 0 100px #000;
-    /*opacity: .7;*/
 }
 
 .team-photo{
-    background-image: url(../img/backgroundphotos/group.jpg);
+    background-image: url(../img/backgroundphotos/retreat-group.jpg);
 }
 .mission-photo{
     background-image: url(../img/backgroundphotos/siranush-bsls.jpg);
@@ -92,15 +90,11 @@ h5 {
     background-image: url(../img/backgroundphotos/guy-tinker-orig.jpg);
 }
 
-.sponsors-photo{
+.sponsor-photo{
     background-image: url(../img/backgroundphotos/rubia-google.jpg);
 }
 
 .applytosponsor-photo{
-    background-image: url(../img/backgroundphotos/ale-tinker-orig.jpg);
-}
-
-.sponsors-photo{
     background-image: url(../img/backgroundphotos/valentines.jpg);
 }
 
@@ -120,7 +114,7 @@ h5 {
     padding: 6%;
 }
 
-.waves-full-background
+.home-page-cover
 {
 	background-color: rgba(79, 192, 170, 1);
     background-image: url(../img/backgroundphotos/lineup-orig.jpg);
@@ -148,7 +142,6 @@ h5 {
 {
 	max-width: 90%;
 	margin: auto;
-    /*opacity: 1;*/
 }
 
 /* ---------------------------------------LOADING PAGE ---------------------------------------*/
@@ -192,6 +185,7 @@ if it's not present, don't show loader */
     margin-bottom: 0px;
     color: rgb(68, 43, 85);
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -265,7 +259,6 @@ if it's not present, don't show loader */
 }
 
 .home-event-name{
-    /*font-size: 15px;*/
     font-weight: bold;
     color: rgb(141,141,141);
 }
@@ -317,7 +310,7 @@ if it's not present, don't show loader */
     .page-cover-photo{
         height: 40vh;
     }
-    .waves-full-background{
+    .home-page-cover{
         height: 60vh;
     }
     .home-date {
@@ -953,9 +946,9 @@ section.section>.section-container>.team-container .blurb .inner p {
 .project-name{
     display: inline;
     display: inline;
-text-align: center;
-font-size: 18px;
-margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 
 .project-date{
@@ -976,7 +969,7 @@ margin-bottom: 0px;
 
 /*SPONSORS*/
 .sponsor-overview-img {
-    background-image: url(../img/charlotte-tinker2.jpg);
+    background-image: url(../img/erin-tinker.jpg);
     background-size: cover;
     margin-right: 4%;
 }
@@ -1007,6 +1000,10 @@ margin-bottom: 0px;
     height: 100%;
     background-repeat:  no-repeat;
     background-size: contain;
+}
+
+.sponsor-container {
+    text-align: center;
 }
 
 .sponsor-wrap{
@@ -1048,6 +1045,7 @@ margin-bottom: 0px;
     background-color: #f8f8f8;
     border-color: #e7e7e7;
     width: 100%;
+    font-weight: 600;
 }
 
 .footer-block{
