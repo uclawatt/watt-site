@@ -3,6 +3,7 @@ body{
     line-height: 1.428571;
     margin-top: 50px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 h2 {
@@ -44,6 +45,7 @@ h5 {
     background-color: white;
     padding: 2%;
     border-radius: 20px;
+    background-position: center center;
 }
 
 .page-cover-photo {
@@ -982,7 +984,6 @@ section.section>.section-container>.team-container .blurb .inner p {
 .sponsor-card-title{
     color: rgb(255, 206, 0);
     text-align: center;
-    /*font-size: xx-large;*/
     font-weight: 600;
 }
 
