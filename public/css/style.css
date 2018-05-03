@@ -770,7 +770,7 @@ section.section>.section-container>.team-container .blurb .inner p {
     font-weight: 300;
 }
 .person-card p {
-    font-size: 1.1em;
+    font-size: .95em;
 }
 .person-card>.profile-picture {
     object-fit: cover;
