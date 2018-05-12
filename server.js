@@ -111,23 +111,9 @@ router.get("/sponsors",function(req,res){
 // Google Site Verification
 
 // WATT Email
-router.get("/googlea2a112487327d175.html",function(req,res){
+router.get("/googlea2a112487327d175",function(req,res){
   res.render('googlea2a112487327d175');
 });
-
-
-// router.get("/memes",function(req,res){
-//   res.render('memes');
-// });
-
-// router.get("/haha",function(req,res){
-//   res.render('haha');
-// });
-
-// router.get("/handle",function(req,res){
-//   res.render('handle');
-// });
-
 
 app.use("/",router);
 
