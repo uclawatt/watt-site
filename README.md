@@ -10,7 +10,7 @@ Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu)!
 
 ## Setting up the environment
 - Clone this repository.
-  - `git clone https://github.com/tanzeelak/Orwell.git`
+  - `git clone https://github.com/tanzeelak/watt-site.git`
 - Install yarn, a reliable package manager for code. 
   - `brew install yarn`
   - Read more about Yarn commands [here](https://yarnpkg.com/lang/en/docs/cli/global/).
@@ -27,5 +27,5 @@ Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu)!
   - `sass --watch .`
 - Minify the files.
   - `npm run minAll`
-- Run nodemon and check server at `localhost:5000`. 
+- Run nodemon and check server at (localhost:5000)[http://localhost:5000/]. 
   - `nodemon`
