@@ -29,7 +29,7 @@ h5 {
     font-size: medium;
     text-align: center;
     font-size: x-large;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
@@ -89,7 +89,7 @@ h5 {
 }
 
 .projects-photo{
-    background-image: url(../img/backgroundphotos/guy-tinker-orig.jpg);
+    background-image: url(../img/backgroundphotos/ashwin-tinker.jpg);
 }
 
 .sponsor-photo{
@@ -101,7 +101,7 @@ h5 {
 }
 
 .memes-photo{
-    background-image: url(../img/backgroundphotos/cullen-tinker-orig.jpg);
+    background-image: url(../img/backgroundphotos/cullen-tinker.jpg);
 }
 
 
@@ -119,7 +119,7 @@ h5 {
 .home-page-cover
 {
 	background-color: rgba(79, 192, 170, 1);
-    background-image: url(../img/backgroundphotos/lineup-orig.jpg);
+    background-image: url(../img/backgroundphotos/lineup.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -810,8 +810,6 @@ section.section>.section-container>.team-container .blurb .inner p {
     border-left:1px solid black;
 }
 
-
-
 /*FAMILY PAGE*/
 .fam-pic {
     margin-right: 8%;
@@ -971,13 +969,13 @@ section.section>.section-container>.team-container .blurb .inner p {
 
 /*SPONSORS*/
 .sponsor-overview-img {
-    background-image: url(../img/erin-tinker.jpg);
+    background-image: url(../img/backgroundphotos/erin-tinker.jpg);
     background-size: cover;
     margin-right: 4%;
 }
 
 .sponsor-help-img {
-    background-image: url(../img/jenny-tinker-orig.jpg);
+    background-image: url(../img/jenny-tinker.jpg);
     background-size: cover;
 }
 
