@@ -149,7 +149,7 @@ h5 {
 /* ---------------------------------------LOADING PAGE ---------------------------------------*/
 
 /* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
+/* This only works with JavaScript,
 if it's not present, don't show loader */
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -207,7 +207,7 @@ if it's not present, don't show loader */
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
+    margin-top: 0;
  }
 
  .navbar-default .navbar-nav>li>a {
