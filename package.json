@@ -24,7 +24,7 @@
     "xoauth2": "^1.2.0"
   },
   "engines": {
-    "node": "6.8.1"
+    "node": "10.0.0"
   },
   "repository": {
     "type": "git",
