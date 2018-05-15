@@ -2,7 +2,7 @@
 
 ## Overview
 IEEE WATT's website!
-Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu)!
+Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu) :) 
 
 ## Built With
 - [Node.js](https://nodejs.org/en/): JavaScript run-time environment that executes JavaScript server-side code.
@@ -16,16 +16,12 @@ Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu)!
   - Read more about Yarn commands [here](https://yarnpkg.com/lang/en/docs/cli/global/).
 - Install nodemon, a monitor for changes in source code and automatically restarts when change is detected. 
   - `yarn global add nodemon`
-- Install CSS/JS minifiers globally.
-  - `yarn global add uglify-js`
-  - `yarn global add uglifycss`
 - Install all packages listed in the package.json.
   - `yarn install`
 
 ## Run the server locally
-- Run sass watcher.
+- Run sass watcher in one terminal.
   - `sass --watch .`
-- Minify the files.
-  - `npm run minAll`
-- Run nodemon and check server at (localhost:5000)[http://localhost:5000/]. 
+- Run nodemon in another terminal tab.  
   - `nodemon`
+  - Check the server at (localhost:5000)[http://localhost:5000/].
