@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var projectsSource = $("#projects-template").html();
   var projectsTemplate = Handlebars.compile(projectsSource);
   var sponsorsSource = $("#sponsors-template").html();
-  var sponsorsTemplate = Handlebars.compile(sponsorsSource());
+  var sponsorsTemplate = Handlebars.compile(sponsorsSource);
 
   var dataObj = {
     events: [
