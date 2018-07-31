@@ -21,7 +21,7 @@ Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu) :)
 
 ## Run the server locally
 - Run sass watcher in one terminal. Sass watches the .scss files for changes and outputs the css version into the .css files. 
-  - `sass --watch .`
+  - `sass public/css/style.scss public/css/style.css  --watch`
 - Run nodemon in another terminal tab. Nodemon watches for any changes in the .js files and updates the server correspondingly.
   - `nodemon`
   - Check the server at (localhost:5000)[http://localhost:5000/].
