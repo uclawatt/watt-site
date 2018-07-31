@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var officersTemplate = Handlebars.compile(officersSource);
   var projectsSource = $("#projects-template").html();
   var projectsTemplate = Handlebars.compile(projectsSource);
+  var sponsorsSource = $("#sponsors-template").html();
+  var sponsorsTemplate = Handlebars.compile(sponsorsSource());
 
   var dataObj = {
     events: [
@@ -193,6 +195,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         eventUrl: "https://www.facebook.com/events/385779441753175/",
         imgUrl: "img/eventphotos/wearablesws1.jpg"
       }
+    ],
+    sponsors: [
+      {
+        imgUrl: "",
+        alt: "",
+        class: ""
+      },
+      {
+        imgUrl: "",
+        alt: "",
+        class: ""
+      }
     ]
   };
 
@@ -208,6 +222,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   $("#officers-mount").html(
     officersTemplate({
       officers: dataObj.officers
+    })
+  );
+
+  $("#sponsors-mount").html(
+    sponsorsTemplate({
+      sponsors: dataObj.sponsors
     })
   );
 
