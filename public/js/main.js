@@ -2,27 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Animate loader off screen
   $(".se-pre-con").fadeOut(1250);
 
-//   // Fade in Nav on scroll
-//   $(window).scroll(function() {
-//     // 100 = The point you would like to fade the nav in.
 
-//     if ($(window).scrollTop() > 100) {
-//       $(".bg").addClass("show");
-//     } else {
-//       $(".bg").removeClass("show");
-//     }
-//   });
-
-//   $(".scroll").on("click", function(e) {
-//     e.preventDefault();
-
-//     $("html, body").animate(
-//       {
-//         scrollTop: $(this.hash).offset().top
-//       },
-//       500
-//     );
-//   });
 
   var eventsSource = $("#events-template").html();
   var eventsTemplate = Handlebars.compile(eventsSource);
@@ -30,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var officersTemplate = Handlebars.compile(officersSource);
   var projectsSource = $("#projects-template").html();
   var projectsTemplate = Handlebars.compile(projectsSource);
+  var sponsorsSource = $("#sponsors-template").html();
+  var sponsorsTemplate = Handlebars.compile(sponsorsSource);
 
   var dataObj = {
     events: [
@@ -193,6 +175,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
         eventUrl: "https://www.facebook.com/events/385779441753175/",
         imgUrl: "img/eventphotos/wearablesws1.jpg"
       }
+    ],
+    sponsors: [
+      {
+        imgUrl: "img/sponsors/qualcomm.png",
+        alt: "Qualcomm Logo"
+      },
+      {
+        imgUrl: "img/sponsors/northrop.png",
+        alt: "Northrup Logo"
+      },
+      {
+        imgUrl: "img/sponsors/google.png",
+        alt: "Google Logo"
+      },
+      {
+        imgUrl: "img/sponsors/intel.png",
+        alt: "Intel Logo"
+      },
+      {
+        imgUrl: "img/sponsors/oath.png",
+        alt: "Oath Logo"
+      },
+      {
+        imgUrl: "img/sponsors/uber.jpg",
+        alt: "Uber Logo"
+      },
+      {
+        imgUrl: "img/sponsors/cray.png",
+        alt: "Cray Logo"
+      }
+
     ]
   };
 
@@ -211,53 +224,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   );
 
+  $("#sponsors-mount").html(
+    sponsorsTemplate({
+      sponsors: dataObj.sponsors
+    })
+  );
+
   $("#projects-mount").html(
     projectsTemplate({
       projects: dataObj.projects
     })
   );
 
-  // (function($) {window.fnames = new Array();
-  //     window.ftypes = new Array();
-  //     fnames[0]='EMAIL';
-  //     ftypes[0]='email';
-  //     fnames[1]='FNAME';
-  //     ftypes[1]='text';
-  //     fnames[2]='LNAME';
-  //     ftypes[2]='text';
-  // }(jQuery));
-  // var $mcj = jQuery.noConflict(true);
 
-  //     console.log("Hello")
-  //
-  //     // JavaScript
-  //     // window.sr = ScrollReveal();
-  //     // console.log("yes");
-  //     // sr.reveal('.foo');
-  //     // console.log("pls");
-  //     // sr.reveal('.bar');
-  //
-  //     // interval passed to reveal
-  // window.sr = ScrollReveal({ duration: 2000 });
-  // console.log("da fuck")
-  // sr.reveal('.page-content', 50);
-
-  // showImage() {
-  //   var theImages = [ 'img/fun1.jpg', 'img/fun1.jpg', 'img/fun1.jpg', 'img/fun1.jpg', 'img/fun1.jpg' ];
-  //   var img = theImages[Math.round(Math.random() * (theImages.length - 1))];
-  //   document.getElementById('splash').innerHTML = '<img src="' + img + '">');
-  // }
-  //
-  // showImage();
-
-  // window.onload = choosePic;
-  //
-  // var myPix = new Array("img/fun1.jpg","img/fun2.jpg","img/fun3.jpg");
-  //
-  // function choosePic() {
-  //     randomNum = Math.floor((Math.random() * myPix.length));
-  //     document.getElementById("myPicture").src = myPix[randomNum];
-  // }
 });
 
 function reformatToPs(i, item) {
