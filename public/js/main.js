@@ -37,100 +37,101 @@ document.addEventListener("DOMContentLoaded", function(event) {
     officers: [
       {
         name: "Allison Doami",
-        imgUrl: "img/boardmembers/allison.jpg",
+        imgUrl: "img/boardmembers18/Allison18.jpg",
         role: "External Co-President",
         email: "mailto:externalpresident@ieeewatt.com",
         bio:
-          "Allison is a third year Electrical Engineering major. She is an avid frisbee, tennis, and soccer player who also loves to play the violin, piano, and ukulele in her spare time. Catch her making weird faces as she's doing her homework or eating Ike's in Westwood when she gets sick of campus food."
-      },
-      {
-        name: "Tanvi Rane",
-        imgUrl: "img/boardmembers/tanvi.jpg",
-        role: "Internal Co-President",
-        email: "mailto:internalpresident@ieeewatt.com",
-        bio:
-          "Tanvi is a fourth year Electrical Engineering major. She loves math, food, memes, dance, and her friends. As a chronic over-commiter, she has held many leadership positions in her time at UCLA, so for the sake of her sanity, she is slowly learning to say 'no' and prioritize her committments."
-      },
-      {
-        name: "Katrina Wijaya",
-        imgUrl: "img/boardmembers/katrina.jpg",
-        role: "Secretary",
-        email: "mailto:secretary@ieeewatt.com",
-        bio:
-          "Katrina is a third year Computer Science major. You can usually find her navigating through Boelter with Google Maps. She’s currently either thinking about food, eating food, or planning what food she’ll eat next. Alongside her passion for food, Katrina develops her (lacking) artistic skills through origami, nail art, and Pictionary."
-      },
-      {
-        name: "Siranush Martirosyan",
-        imgUrl: "img/boardmembers/siranush.jpg",
-        role: "Treasurer",
-        email: "mailto:treasurer@ieeewatt.com",
-        bio:
-          "Siranush is a second year Electrical Engineer interested in solar energy and electric vehicles. She loves to roller-skate, hike, latin dance, cook, travel, get inspired from nature and learn different languages."
-      },
-      {
-        name: "Meena Nagappan",
-        imgUrl: "img/boardmembers/meena.jpg",
-        role: "Mentorship Chair",
-        email: "mailto:mentorship@ieeewatt.com",
-        bio:
-          "Meena is a second year Electrical Engineering major. She loves chocolate, watching movies, and traveling. She would love to learn more languages so she can watch more movies."
-      },
-      {
-        name: "Alejandra Uribe",
-        imgUrl: "img/boardmembers/ale.jpg",
-        role: "Social Chair",
-        email: "mailto:social@ieeewatt.com",
-        bio:
-          "Alejandra is a second year Mathematics of Computation major. During her free time she enjoys playing the ukulele, watching Game of Thrones, and teaching people math."
-      },
-      {
-        name: "Catherine Cheng",
-        imgUrl: "img/boardmembers/catherine.jpg",
-        role: "Advocacy and Wellness Chair",
-        email: "mailto:advocacywellness@ieeewatt.com",
-        bio:
-          "Catherine is an EE senior at UCLA, engineering to help LGBTQ, mental health patients, and sexual assault survivors. She made an iOS self-care app, Mood Buddy, to help people with their emotional well being."
+          "Allison is a fourth year Electrical Engineering major. When she's not confused about how to do her circuits homework, she's either playing frisbee, rockclimbing in Wooden, taking photos of her friends, or eating Harrison Parmes at Ike's in Westwood. She's sad it's her last year as an officer in WATT, but she's excited to go out with a bang!"
       },
       {
         name: "Jennifer Seki",
-        imgUrl: "img/boardmembers/jennifer.jpg",
-        role: "Events Coordinator",
-        email: "mailto:events@ieeewatt.com",
+        imgUrl: "img/boardmembers18/Jen18.jpg",
+        role: "Internal Co-President",
+        email: "mailto:internalpresident@ieeewatt.com",
         bio:
-          "Second year Electrical Engineering major. Loves soccer, traveling, and food. Yearns to travel and eat more, but devastated by the cost."
+          "Jennifer is a third year Electrical Engineering major. She loves to go on foodie adventures, play soccer, and run around Westwood. She also has a Yellow Prajiet in Muay Thai. Please swipe her into dining halls, as she gets lazy and doesn’t want to buy groceries at Ralph’s (even though she lives in the apartment across the street)."
       },
       {
-        name: "Tanzeela Khan",
-        imgUrl: "img/boardmembers/tanzeela.jpg",
-        role: "Webmaster",
-        email: "mailto:webmaster@ieeewatt.com",
+        name: "Ariana Kazemi",
+        imgUrl: "img/boardmembers18/Ariana18.jpg",
+        role: "Treasurer",
+        email: "mailto:treasurer@ieeewatt.com",
         bio:
-          "Tanzeela is a third year Computer Science and Engineering major. She loves hiking, singing terribly, watching musicals, and dj-ing. She's currently planning her escape."
+          "Ariana is a third year Electrical Engineering major. She enjoys going to concerts, driving down the PCH, playing piano, trying new boba places, and watching vine compilations. She is always willing to discuss opinions on new Apple products, Game of Thrones fan theories, or the newest SNL episodes. She is both an espresso and fried chicken enthusiast, and always welcomes suggestions for either!"
       },
       {
         name: "Maurene Jiang",
-        imgUrl: "img/boardmembers/maurene.jpg",
+        imgUrl: "img/boardmembers18/Maurene18.jpg",
         role: "Corporate Relations",
         email: "mailto:corporate@ieeewatt.com",
         bio:
-          "Third year Computer Science major with an unhealthy Salt & Straw obsession and slightly annoying love for cacti"
+          "Maurene is a fourth year Computer Science major.  She is a little too obsessed with ice cream, Arizona, and her pet cat (ask her to show you pictures!).  In her spare time, you can find her running around with a camera, crying over midterms, or falling on a tennis court."
       },
       {
-        name: "Melissa Cox",
-        imgUrl: "img/boardmembers/melissa.jpg",
-        role: "Publicity Chair",
-        email: "mailto:publicity@ieeewatt.com",
+        name: "Samiha Rahman",
+        imgUrl: "img/boardmembers18/Samiha18.jpg",
+        role: "Workshops Chair",
+        email: "mailto:workshops@ieeewatt.com",
         bio:
-          "Melissa is a second year Computer Science major. She loves art, karaoke, and videogames. She does not like pollution, the quarter system, and comic sans. She hopes to travel to new destinations, especially natural wonders."
+          "Samiha is a third year Computer Engineering major. She enjoying watching cat videos, playing volleyball, going to Target, and eating food with friends. While her primary dream is to become an engineer, her other goal is to finish watching the Fullmetal Alchemist: Brotherhood anime series."
+      },
+      {
+        name: "Siranush Martirosyan",
+        imgUrl: "img/boardmembers18/Siranush18.jpg",
+        role: "Secretary",
+        email: "mailto:secretary@ieeewatt.com",
+        bio:
+          "Siranush is a third year Electrical Engineering major. She loves to cook food, enjoy nature, go hiking with friends, roller-skate, join Zumba classes and dance salsa/bachata. She also watches Forensic Files and tons of Food Network shows in her spare time."
+      },
+      {
+        name: "Ivan Gomez Siu",
+        imgUrl: "img/boardmembers18/Ivan18.jpg",
+        role: "Social Chair",
+        email: "mailto:social@ieeewatt.com",
+        bio:
+          "Ivan is a third year Electrical Engineering major.  He is a big soccer fan and listens to a lot of late 90's French Shuffle.  He is a bit of a class clown and makes weird jokes.  Spirit animal has to be that kind-of-dumb dog that everyone loves."
       },
       {
         name: "Rubia Liu",
         imgUrl: "img/boardmembers/rubia.jpg",
-        role: "Workshops Chair",
-        email: "mailto:workshops@ieeewatt.com",
+        role: "Advocacy and Wellness Chair",
+        email: "mailto:advocacywellness@ieeewatt.com",
         bio:
-          "Rubia is a second year Computer Science major slowly sneaking into the Electrical Engineering major. She likes to daydream unfinished stories, coat her room with origami stars and cranes, and dismantle bigotry with passive aggression."
-      }
+          "Rubia is a third year Computer Science major slowly sneaking into the Electrical Engineering major. She likes to daydream unfinished stories, coat her room with origami stars and cranes, and dismantle bigotry with passive aggression."
+      },
+      {
+        name: "Meena Nagappan",
+        imgUrl: "img/boardmembers18/Meena18.jpg",
+        role: "Publicity Chair",
+        email: "mailto:publicity@ieeewatt.com",
+        bio:
+          "Meena is a third year Electrical Engineering major. She loves chocolate, watching movies, and traveling. She would love to learn more languages so she can watch more movies."
+      },
+      {
+        name: "Tammie Yang",
+        imgUrl: "img/boardmembers18/Tammie18.jpg",
+        role: "Mentorship Chair",
+        email: "mailto:mentorship@ieeewatt.com",
+        bio:
+          "Tammie's a second year Electrical Engineering major who will HYPE YOU UP (unless she's running on 3 hours of sleep or dead). She enjoys reading, making bad jokes, playing random instruments like the recorder, and fantasizing about traveling the world. You'll see her at events with free food, chilling in random places, or power walking to her next class or club event."
+      },
+      {
+        name: "Justine Bailey",
+        imgUrl: "img/boardmembers18/Justine18.jpg",
+        role: "Events Coordinator",
+        email: "mailto:events@ieeewatt.com",
+        bio:
+          "Justine is a second year electrical engineering student. As a native SoCal resident, she loves everything to do with the beach. She is excited to help WATT grow as a club this year."
+      },
+      {
+        name: "Erin Pool",
+        imgUrl: "img/boardmembers18/Erin18.jpg",
+        role: "Webmaster",
+        email: "mailto:webmaster@ieeewatt.com",
+        bio:
+          "Erin is a second year Electrical Engineering major. She loves to embroider and cross stitch, hang with friends, make bad EE puns, and enjoy gelato from 1919. Most likely to be spotted falling off her pennyboard somewhere on campus."
+      },
+   
     ],
     projects: [
       {
@@ -204,6 +205,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       {
         imgUrl: "img/sponsors/cray.png",
         alt: "Cray Logo"
+      },
+      {
+        imgUrl: "img/sponsors/symantec.png",
+        alt: "Symantec Logo"
       }
 
     ]
