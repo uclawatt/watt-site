@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     ],
     sponsors: [
       {
-<<<<<<< HEAD
         imgUrl: "img/sponsors/qualcomm.png",
         alt: "Qualcomm Logo"
       },
@@ -207,17 +206,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         alt: "Cray Logo"
       }
 
-=======
-        imgUrl: "",
-        alt: "",
-        class: ""
-      },
-      {
-        imgUrl: "",
-        alt: "",
-        class: ""
-      }
->>>>>>> 339d8ae2c8e1ff11399f1224e5233ef8cf74ad8b
     ]
   };
 
