@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         role: "Secretary",
         email: "mailto:secretary@ieeewatt.com",
         bio:
-          "Siranush is a third year Electrical Engineering major. She loves to cook food, enjoy nature, go hiking with friends, roller-skate, join Zumba classes and dance salsa/bachata. She also watches Forensic Files and tons of Food Network shows in her spare time."
+          "Siranush is a third year Electrical Engineering major. She loves to cook food, enjoy nature, go hiking with friends, roller-skate, join Zumba classes and dance salsa/bachata. She also watches Forensic Files and tons of Food Network shows in whatever spare time she has."
       },
       {
         name: "Ivan Gomez Siu",
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         role: "Publicity Chair",
         email: "mailto:publicity@ieeewatt.com",
         bio:
-          "Meena is a third year Electrical Engineering major. She loves chocolate, watching movies, and traveling. She would love to learn more languages so she can watch more movies."
+          "Meena is a third year Electrical Engineering major. As a winner of WATT's 'Sweetest Person' Award, she loves sweet things like chocolate. She also loves watching movies, and traveling. She would love to learn more languages so she can watch more movies."
       },
       {
         name: "Tammie Yang",
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         role: "Mentorship Chair",
         email: "mailto:mentorship@ieeewatt.com",
         bio:
-          "Tammie's a second year Electrical Engineering major who will HYPE YOU UP (unless she's running on 3 hours of sleep or dead). She enjoys reading, making bad jokes, playing random instruments like the recorder, and fantasizing about traveling the world. You'll see her at events with free food, chilling in random places, or power walking to her next class or club event."
+          "Tammie's a second year Electrical Engineering major who will HYPE YOU UP (unless she's running on 3 hours of sleep or dead). She enjoys reading, making bad jokes, playing random instruments like the recorder, and fantasizing about traveling the world."
       },
       {
         name: "Justine Bailey",
