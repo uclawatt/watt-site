@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Join your house for Dinner on the Hill! A great time to grow closer with your mentor and fellow mentees!"
       },
       {
-        name: "Finals!",
+        name: "Good Luck",
+        location: "with",
+        time: "Finals!",
         description:
           "Everyone at WATT wishes you good luck with finals!! If you need help with anything, reach out to your mentor or someone else! We all want to succeed together! You CAN do this"
       }
