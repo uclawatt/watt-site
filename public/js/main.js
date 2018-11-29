@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         time: "6 PM - 7 PM",
         description:
           "Join your house for Dinner on the Hill! A great time to grow closer with your mentor and fellow mentees!"
+      },
+      {
+        name: "Finals!",
+        description:
+          "Everyone at WATT wishes you good luck with finals!! If you need help with anything, reach out to your mentor or someone else! We all want to succeed together! You CAN do this"
       }
      
     ],
