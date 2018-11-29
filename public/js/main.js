@@ -16,23 +16,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        name: "WATTches Series: Circuit",
-        eventUrl: "https://www.facebook.com/events/1167368630070856/",
-        date: "5/4/18",
-        location: "Engr IV 47-124",
+        name: "HogWATTs Dinner on the Hill",
+        eventUrl: "https://www.facebook.com/events/344811739615789/",
+        date: "11/30/18",
+        location: "Covel Private Dining Room",
         time: "6 PM - 7 PM",
         description:
-          "WATT is a hosting a 4-part workshop called WATTches! You’ll be making an LED watch using clock modules and MCUs in teams of 2. Sound interesting? Make sure to sign up by this Friday 5/4! Sound intimidating? Don’t worry! We’ll be teaching from a completely amateur level, so all skills levels and majors are welcome. * You’ll be building the full circuit and learning how to use all the parts."
-      },
-      {
-        name: "Northrop Grumman Tour",
-        eventUrl: "https://www.facebook.com/events/371421390028511/",
-        date: "5/11/18",
-        location: "De Neve Turnaround",
-        time: "11 AM - 3 PM",
-        description:
-          "Come join WATT as we tour Northrop Grumman's campus on Friday, May 11th from noon-3pm! We will meet at De Neve Turnaround at 11am to arrange transportation to the campus. Northrop employees will take us around the site to learn more about the company and view the labs and projects that make Northrop unique! Lunch will be provided! *US Citizenship Required *BE SURE TO RSVP BY MAY 2ND *RSVP at tinyurl.com/ngcwatt"
+          "Join your house for Dinner on the Hill! A great time to grow closer with your mentor and fellow mentees!"
       }
+     
     ],
     officers: [
       {
