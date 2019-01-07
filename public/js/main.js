@@ -16,20 +16,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        name: "HogWATTs Dinner on the Hill",
-        eventUrl: "https://www.facebook.com/events/344811739615789/",
-        date: "11/30/18",
-        location: "Covel Private Dining Room",
+        name: "WATT Winter General Meeting",
+        eventUrl: "https://www.facebook.com/events/252936495618955/",
+        date: "1/8/19",
+        location: "Maxwell Room (Engr IV 57-124)",
         time: "6 PM - 7 PM",
         description:
-          "Join your house for Dinner on the Hill! A great time to grow closer with your mentor and fellow mentees!"
-      },
-      {
-        name: "Good Luck",
-        location: "with",
-        time: "Finals!",
-        description:
-          "Everyone at WATT wishes you good luck with finals!! If you need help with anything, reach out to your mentor or someone else! We all want to succeed together! You CAN do this"
+          "Welcome back! WATT better way to ring in the new year than to join us at our Winter GM? Find out about our exciting events for the quarter, reconnect with other WATT members or meet new ones, and eat some free pizza. See you there!"
       }
      
     ],
