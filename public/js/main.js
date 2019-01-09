@@ -16,15 +16,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        name: "WATT Winter General Meeting",
-        eventUrl: "https://www.facebook.com/events/252936495618955/",
-        date: "1/8/19",
-        location: "Maxwell Room (Engr IV 57-124)",
-        time: "6 PM - 7 PM",
-        description:
-          "Welcome back! WATT better way to ring in the new year than to join us at our Winter GM? Find out about our exciting events for the quarter, reconnect with other WATT members or meet new ones, and eat some free pizza. See you there!"
-      },
-      {
         name: "Resume Workshop with Google",
         eventUrl: "",
         date: "1/16/19",
