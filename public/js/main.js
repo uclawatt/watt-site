@@ -16,42 +16,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        name: "Resume Workshop with Google",
-        eventUrl: "",
-        date: "1/16/19",
-        location: "Engr VI 289",
-        time: "6 PM - 8 PM",
-        description:
-          "Bring resumes for critique and advice from Google's engineers and recruiters"
-      },
-      {
-        name: "Interview Prep with Uber",
-        eventUrl: "",
-        date: "1/22/19",
-        location: "Bunche 3164",
-        time: "6 PM - 8 PM",
-        description:
-          "Join Uber's engineers and recruiters as they teach you technical interview tips and answer questions"
-      },
-      {
-        name: "Oath Info Session",
-        eventUrl: "",
-        date: "1/24/19",
-        location: "Tesla Room",
-        time: "6 PM - 8 PM",
-        description:
-          "Network with Oath recruiters and learn about the company behind Yahoo, Tumblr, AOL, HuffPost, and more"
-      },
-      {
-        name: "Board Games and Snacks",
-        eventUrl: "",
-        date: "1/25/19",
-        location: "tbd",
-        time: "6 PM - 7 PM",
-        description:
-          "Come hang out and relax with some fellow engineers!"
-      },
-      {
         name: "WATTxSWE LED Paper Crafts",
         eventUrl: "",
         date: "2/12/19",
