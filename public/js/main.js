@@ -17,21 +17,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     events: [
       {
         name: "WATTxSWE LED Paper Crafts",
-        eventUrl: "",
-        date: "2/12/19",
-        location: "Faraday Room (Engr IV 67-124)",
-        time: "6:30 PM - 8 PM",
+        eventUrl: "https://www.facebook.com/events/628677974258694/",
+        date: "3/3/19",
+        location: "Janns Steps",
+        time: "1 PM - 3 PM",
         description:
-          "Some special Valentine's day fun! Make light-up cards using conductive paint"
+          "Take part in a picnic on the Janss Steps! Take a moment to eat food and relax before project deadlines and finals are around the corner. Food will be provided!"
       },
       {
-        name: "Midterm Season Study Session",
-        eventUrl: "",
-        date: "2/19/19",
-        location: "Engr VI 289",
-        time: "6:30 PM - 8 PM",
+        name: "Dinner on the Hill",
+        eventUrl: "https://www.facebook.com/events/351595095446762/",
+        date: "3/1/19",
+        location: "Bplate Private Dining Room",
+        time: "6 PM - 7 PM",
         description:
-          "Suffering together is better than suffering alone!"
+          "Eat with your favorite WATT friends! Just chill, catch up, and socialize over dinner."
       }
      
     ],
