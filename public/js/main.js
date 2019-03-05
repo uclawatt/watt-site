@@ -16,22 +16,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        name: "WATTxSWE LED Paper Crafts",
-        eventUrl: "https://www.facebook.com/events/628677974258694/",
-        date: "3/3/19",
-        location: "Janns Steps",
-        time: "1 PM - 3 PM",
+        name: "Alumnae Salary Negotiation Workshop",
+        eventUrl: "https://www.facebook.com/events/2261896494025243/",
+        date: "3/7/19",
+        location: "Boelter Penthouse",
+        time: "6 PM - 8 PM",
         description:
-          "Take part in a picnic on the Janss Steps! Take a moment to eat food and relax before project deadlines and finals are around the corner. Food will be provided!"
-      },
-      {
-        name: "Dinner on the Hill",
-        eventUrl: "https://www.facebook.com/events/351595095446762/",
-        date: "3/1/19",
-        location: "Bplate Private Dining Room",
-        time: "6 PM - 7 PM",
-        description:
-          "Eat with your favorite WATT friends! Just chill, catch up, and socialize over dinner."
+          "On average, women in tech in LA face a 10% wage gap. Join WE@UCLA, WATT, SWE, and ACM-W and learn how to combat the wage gap from UCLA alumni!"
       }
      
     ],
