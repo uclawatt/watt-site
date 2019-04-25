@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var eventsSource = $("#events-template").html();
   var eventsTemplate = Handlebars.compile(eventsSource);
   var officersSource = $("#officers-template").html();
-  var officersTemplate = Handlebars.compile(officersSource);
+  var officersTemplate = Handlebars.compile(officersSource);ç
   var projectsSource = $("#projects-template").html();
   var projectsTemplate = Handlebars.compile(projectsSource);
   var sponsorsSource = $("#sponsors-template").html();
