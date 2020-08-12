@@ -24,5 +24,5 @@ Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu) :)
   - `sass public/css/style.scss public/css/style.css  --watch`
 - Run nodemon in another terminal tab. Nodemon watches for any changes in the .js files and updates the server correspondingly.
   - `nodemon`
-  - Check the server at (localhost:5000)[http://localhost:5000/].
+  - Check the server at [http://localhost:5000/](localhost:5000).
   - To restart the server without exiting nodemon, type  `rs`. 
