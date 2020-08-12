@@ -108,6 +108,10 @@ router.get("/sponsors",function(req,res){
   res.render('sponsors');
 });
 
+router.get("/donate",function(req,res){
+  res.render('donate');
+});
+
 // Google Site Verification
 
 // WATT Email

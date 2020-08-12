@@ -2,3 +2,4 @@ node_modules
 access.log
 config.json
 .sass-cache
+package-lock.json
