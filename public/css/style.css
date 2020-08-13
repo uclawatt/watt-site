@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 body {
-  background-color: #4fc0aa;
+  background-color: white;
   line-height: 1.428571;
   /* margin-top: 50px; */
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h5 {
@@ -35,7 +36,7 @@ h5 {
 }
 
 .page-body {
-  background-color: #a8d7ce;
+  background-color: white;
   margin-left: 10%;
   margin-right: 10%;
   /*box-shadow: 0px 1px 3px #000000;*/
@@ -45,71 +46,39 @@ h5 {
 .page-content {
   background-color: white;
   padding: 2%;
-  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-position: center center;
+}
+
+.page-content-photo {
+  background-color: white;
+  border-radius: 6px;
+  padding: 2%;
   background-position: center center;
 }
 
 .page-cover-photo {
-  background-image: url(../img/backgroundphotos/erin-tinker.jpg);
-  background-position: center center;
+  background: linear-gradient(rgba(232, 228, 238, 0.5), rgba(232, 228, 238, 0.5)), var(--img);
+  background-position: center 25%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
   color: white;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-left: 6%;
-  padding-bottom: 2%;
-  font-size: 25px;
-  font-weight: 300;
-  box-shadow: inset 0 0 100px #000;
-}
-
-.team-photo {
-  background-image: url(../img/backgroundphotos/retreat-group.jpg);
-}
-
-.mission-photo {
-  background-image: url(../img/backgroundphotos/siranush-bsls.jpg);
-}
-
-.family-photo {
-  background-image: url(../img/backgroundphotos/allison-bsls.jpg);
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
 }
 
 .contact-photo {
   background-image: url(../img/backgroundphotos/fab-google.jpg.jpg);
 }
 
-.calendar-photo {
-  background-image: url(../img/backgroundphotos/melissa-bsls.jpg);
-}
-
-.gallery-photo {
-  background-image: url(../img/backgroundphotos/intel-dinner.jpg);
-}
-
-.projects-photo {
-  background-image: url(../img/backgroundphotos/ashwin-tinker.jpg);
-}
-
-.sponsor-photo {
-  background-image: url(../img/backgroundphotos/rubia-google.jpg);
-}
-
-.applytosponsor-photo {
-  background-image: url(../img/backgroundphotos/valentines.jpg);
-}
-
-.memes-photo {
-  background-image: url(../img/backgroundphotos/cullen-tinker.jpg);
-}
-
 .page-heading {
   text-align: 1px 1px gray;
-  font-size: 45px;
-  text-shadow: 2px 2px 2px black;
+  font-size: 55px;
+  font-weight: 1000;
+  text-shadow: 0px 0px 20px black;
 }
 
 .page-wrapper {
@@ -204,7 +173,7 @@ if it's not present, don't show loader */
 .navbar {
   margin-bottom: 0px;
   color: #442b55;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -229,7 +198,7 @@ if it's not present, don't show loader */
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #a698ab;
+  color: #442b55;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -291,6 +260,17 @@ if it's not present, don't show loader */
 #home-text {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.mission {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+#mission-container {
+  background-color: #e7e7e7;
+  margin-bottom: 1cm;
 }
 
 .home-join-card {
@@ -1290,7 +1270,7 @@ section.section > img.section-divider {
 
 /*FOOTER*/
 .footer-container {
-  background-color: #f8f8f8;
+  background-color: #a0ebde;
   border-color: #e7e7e7;
   width: 100%;
   font-weight: 600;
@@ -1301,7 +1281,7 @@ section.section > img.section-divider {
 }
 
 .footer-text {
-  color: #a698ab;
+  color: #ffffff;
 }
 
 .social:hover {
@@ -1315,27 +1295,19 @@ section.section > img.section-divider {
   /* Browser Variations: */
   -moz-transform: scale(0.8);
   -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  color: #00d0af;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  color: #14806f;
+}
+
+.dark-green {
+  color: #14806f;
 }
 
 /*
     Multicoloured Hover Variations
 */
-#social-nl:hover {
-  color: #442b55;
-}
-
-#social-fb:hover {
-  color: #3b5998;
-}
-
-#social-fl:hover {
-  color: #442b55;
-}
-
 #social-tw:hover {
   color: #4099ff;
 }
@@ -1390,7 +1362,7 @@ section.section > img.section-divider {
   width: 50%;
   color: #333;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-size: 10vh;
 }
 
