@@ -35,6 +35,19 @@
             </div>
             \{{/each}}
         </script>
+        <!-- NEW EVENTS HANDLEBARS SCRIPT -->
+        <script id="officers-template" type="text/x-handlebars-template">
+            \{{#each officers}}
+            <div class="col sm-12 md-8 lg-8 person-wrapper">
+                <div class="person-card">
+                    <img class="profile-picture" src="\{{this.imgUrl}}">
+                    <h4>\{{this.name}}</h4>
+                    <h5>\{{this.role}}</h5>
+                    <p>\{{this.bio}}</p>
+                </div>
+            </div>
+            \{{/each}}
+        </script>
            <!--  SPONSORS HANDLEBARS SCRIPT -->
         <script id="sponsors-template" type="text/x-handlebars-template">
             \{{#each sponsors}}

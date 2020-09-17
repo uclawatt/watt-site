@@ -97,6 +97,17 @@ h5 {
   height: 100vh;
   box-shadow: inset 0 0 100px #000;
 
+
+/*COLORS*/
+.dark-green {
+  color: rgb(20, 128, 111);
+}
+
+.light-green {
+  color: rgb(0, 208, 175);
+}
+
+
   /*CENTER DIV!!*/
   display: flex;
   justify-content: center;
@@ -1055,11 +1066,6 @@ section.section > img.section-divider {
   }
 }
 
-/*SPONSOR*/
-.sponsor-container {
-  width: 100%;
-}
-
 /*PROJECTS*/
 .projectwrap {
   position: relative;
@@ -1098,7 +1104,12 @@ section.section > img.section-divider {
   padding-top: 0px;
 }
 
-/*SPONSORS*/
+/*SPONSOR*/
+.sponsor-container {
+  width: 100%;
+  text-align: center;
+}
+
 .sponsor-overview-img {
   background-image: url(../img/backgroundphotos/erin-tinker.jpg);
   background-size: cover;
@@ -1110,43 +1121,50 @@ section.section > img.section-divider {
   background-size: cover;
 }
 
-.sponsor-card-title {
+.sponsor-yellow-title {
   color: rgb(255, 206, 0);
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 
-.sponsor-card-subheading {
-  color: rgb(0, 217, 179);
-  font-size: 18px;
+.sponsor-green-title {
+  color: rgb(255, 206, 0);
+  text-align: left;
+  font-weight: 600;
 }
 
-.sponsor-card-description {
-  color: rgb(141, 141, 141);
+.sponsor-green-subtitle {
+  color: rgb(255, 206, 0);
+  text-align: left;
+  font-weight: 600;
 }
 
-.sponsor-div {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+// .sponsor-card-subheading {
+//   color: rgb(0, 217, 179);
+//   font-size: 18px;
+// }
 
-.sponsor-container {
-  text-align: center;
-}
+// .sponsor-card-description {
+//   color: rgb(141, 141, 141);
+// }
 
-.sponsor-wrap {
-  padding-top: 0;
-  padding-bottom: 31%;
-  margin-bottom: 2%;
-}
+// .sponsor-div {
+//   width: 100%;
+//   height: 100%;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+
+// .sponsor-wrap {
+//   padding-top: 0;
+//   padding-bottom: 31%;
+//   margin-bottom: 2%;
+// }
 
 .tiers-wrap {
   padding-top: 0;
   padding-bottom: 77%;
   margin-bottom: 2%;
-  border-radius: 20px;
 }
 
 .sponsor-img {
@@ -1200,10 +1218,6 @@ section.section > img.section-divider {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
-  color: rgb(20, 128, 111);
-}
-
-.dark-green {
   color: rgb(20, 128, 111);
 }
 
