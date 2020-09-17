@@ -84,7 +84,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Bonnie Liu",
-        imgUrl: "img/boardmembers20/Bonnie20.jpg",
+        imgUrl: "img/favicons/android-chrome-192x192.png",
+        // imgUrl: "img/boardmembers20/Bonnie20.JPG",
         role: "Events Coordinator",
         bio:
           "Second year Computer Science major"
@@ -119,14 +120,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Neha Adhlakha",
-        imgUrl: "img/boardmembers20/Neha20.jpg",
+        imgUrl: "img/favicons/android-chrome-192x192.png",
+        // imgUrl: "img/boardmembers20/Neha20.JPG",
         role: "Mentorship Chair",
         bio:
           "Neha is a third year Electrical Engineering major. During her free time, she’s been going swimming, learning how to sew, and having social distance picnics with her friends. She is excited to be Mentorship Chair this year!"
       },
       {
         name: "Anreeta Saseetharran",
-        imgUrl: "img/boardmembers20/Anreeta20.jpg",
+        imgUrl: "img/favicons/android-chrome-192x192.png",
+        // imgUrl: "img/boardmembers20/Anreeta20.JPG",
         role: "Workshop Chair",
         bio:
           "Anreeta is a third year Computer Engineering major. She served as a Technical Workshops chair for WATT last year, and is excited to continue in this role this year! During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
