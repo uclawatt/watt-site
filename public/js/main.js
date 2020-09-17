@@ -56,65 +56,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
     officers: [
       {
         name: "Weslyn Clarke",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Weslyn20.jpg",
         role: "President",
-        email: "mailto:externalpresident@ieeewatt.com",
         bio:
-          "Fourth year Electrical Engineering major"
+          "Weslyn is a fourth year Electrical Engineering major. Last year, she served as Treasurer. During her free time, she enjoys reading fantasy and dystopian novels, binge watching television shows and anime, and nap!"
       },
       {
         name: "Jasanpreet Pandher",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/JP20.jpg",
         role: "Vice President",
-        email: "mailto:internalpresident@ieeewatt.com",
         bio:
-          "Third year Electrical Engineering major"
+          "Jasanpreet is a third year Electrical Engineering major. Last year, she served as one of the Technical Workshop chairs, and this year she is stepping into the position of Vice President. During her free time, she loves to do photography, exercise, and listen to podcasts! "
       },
       {
         name: "Vani Sharma",
         imgUrl: "img/favicons/android-chrome-192x192.png",
         role: "Treasurer",
-        email: "mailto:treasurer@ieeewatt.com",
         bio:
-          "Second year Electrical Engineering major"
+          "Vani is a second year Electrical Engineering major. In her free time she enjoys listening to music, trying new recipes, and watching TV. She looks forward to zooming with all the new WATT members! "
       },
       {
         name: "Christina Lee",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Christina20.jpg",
         role: "Corporate Relations",
-        email: "mailto:corporate@ieeewatt.com",
         bio:
-          "Third year Electrical Engineering major"
+          "Christina is a third year Electrical Engineering major. In her free time, she enjoys writing letters to people, going on Youtube, or watching K-dramas. Recently during this quarantine, she’s been trying to exercise every morning and read as well! "
       },
       {
         name: "Bonnie Liu",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Bonnie20.jpg",
         role: "Events Coordinator",
-        email: "mailto:workshops@ieeewatt.com",
         bio:
           "Second year Computer Science major"
       },
       {
         name: "Brianna McColm",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Brianna20.jpg",
         role: "Secretary",
-        email: "mailto:secretary@ieeewatt.com",
         bio:
-          "Second year Electrical Engineering major"
+          "Brianna is a second year Electrical Engineering major. During her free time, she enjoys swimming, hiking, and spending time outdoors. She’s excited to connect with incoming WATT members this year!"
       },
       {
         name: "Helen Wang",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Helen20.jpg",
         role: "Publicity",
-        email: "mailto:social@ieeewatt.com",
         bio:
-          "Second year Electrical Engineering major"
+          "Helen is a second year Computer Science major. In quarantine, she’s been Zooming friends, sleeping 24/7, and petting her neighbourhood cats. She’s excited to (virtually) meet new WATT members this year!"
       },
       {
         name: "Katherine Stahnke",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Katherine20.png",
         role: "Social Chair",
-        email: "mailto:advocacywellness@ieeewatt.com",
         bio:
           "Second year Electrical Engineering major"
       },
@@ -122,41 +114,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
         name: "Nisha Sharma",
         imgUrl: "img/favicons/android-chrome-192x192.png",
         role: "Advocacy and Wellness Chair",
-        email: "mailto:publicity@ieeewatt.com",
         bio:
           "Fifth year Electrical Engineering major"
       },
       {
         name: "Neha Adhlakha",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Neha20.jpg",
         role: "Mentorship Chair",
-        email: "mailto:mentorship@ieeewatt.com",
         bio:
-          "Third year Electrical Engineering major"
+          "Neha is a third year Electrical Engineering major. During her free time, she’s been going swimming, learning how to sew, and having social distance picnics with her friends. She is excited to be Mentorship Chair this year!"
       },
       {
         name: "Anreeta Saseetharran",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Anreeta20.jpg",
         role: "Workshop Chair",
-        email: "mailto:events@ieeewatt.com",
         bio:
-          "Third year Computer Engineering major"
+          "Anreeta is a third year Computer Engineering major. She served as a Technical Workshops chair for WATT last year, and is excited to continue in this role this year! During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
       },
       {
         name: "Evelyn Chiappe",
         imgUrl: "img/favicons/android-chrome-192x192.png",
         role: "Workshop Chair",
-        email: "mailto:webmaster@ieeewatt.com",
         bio:
           "Third year Electrical Engineering major"
       },
       {
         name: "Justine Lin",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Justine20.jpg",
         role: "Webmaster",
-        email: "mailto:webmaster@ieeewatt.com",
         bio:
-          "Third year Electrical Engineering major"
+          "Justine is a third year Electrical Engineering major. In quarantine, she’s enjoyed baking bread (unsuccessfully), embroidering, and Netflix Party-ing with friends. You can often find her online at 3am struggling with a circuits lab or binge-watching Masterchef."
       },
    
     ],
