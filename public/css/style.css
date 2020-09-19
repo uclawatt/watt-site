@@ -1221,18 +1221,21 @@ section.section > img.section-divider {
   color: #ffce00;
   text-align: left;
   font-weight: 600;
+  font-size: 20;
 }
 
 .sponsor-green-title {
-  color: #ffce00;
+  color: #00d0af;
   text-align: left;
   font-weight: 600;
+  font-size: 20;
 }
 
 .sponsor-green-subtitle {
-  color: #ffce00;
+  color: #00d0af;
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 18;
 }
 
 .tiers-wrap {
