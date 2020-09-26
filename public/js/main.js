@@ -15,24 +15,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var dataObj = {
     events: [
-      // {
-      //   eventUrl: "https://www.facebook.com/events/2307539762631972/",
-      //   name: "Spring General Meeting",
-      //   date: "4/2/19",
-      //   location: "Maxwell Envr IV 57-124",
-      //   time: "6 PM - 7 PM",
-      //   description:
-      //     "Come learn about WATT's going on with WATT and eat free pizza"
-      // },
-      // {
-      //   eventUrl: "",
-      //   name: "WATT Officer Elections",
-      //   date: "4/16/19",
-      //   location: "Maxwell Envr IV 57-124",
-      //   time: "6 PM - 8 PM",
-      //   description:
-      //     "Come run for a board position or vote for who you want to lead WATT next year!"
-      // },
+      {
+        eventUrl: "https://www.facebook.com/uclawatt",
+        name: "Fall General Meeting",
+        date: "Week 1 10/8/20",
+        location: "Zoom",
+        time: "5 PM - 6 PM PST",
+        description:
+          "Come learn about WATT and meet some other members. Free stickers will be sent to attendees!"
+      },
+      {
+        eventUrl: "https://www.facebook.com/uclawatt",
+        name: "Mentorship Reveal",
+        date: "Week 2 10/16/20",
+        location: "Zoom",
+        time: "5:30 PM - 7 PM PST",
+        description:
+          "Get sorted into your HogWATTs house and meet your mentor!"
+      },
       // {
       //   eventUrl: "",
       //   name: "Picnic on Janns Steps",

@@ -30,9 +30,15 @@ h5 {
 .card-title {
   color: black;
   font-size: medium;
-  text-align: center;
   font-size: x-large;
   font-weight: 500;
+}
+
+.green-card-title {
+  color: #00d0af;
+  font-size: medium;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .page-body {
@@ -46,8 +52,16 @@ h5 {
 .page-content {
   background-color: white;
   padding: 2%;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-position: center center;
+}
+
+.page-content-outline {
+  background-color: white;
+  padding: 2%;
+  outline-style: solid;
+  outline-color: #00d0af;
+  background-position: center center;
+  margin-bottom: 25px;
 }
 
 .page-content-photo {
@@ -276,7 +290,7 @@ if it's not present, don't show loader */
 }
 
 #mission-container {
-  background-color: #e7e7e7;
+  background-color: #d7faf4;
   margin-bottom: 1cm;
 }
 
@@ -292,7 +306,7 @@ if it's not present, don't show loader */
 
 .home-do-img {
   margin-right: 4%;
-  background-image: url(../img/backgroundphotos/valentines-food.jpg);
+  background-image: url(../img/backgroundphotos/mission-page-photo.jpg);
   background-size: cover;
   min-height: 197px;
 }
@@ -1046,7 +1060,7 @@ section.section > img.section-divider {
 }
 
 .mentor-pic {
-  max-height: 300px;
+  max-height: 210px;
   border-radius: 20px;
 }
 
@@ -1068,6 +1082,10 @@ section.section > img.section-divider {
 
 .fam-card {
   margin-bottom: 3%;
+}
+
+.fam-card-text {
+  margin-top: 25px;
 }
 
 .fam-container {
