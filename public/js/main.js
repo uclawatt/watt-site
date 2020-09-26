@@ -15,42 +15,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var dataObj = {
     events: [
-      {
-        eventUrl: "https://www.facebook.com/events/2307539762631972/",
-        name: "Spring General Meeting",
-        date: "4/2/19",
-        location: "Maxwell Envr IV 57-124",
-        time: "6 PM - 7 PM",
-        description:
-          "Come learn about WATT's going on with WATT and eat free pizza"
-      },
-      {
-        eventUrl: "",
-        name: "WATT Officer Elections",
-        date: "4/16/19",
-        location: "Maxwell Envr IV 57-124",
-        time: "6 PM - 8 PM",
-        description:
-          "Come run for a board position or vote for who you want to lead WATT next year!"
-      },
-      {
-        eventUrl: "",
-        name: "Picnic on Janns Steps",
-        date: "4/17/19",
-        location: "Janns Steps",
-        time: "3 PM - 5 PM",
-        description:
-          "Hang our and relax with WATT!"
-      },
-      {
-        eventUrl: "",
-        name: "Midterm Study Session",
-        date: "5/1/19",
-        location: "Faraday Envr IV 67-124",
-        time: "6 PM - 8 PM",
-        description:
-          "Suffering together is better than suffering alone"
-      }
+      // {
+      //   eventUrl: "https://www.facebook.com/events/2307539762631972/",
+      //   name: "Spring General Meeting",
+      //   date: "4/2/19",
+      //   location: "Maxwell Envr IV 57-124",
+      //   time: "6 PM - 7 PM",
+      //   description:
+      //     "Come learn about WATT's going on with WATT and eat free pizza"
+      // },
+      // {
+      //   eventUrl: "",
+      //   name: "WATT Officer Elections",
+      //   date: "4/16/19",
+      //   location: "Maxwell Envr IV 57-124",
+      //   time: "6 PM - 8 PM",
+      //   description:
+      //     "Come run for a board position or vote for who you want to lead WATT next year!"
+      // },
+      // {
+      //   eventUrl: "",
+      //   name: "Picnic on Janns Steps",
+      //   date: "4/17/19",
+      //   location: "Janns Steps",
+      //   time: "3 PM - 5 PM",
+      //   description:
+      //     "Hang our and relax with WATT!"
+      // },
+      // {
+      //   eventUrl: "",
+      //   name: "Midterm Study Session",
+      //   date: "5/1/19",
+      //   location: "Faraday Envr IV 67-124",
+      //   time: "6 PM - 8 PM",
+      //   description:
+      //     "Suffering together is better than suffering alone"
+      // }
      
     ],
     officers: [
