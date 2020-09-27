@@ -1,8 +1,8 @@
 body {
-  background-color:white;
+  background-color: white;
   line-height: 1.428571;
   /* margin-top: 50px; */
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
@@ -24,7 +24,6 @@ h5 {
   margin-right: 2%;
 }
 
-
 .card-title {
   color: black;
   font-size: medium;
@@ -42,8 +41,8 @@ h5 {
 
 .page-body {
   background-color: rgb(255, 255, 255);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   /*box-shadow: 0px 1px 3px #000000;*/
   /*min-width: 840px;*/
 }
@@ -61,7 +60,7 @@ h5 {
   background-color: white;
   padding: 2%;
   outline-style: solid;
-  outline-color:rgb(0, 208, 175);
+  outline-color: rgb(0, 208, 175);
   //box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-position: center center;
   margin-bottom: 25px;
@@ -76,8 +75,10 @@ h5 {
 
 .page-cover-photo {
   background: linear-gradient(
-    rgba(232, 228, 238, 0.5), rgba(232, 228, 238, 0.5)
-  ), var(--img);
+      rgba(232, 228, 238, 0.5),
+      rgba(232, 228, 238, 0.5)
+    ),
+    var(--img);
   background-position: center 25%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +90,6 @@ h5 {
   padding-top: 5%;
 }
 
-
 .contact-photo {
   background-image: url(../img/backgroundphotos/fab-google.jpg.jpg);
 }
@@ -99,6 +99,7 @@ h5 {
   font-size: 55px;
   font-weight: 1000;
   text-shadow: 0px 0px 20px black;
+  font-family: "Bitter";
 }
 
 .page-wrapper {
@@ -115,15 +116,14 @@ h5 {
   // padding-top: 25%;
   height: 85vh;
 
-/*COLORS*/
-.dark-green {
-  color: rgb(20, 128, 111);
-}
+  /*COLORS*/
+  .dark-green {
+    color: rgb(20, 128, 111);
+  }
 
-.light-green {
-  color: rgb(0, 208, 175);
-}
-
+  .light-green {
+    color: rgb(0, 208, 175);
+  }
 
   /*CENTER DIV!!*/
   display: flex;
@@ -284,10 +284,9 @@ if it's not present, don't show loader */
   padding: 10px 15px;
   text-align: center;
   transition: background-color 0.5s;
-
-  position: absolute;
-  left: 46%;
-  margin-top: 20px;
+  display:inline-block;
+  margin: 15px;
+  margin-top: 30px;
 }
 
 #button:hover {
@@ -319,12 +318,17 @@ if it's not present, don't show loader */
   margin-right: 5%;
 }
 
+.home-icon {
+  color: rgb(20, 128, 111);
+  text-align: center;
+}
+
 // About page
 
 .mission {
   margin-left: 4%;
   margin-right: 4%;
-  margin-top: 4%
+  margin-top: 4%;
 }
 
 .mission-yellow-subtitle {
@@ -1147,6 +1151,7 @@ section.section > img.section-divider {
 
 .project-img {
   max-width: 100%;
+  border-radius: 1%;
 }
 
 .project-wrap {
@@ -1192,6 +1197,11 @@ section.section > img.section-divider {
   font-size: 18;
 }
 
+.sponsor-icon {
+  color:  rgb(0, 208, 175);
+  align-content: center;
+  padding-top: 15px;
+}
 // .sponsor-card-subheading {
 //   color: rgb(0, 217, 179);
 //   font-size: 18px;
@@ -1221,9 +1231,10 @@ section.section > img.section-divider {
 }
 
 .sponsor-img {
-  width: 38%;
+  // width: 38%;
+  height: 100px;
   display: inline-block;
-  padding: 1%;
+  margin: 3%;
 }
 
 /*SUBSCRIBE*/
@@ -1245,7 +1256,7 @@ section.section > img.section-divider {
 /*FOOTER*/
 
 .footer-container {
-  background-color:rgb(160, 235, 222);
+  background-color: rgb(160, 235, 222);
   border-color: #e7e7e7;
   width: 100%;
   font-weight: 600;
@@ -1295,7 +1306,6 @@ section.section > img.section-divider {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Bitter);
-
 
 @-webkit-keyframes swing {
   0% {

@@ -44,8 +44,8 @@ h5 {
 
 .page-body {
   background-color: white;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   /*box-shadow: 0px 1px 3px #000000;*/
   /*min-width: 840px;*/
 }
@@ -94,6 +94,7 @@ h5 {
   font-size: 55px;
   font-weight: 1000;
   text-shadow: 0px 0px 20px black;
+  font-family: "Bitter";
 }
 
 .page-wrapper {
@@ -270,9 +271,9 @@ if it's not present, don't show loader */
   padding: 10px 15px;
   text-align: center;
   transition: background-color 0.5s;
-  position: absolute;
-  left: 46%;
-  margin-top: 20px;
+  display: inline-block;
+  margin: 15px;
+  margin-top: 30px;
 }
 
 #button:hover {
@@ -302,6 +303,11 @@ if it's not present, don't show loader */
 #home-text {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.home-icon {
+  color: #14806f;
+  text-align: center;
 }
 
 .mission {
@@ -1239,6 +1245,7 @@ section.section > img.section-divider {
 
 .project-img {
   max-width: 100%;
+  border-radius: 1%;
 }
 
 .project-wrap {
@@ -1284,6 +1291,12 @@ section.section > img.section-divider {
   font-size: 18;
 }
 
+.sponsor-icon {
+  color: #00d0af;
+  align-content: center;
+  padding-top: 15px;
+}
+
 .tiers-wrap {
   padding-top: 0;
   padding-bottom: 77%;
@@ -1291,9 +1304,9 @@ section.section > img.section-divider {
 }
 
 .sponsor-img {
-  width: 38%;
+  height: 100px;
   display: inline-block;
-  padding: 1%;
+  margin: 3%;
 }
 
 /*SUBSCRIBE*/
