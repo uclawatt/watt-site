@@ -113,7 +113,7 @@ h5 {
   background-position: center 50px;
   background-size: 100%;
   // padding-top: 25%;
-  height: 100vh;
+  height: 85vh;
 
 /*COLORS*/
 .dark-green {
@@ -206,6 +206,7 @@ if it's not present, don't show loader */
 }
 
 .navbar {
+  // background-color:rgb(160, 235, 222);
   margin-bottom: 0px;
   color: rgb(68, 43, 85);
   font-family: "Montserrat", sans-serif;
@@ -262,8 +263,9 @@ if it's not present, don't show loader */
 
 .about-cover-heading {
   color: white;
+  font-family: "Bitter";
   font-size: 70px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -271,6 +273,26 @@ if it's not present, don't show loader */
   color: white;
   font-size: 30px;
   text-align: center;
+  font-family: "Bitter";
+}
+
+#button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 15px;
+  text-align: center;
+  transition: background-color 0.5s;
+
+  position: absolute;
+  left: 46%;
+  margin-top: 20px;
+}
+
+#button:hover {
+  background-color: white;
+  color: rgb(20, 128, 111);
 }
 
 .jumbotron {
@@ -303,6 +325,13 @@ if it's not present, don't show loader */
   margin-left: 4%;
   margin-right: 4%;
   margin-top: 4%
+}
+
+.mission-yellow-subtitle {
+  color: rgb(255, 206, 0);
+  text-align: left;
+  font-weight: 500;
+  font-size: 18;
 }
 
 #mission-container {
@@ -901,8 +930,8 @@ section.section > img.section-divider {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   padding: 16px;
   font-size: 0.8em;
   font-weight: 300;
@@ -1202,7 +1231,9 @@ section.section > img.section-divider {
 #mc_embed_signup {
   background: #fff;
   clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  //font: 14px Helvetica, Arial, sans-serif;
   /*width:750px;*/
 }
 
@@ -1225,7 +1256,8 @@ section.section > img.section-divider {
 }
 
 .footer-text {
-  color: #ffffff;
+  font-size: 15;
+  color: rgb(20, 128, 111);
 }
 
 .social:hover {
@@ -1262,6 +1294,8 @@ section.section > img.section-divider {
 /*TESTING LIGHTBULB SVG*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+
 
 @-webkit-keyframes swing {
   0% {
