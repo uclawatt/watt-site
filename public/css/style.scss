@@ -291,6 +291,7 @@ if it's not present, don't show loader */
   display:inline-block;
   margin: 15px;
   margin-top: 30px;
+  outline:none;
 }
 
 #home-button:hover {
@@ -1006,6 +1007,7 @@ section.section > img.section-divider {
   display:inline-block;
   margin-top: 10px;
   margin-right: 15px;
+  outline:none;
 }
 
 #mentor-button:hover {
@@ -1013,6 +1015,7 @@ section.section > img.section-divider {
   border-color: rgb(0, 208, 175);
   color: rgb(0, 208, 175);
 }
+
 .fam-pic {
   margin-right: 8%;
   background-size: cover;
