@@ -125,6 +125,10 @@ h5 {
     color: rgb(0, 208, 175);
   }
 
+  .very-light-green {
+    color: rgb(160, 235, 222);
+  }
+
   /*CENTER DIV!!*/
   display: flex;
   justify-content: center;
@@ -276,7 +280,7 @@ if it's not present, don't show loader */
   font-family: "Bitter";
 }
 
-#button {
+#home-button {
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -289,7 +293,7 @@ if it's not present, don't show loader */
   margin-top: 30px;
 }
 
-#button:hover {
+#home-button:hover {
   background-color: white;
   color: rgb(20, 128, 111);
 }
@@ -990,6 +994,25 @@ section.section > img.section-divider {
 }
 
 /*FAMILY PAGE*/
+#mentor-button {
+  background-color:  rgb(0, 208, 175);
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 550;
+  transition: background-color 0.5s;
+  display:inline-block;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#mentor-button:hover {
+  background-color: transparent;
+  border-color: rgb(0, 208, 175);
+  color: rgb(0, 208, 175);
+}
 .fam-pic {
   margin-right: 8%;
   background-size: cover;
@@ -1050,6 +1073,14 @@ section.section > img.section-divider {
 }
 
 /*GALLERY*/
+.event-cover-button {
+  border: none;
+  padding: 0;
+}
+
+.event-cover-image {
+  height: 100px;
+}
 
 .gallery-container {
   width: 100%;

@@ -128,6 +128,9 @@ h5 {
 .home-page-cover .light-green {
   color: #00d0af;
 }
+.home-page-cover .very-light-green {
+  color: #a0ebde;
+}
 
 .site-wrapper {
   max-width: 90%;
@@ -263,7 +266,7 @@ if it's not present, don't show loader */
   font-family: "Bitter";
 }
 
-#button {
+#home-button {
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -276,7 +279,7 @@ if it's not present, don't show loader */
   margin-top: 30px;
 }
 
-#button:hover {
+#home-button:hover {
   background-color: white;
   color: #14806f;
 }
@@ -1086,6 +1089,26 @@ section.section > img.section-divider {
 }
 
 /*FAMILY PAGE*/
+#mentor-button {
+  background-color: #00d0af;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 550;
+  transition: background-color 0.5s;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#mentor-button:hover {
+  background-color: transparent;
+  border-color: #00d0af;
+  color: #00d0af;
+}
+
 .fam-pic {
   margin-right: 8%;
   background-size: cover;
@@ -1145,6 +1168,15 @@ section.section > img.section-divider {
 }
 
 /*GALLERY*/
+.event-cover-button {
+  border: none;
+  padding: 0;
+}
+
+.event-cover-image {
+  height: 100px;
+}
+
 .gallery-container {
   width: 100%;
 }
