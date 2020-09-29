@@ -1160,6 +1160,11 @@ section.section > img.section-divider {
   /*flex: 1;*/
 }
 
+.house-card-title {
+  font-size: x-large;
+  font-weight: normal;
+}
+
 .fam-card-house-name {
   font-weight: bold;
   color: #8d8d8d;
