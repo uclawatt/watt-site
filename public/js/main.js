@@ -12,11 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var projectsTemplate = Handlebars.compile(projectsSource);
   var sponsorsSource = $("#sponsors-template").html();
   var sponsorsTemplate = Handlebars.compile(sponsorsSource);
+  var gallerySource = $("#gallery-template").html();
+  var galleryTemplate = Handlebars.compile(gallerySource);
 
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/uclawatt",
+        eventUrl: "https://www.facebook.com/events/615414669127583/",
         name: "Fall General Meeting",
         date: "Week 1 10/8/20",
         location: "Zoom",
@@ -32,26 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         time: "5:30 PM - 7 PM PST",
         description:
           "Get sorted into your HogWATTs house and meet your mentor!"
-      },
-      // {
-      //   eventUrl: "",
-      //   name: "Picnic on Janns Steps",
-      //   date: "4/17/19",
-      //   location: "Janns Steps",
-      //   time: "3 PM - 5 PM",
-      //   description:
-      //     "Hang our and relax with WATT!"
-      // },
-      // {
-      //   eventUrl: "",
-      //   name: "Midterm Study Session",
-      //   date: "5/1/19",
-      //   location: "Faraday Envr IV 67-124",
-      //   time: "6 PM - 8 PM",
-      //   description:
-      //     "Suffering together is better than suffering alone"
-      // }
-     
+      }
     ],
     officers: [
       {
@@ -224,7 +207,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/sponsors/symantec.png",
         alt: "Symantec Logo"
       }
-
+    ],
+    gallery: [
+      {
+        albumUrl:"https://www.flickr.com/photos/143450762@N06/albums/72157667740069068/player",
+        coverImg:"img/eventcovers/2018CookieSocial.jpg",
+        eventName:"2018 WATTxIEEE Cookie Social"
+      }
     ]
   };
 
@@ -255,6 +244,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   );
 
+  $("#gallery-mount").html(
+    galleryTemplate({
+      gallery: dataObj.gallery
+    })
+  );
 
 });
 
