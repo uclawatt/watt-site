@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Vani Sharma",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Vani20.jpg",
         role: "Treasurer",
         bio:
           "Vani is a second year Electrical Engineering major. In her free time she enjoys listening to music, trying new recipes, and watching TV. She looks forward to zooming with all the new WATT members! "
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Nisha Sharma",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Nisha20.JPG",
         role: "Advocacy and Wellness Chair",
         bio:
           "Fifth year Electrical Engineering major"
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Evelyn Chiappe",
-        imgUrl: "img/favicons/android-chrome-192x192.png",
+        imgUrl: "img/boardmembers20/Evelyn20.jpg",
         role: "Workshop Chair",
         bio:
           "Third year Electrical Engineering major"
