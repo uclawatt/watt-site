@@ -42,6 +42,13 @@ h5 {
   font-weight: bold;
 }
 
+.dark-green-card-title {
+  color: #14806f;
+  font-size: medium;
+  font-size: x-large;
+  font-weight: bold;
+}
+
 .page-body {
   background-color: white;
   margin-left: 15%;
@@ -1344,6 +1351,12 @@ section.section > img.section-divider {
 
 .sponsor-img {
   height: 100px;
+  display: inline-block;
+  margin: 3%;
+}
+
+.sponsor-img-wide {
+  width: 38%;
   display: inline-block;
   margin: 3%;
 }
