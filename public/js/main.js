@@ -18,16 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/615414669127583/",
-        name: "Fall General Meeting",
-        date: "Week 1 10/8/20",
-        location: "Zoom",
-        time: "5 PM - 6 PM PST",
-        description:
-          "Come learn about WATT and meet some other members. Free stickers will be sent to attendees!"
-      },
-      {
-        eventUrl: "https://www.facebook.com/uclawatt",
+        eventUrl: "https://www.facebook.com/events/451643952482864/",
         name: "Mentorship Reveal",
         date: "Week 2 10/16/20",
         location: "Zoom",
@@ -35,6 +26,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         description:
           "Get sorted into your HogWATTs house and meet your mentor!"
       }
+      // {
+      //   eventUrl: "https://www.facebook.com/events/615414669127583/",
+      //   name: "Fall General Meeting",
+      //   date: "Week 1 10/8/20",
+      //   location: "Zoom",
+      //   time: "5 PM - 6 PM PST",
+      //   description:
+      //     "Come learn about WATT and meet some other members. Free stickers will be sent to attendees!"
+      // }
     ],
     officers: [
       {
