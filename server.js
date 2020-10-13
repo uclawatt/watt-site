@@ -112,6 +112,10 @@ router.get("/donate",function(req,res){
   res.render('donate');
 });
 
+router.get("/recordings",function(req,res){
+  res.render('recordings');
+});
+
 // Google Site Verification
 
 // WATT Email
