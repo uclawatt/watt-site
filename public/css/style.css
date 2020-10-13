@@ -1385,7 +1385,8 @@ section.section > img.section-divider {
 }
 
 .footer-block {
-  margin-bottom: 2%;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 .footer-text {
