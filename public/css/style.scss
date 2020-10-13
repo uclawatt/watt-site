@@ -346,24 +346,23 @@ if it's not present, don't show loader */
 
 .mission-yellow-subtitle {
   color: rgb(255, 206, 0);
-  text-align: left;
-  font-weight: 500;
-  font-size: 18;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 23;
+  margin-top: -40px;
 }
 
 #mission-container {
-  background-color: rgb(215, 250, 244);
-  margin-bottom: 1cm;
+  margin: 7px;
 }
 
+.mission-icon {
+  color:  rgb(255, 246, 210);
+  align-content: center;
+  margin-left: 50px;
+}
 .home-join-card {
   margin-right: 4%;
-}
-
-.home-join-img {
-  background-image: url(../img/backgroundphotos/social-house.jpg);
-  background-size: cover;
-  min-height: 292px;
 }
 
 .home-do-img {
