@@ -18,13 +18,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/451643952482864/",
-        name: "Mentorship Reveal",
-        date: "Week 2 10/16/20",
+        eventUrl: "https://www.facebook.com/events/4063133387035644",
+        name: "Halloween Origami Night",
+        date: "Week 4 10/28/20",
         location: "Zoom",
-        time: "5:30 PM - 7 PM PST",
+        time: "6:30 PM - 7:30 PM PST",
         description:
-          "Get sorted into your HogWATTs house and meet your mentor!"
+          "Join WATT in a Halloween-inspired origami night! All you need is paper, scissors, and a ruler, and you're all set for a fun night."
+      },
+      {
+        eventUrl: "https://www.facebook.com/events/840918376710904/",
+        name: "Resume Workshop with AT&T",
+        date: "Week 8 11/24/20",
+        location: "Zoom",
+        time: "6 PM - 7 PM PST",
+        description:
+          "Learn how to perfect your resume from an AT&T recruiter."
+      },
+      {
+        eventUrl: "https://www.facebook.com/events/936709003401539/",
+        name: "SWE x WATT LED Crafts Workshop",
+        date: "Week 4 10/29/20",
+        location: "Zoom",
+        time: "6 PM - 7 PM PST",
+        description:
+          "Wanna do an engineering thing but make it artsy? Then come virtually join SWE and WATT in making LED crafts for your family, friends, or yourself!"
       }
       // {
       //   eventUrl: "https://www.facebook.com/events/615414669127583/",
