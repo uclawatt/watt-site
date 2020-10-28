@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://fb.me/e/kgij2891s",
-        name: "Southern California Edison Infosession",
-        date: "Week 3 10/20/20",
+        eventUrl: "https://www.facebook.com/events/451643952482864/",
+        name: "Mentorship Reveal",
+        date: "Week 2 10/16/20",
         location: "Zoom",
-        time: "6 PM - 7 PM PST",
+        time: "5:30 PM - 7 PM PST",
         description:
-
+          "Get sorted into your HogWATTs house and meet your mentor!"
       }
       // {
       //   eventUrl: "https://www.facebook.com/events/615414669127583/",
