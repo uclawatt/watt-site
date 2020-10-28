@@ -1098,7 +1098,7 @@ section.section > img.section-divider {
 }
 
 /*FAMILY PAGE*/
-#mentor-button {
+#light-button {
   background-color: #00d0af;
   color: white;
   border: 2px solid white;
@@ -1113,7 +1113,7 @@ section.section > img.section-divider {
   outline: none;
 }
 
-#mentor-button:hover {
+#light-button:hover {
   background-color: transparent;
   border-color: #00d0af;
   color: #00d0af;
@@ -1223,6 +1223,12 @@ section.section > img.section-divider {
   margin-bottom: 3%;
   padding: 3.5% 3.5% 0 3.5%;
   text-align: center;
+}
+
+/* RECORDINGS */
+.video-wrapper {
+  width: 840px;
+  height: 473px;
 }
 
 /*CONTACT*/
