@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       {
         eventUrl: "https://www.facebook.com/events/840918376710904/",
         name: "Resume Workshop with AT&T",
-        date: "Week 4 11/24/20",
+        date: "Week 4 10/29/20",
         location: "Zoom",
         time: "6 PM - 7 PM PST",
         description:
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       {
         eventUrl: "https://www.facebook.com/events/936709003401539/",
         name: "SWE x WATT LED Crafts Workshop",
-        date: "Week 8 10/29/20",
+        date: "Week 8 11/24/20",
         location: "Zoom",
         time: "6 PM - 7 PM PST",
         description:
