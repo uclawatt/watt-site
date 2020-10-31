@@ -18,22 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/4063133387035644",
-        name: "Halloween Origami Night",
-        date: "Week 4 10/28/20",
+        eventUrl: "https://www.facebook.com/events/738085137054144",
+        name: "SWE x WATT: Intro to Python Workshop I",
+        date: "Week 6 11/10/20",
         location: "Zoom",
-        time: "6:30 PM - 7:30 PM PST",
+        time: "8 PM - 9 PM PST",
         description:
-          "Join WATT in a Halloween-inspired origami night! All you need is paper, scissors, and a ruler, and you're all set for a fun night."
-      },
-      {
-        eventUrl: "https://www.facebook.com/events/840918376710904/",
-        name: "Resume Workshop with AT&T",
-        date: "Week 4 10/29/20",
-        location: "Zoom",
-        time: "6 PM - 7 PM PST",
-        description:
-          "Learn how to perfect your resume from an AT&T recruiter."
+          "Come out to SWExWATT's Intro to Python Workshop Series this quarter to get a feel for an introduction to data structures and simple python programs!"
       },
       {
         eventUrl: "https://www.facebook.com/events/936709003401539/",
@@ -43,16 +34,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         time: "6 PM - 7 PM PST",
         description:
           "Wanna do an engineering thing but make it artsy? Then come virtually join SWE and WATT in making LED crafts for your family, friends, or yourself!"
+      },
+      {
+        eventUrl: "https://www.facebook.com/events/354977598897056/",
+        name: "SWE x WATT: Intro to Python Workshop II",
+        date: "Week 9 12/1/20",
+        location: "Zoom",
+        time: "6 PM - 7:30 PM PST",
+        description:
+          "Come out to SWExWATT's second installment of our Intro to Python Workshop Series this quarter."
       }
-      // {
-      //   eventUrl: "https://www.facebook.com/events/615414669127583/",
-      //   name: "Fall General Meeting",
-      //   date: "Week 1 10/8/20",
-      //   location: "Zoom",
-      //   time: "5 PM - 6 PM PST",
-      //   description:
-      //     "Come learn about WATT and meet some other members. Free stickers will be sent to attendees!"
-      // }
     ],
     officers: [
       {
