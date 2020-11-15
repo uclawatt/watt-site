@@ -18,15 +18,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/738085137054144",
-        name: "SWE x WATT: Intro to Python Workshop I",
-        date: "Week 6 11/10/20",
-        location: "Zoom",
-        time: "8 PM - 9 PM PST",
-        description:
-          "Come out to SWExWATT's Intro to Python Workshop Series this quarter to get a feel for an introduction to data structures and simple python programs!"
-      },
-      {
         eventUrl: "https://www.facebook.com/events/936709003401539/",
         name: "SWE x WATT LED Crafts Workshop",
         date: "Week 8 11/24/20",

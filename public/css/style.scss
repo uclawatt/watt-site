@@ -130,11 +130,11 @@ h5 {
   }
 
   .light-green {
-    color: rgb(0, 208, 175);
+    color: #00d0af;
   }
 
   .very-light-green {
-    color: rgb(160, 235, 222);
+    color: #a0ebde;
   }
 
   /*CENTER DIV!!*/
@@ -1451,4 +1451,309 @@ section.section > img.section-divider {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+//House Points Hourglass
+
+$glass:linear-gradient(to right,#f7f7f7, #A2B9C4,#A5C4D4,#A5C4D4 ,#A2B9C4,#f7f7f7);
+$gold:linear-gradient(to right,#CCA951,#FFD166,#CCA951);
+.body {
+  background:#00d0af;
+}
+.box {
+  position: relative;
+  display: block;
+  margin-top: 8%;
+  margin-bottom: -16%;
+  margin-left: 0;
+  width: 600px;
+  height: 500px;
+  
+}
+
+.top-glass, .top-glass2, .top-glass3, .top-glass4{
+  position:absolute;
+  top: 20%; //original 60
+  width: 100px;
+  height: 130px;
+  background:$glass;
+  opacity: 0.5;
+  border: 1px solid #A2B9C4;
+  border-radius: 40% 40% 10% 10%;
+  z-index:1;
+  }
+.top-glass{
+  left:10%;
+}
+.top-glassp{
+  left:10.5%;
+  position:absolute;
+  top: 42%;
+  width: 95px;
+  height: 20px;
+  background:#af4133;
+  border-radius: 40% 40% 10% 10%;
+  
+}
+.glassp{
+  left:14%;
+  position:absolute;
+  top: 14.5%;
+  width: 55px;
+  height: 20px;
+  background:#af4133;
+  border-radius: 40%;
+}
+
+.top-glass2{
+  left:30%;
+}
+.top-glassp2{
+  left:30.5%;
+  position:absolute;
+  top: 42%;
+  width: 95px;
+  height: 20px;
+  background:#12598e;
+  border-radius: 40% 40% 10% 10%;
+  
+}
+.glassp2{
+  left:34%;
+  position:absolute;
+  top: 14.5%;
+  width: 55px;
+  height: 20px;
+  background:#12598e;
+  border-radius: 40%;
+}
+.top-glass3{
+  left:50%;
+}
+.top-glassp3{
+  left:50.5%;
+  position:absolute;
+  top: 42%;
+  width: 95px;
+  height: 20px;
+  background:#be9136;
+  border-radius: 40% 40% 10% 10%;
+  
+}
+.glassp3{
+  left:54%;
+  position:absolute;
+  top: 14.5%;
+  width: 55px;
+  height: 20px;
+  background:#be9136;
+  border-radius: 40%;
+}
+.top-glass4{
+  left:70%;
+}
+.top-glassp4{
+  left:70.5%;
+  position:absolute;
+  top: 42%;
+  width: 95px;
+  height: 20px;
+  background:#276e23;;
+  border-radius: 40% 40% 10% 10%;
+  
+}
+.glassp4{
+  left:74%;
+  position:absolute;
+  top: 14.5%;
+  width: 55px;
+  height: 20px;
+  background:#276e23;;
+  border-radius: 40%;
+}
+.middle, .middle2, .middle3, .middle4{
+  position:absolute;
+  top: 18%;   //original 58
+  width: 50px;
+  height: 10px;
+  background:$glass;
+  opacity: 0.3;
+  border: 1px solid #A2B9C4;
+  border-bottom:0px;
+  border-radius:40%;
+  z-index:1;
+  }
+.middle{
+  left:14%;
+}
+.middle2{
+  left:34%;
+}
+.middle3{
+  left:54%;
+}
+.middle4{
+  left:74%;
+}
+.glass, .glass2, .glass3, .glass4{
+  position:absolute;
+  top: -3%;    //original 37
+  width: 95px;
+  height: 105px;
+  background:$glass;
+  opacity: 0.5;
+  border: 1px solid #A2B9C4;
+  border-radius: 10% 10% 40% 40%;
+  z-index:1;
+}
+.points, .points2, .points3{
+  position:absolute;
+  top: 15%; //original 55
+  left:16%;
+  width: 10px;
+  height: 10px;
+  background:#af4133;
+  opacity: 0.9;
+  border-radius: 40% 40% 20% 30%;
+}
+.points{
+  left:16%;
+  animation: points-drop 4s infinite ease-in-out;
+}
+.points2{
+  left:17%;
+  animation: points-drop 4s infinite ease-in-out 2s;
+}
+.points3{
+  left:18%;
+  animation: points-drop 4s infinite ease-in-out 3s;
+}
+.points4, .points5{
+  position:absolute;
+  top: 15%;
+  width: 10px;
+  height: 10px;
+  background:#12598e;
+  opacity: 0.9;
+  border-radius: 40% 40% 20% 30%;
+}
+.points4{
+  left:38%;
+  animation: points-drop 4s infinite ease-in-out .5s;
+}
+.points5{
+  left:39%;
+  animation: points-drop 4s infinite ease-in-out 1.5s;
+}
+.points6, .points7, .points8{
+  position:absolute;
+  top: 15%;
+  width: 10px;
+  height: 10px;
+  background:#be9136;
+  border-radius: 40% 40% 20% 30%;
+
+}
+.points6{
+  left:56%;
+  animation: points-drop 4s infinite ease-in-out;
+}
+.points7{
+  left:57%;
+  animation: points-drop 4s infinite ease-in-out 1.25s;
+}
+.points8{
+  left:58%;
+  animation: points-drop 4s infinite ease-in-out 2.25s;
+}
+.points9{
+  position:absolute;
+  top:15%;
+  width: 10px;
+  height: 10px;
+  background:#276e23;
+  border-radius: 40% 40% 20% 30%;
+}
+.points9{
+  left:77%;
+  animation: points-drop 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes points-drop {
+  0% { 
+    top: 15%; 
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 45%;
+   }
+}
+.glass, .band{
+  left:10.5%;
+}
+.glass2, .band2{
+  left:30.5%;
+}
+.glass3, .band3{
+  left:50.5%;
+}
+.glass4, .band4{
+  left:70.5%;
+}
+.band, .band2, .band3, .band4{
+  position:absolute;
+  top: -3%;
+  width: 97px;
+  height: 10px;
+  background:$gold;
+  border-radius: 20%;
+  z-index:1;
+}
+.band5, .band6, .band7, .band8{
+  position:absolute;
+  top: 46%;
+  width: 100px;
+  height: 10px;
+  background:$gold;
+  border-radius: 20%;
+  z-index:1;
+}
+.band5{
+  left:10%;
+}
+.band6{
+  left:30%;
+}
+.band7{
+  left:50%;
+}
+.band8{
+  left:70%;
+}
+.podium, .podium2, .podium3, .podium4{
+  position:absolute;
+  top: 48%;
+  width: 100px;
+  height: 50px;
+  opacity:.9;
+  border-radius: 10% 10% 0 0;
+  z-index:1;
+}
+.podium{
+ left:10%;
+ background:#af4133;
+}
+.podium2{
+ left:30%;
+ background:#12598e;
+}
+.podium3{
+ left:50%;
+ background:#be9136;
+}
+.podium4{
+ left:70%;
+ background:#276e23;
 }
