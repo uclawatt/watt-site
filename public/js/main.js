@@ -18,22 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/354977598897056/",
-        name: "SWE x WATT: Intro to Python Workshop II",
-        date: "Week 9 12/1/20",
+        eventUrl: "https://www.facebook.com/events/157285669188445",
+        name: "SWE x WATT: Intro to Python Workshop III",
+        date: "Week 1 1/5/20",
         location: "Zoom",
-        time: "6 PM - 7:30 PM PST",
+        time: "6:30 PM - 7:30 PM PST",
         description:
-          "Come out to SWExWATT's second installment of our Intro to Python Workshop Series this quarter."
-      },
-      {
-        eventUrl: "https://www.facebook.com/events/1367060346970847",
-        name: "Study & Game Night",
-        date: "Week 9 12/3/20",
-        location: "Zoom",
-        time: "8 PM - 9 PM PST",
-        description:
-          "Come study / chill with WATT! We will be hosting a study night where you can ask officers for advice about classes, do homework together, or just play games to relax before finals :^)"
+          "Come out to SWExWATT's continuation of our Intro to Python Workshop Series this quarter."
       }
     ],
     officers: [
