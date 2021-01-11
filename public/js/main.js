@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/157285669188445",
-        name: "SWE x WATT: Intro to Python Workshop III",
-        date: "Week 1 1/5/20",
+        eventUrl: "https://www.facebook.com/events/1622282854827515",
+        name: "WATT Winter GM",
+        date: "Week 2 1/11/20",
         location: "Zoom",
-        time: "6:30 PM - 7:30 PM PST",
+        time: "6:00 PM - 7:00 PM PST",
         description:
-          "Come out to SWExWATT's continuation of our Intro to Python Workshop Series this quarter."
+          "Happy winter quarter! Come to WATT's Winter GM to see what's in store for this quarter and to get a raffle entry for this quarter's raffle. We're so excited to see you there:)"
       }
     ],
     officers: [
@@ -83,6 +83,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         role: "Social Chair",
         bio:
           "Second year Electrical Engineering major"
+      },
+      {
+        name: "Tammie Yang",
+        imgUrl: "img/boardmembers20/Tammie20.jpg",
+        role: "Social Chair",
+        bio:
+          "Fourth year Electrical Engineering major"
       },
       {
         name: "Nisha Sharma",
