@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var dataObj = {
     events: [
-      {
-        eventUrl: "https://www.facebook.com/events/208085937694152",
-        name: "Resume Review Workshop",
-        date: "Week 3 1/20/20",
-        location: "Zoom",
-        time: "6:00 PM - 7:00 PM PST",
-        description:
-          "Come to WATT's Resume Review workshop and get help directly from upperclassmen at UCLA!"
-      }
+      // {
+      //   eventUrl: "https://www.facebook.com/events/208085937694152",
+      //   name: "Resume Review Workshop",
+      //   date: "Week 3 1/20/20",
+      //   location: "Zoom",
+      //   time: "6:00 PM - 7:00 PM PST",
+      //   description:
+      //     "Come to WATT's Resume Review workshop and get help directly from upperclassmen at UCLA!"
+      // }
     ],
     officers: [
       {
