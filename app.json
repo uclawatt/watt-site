@@ -4,5 +4,6 @@
   "repository": "https://github.com/tanzeelak/watt-site",
   "logo": "https://raw.githubusercontent.com/tanzeelak/watt-site/master/public/img/watt-logo-green.png",
   "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs"
+  "image": "heroku/nodejs",
+  "stack": "heroku-20"
 }
