@@ -18,13 +18,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var dataObj = {
     events: [
       {
-        eventUrl: "https://www.facebook.com/events/889932795087430",
-        name: "Healthy Eating Habits Workshop",
-        date: "Week 7 2/17/21",
+        eventUrl: "https://www.facebook.com/events/490170465476758",
+        name: "Python Game Workshop",
+        date: "Week 9 3/1/21",
         location: "Zoom",
-        time: "6:00 PM - 7:00 PM PST",
+        time: "6:00 PM - 8:00 PM PST",
         description:
-          "This workshop will talk about healthy eating habits to help students in stressful times such as finals week that are both budget-friendly and time friendly. Come to this workshop and learn about some fun recipes and sustainable eating habits that are made for students!"
+          "Ever wondered how to code a game in Python? Come join us and work with a friend to code a Snake game in Python! This workshop is beginner friendly, so anyone at any skill level is welcome!"
+      },
+      {
+        eventUrl: "https://www.facebook.com/events/1121401364950413",
+        name: "Raspberry Pi Workshop II",
+        date: "Week 9 3/3/21",
+        location: "Zoom",
+        time: "7:00 PM - 8:00 PM PST",
+        description:
+          "This will be the second workshop in our Raspberry Pi Workshop series. We will be setting up the Raspberry Pi's and hopefully getting started with the basics of the project!"
       }
     ],
     officers: [
