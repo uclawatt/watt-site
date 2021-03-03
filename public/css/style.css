@@ -293,6 +293,26 @@ if it's not present, don't show loader */
   color: #14806f;
 }
 
+#home-light-button {
+  background-color: white;
+  color: #14806f;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 550;
+  transition: background-color 0.5s;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 15px;
+  outline: none;
+}
+
+#home-light-button:hover {
+  background-color: transparent;
+  color: white;
+}
+
 .jumbotron {
   margin-bottom: 0px;
 }
