@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     events: [
       {
         eventUrl: "https://www.facebook.com/events/1121401364950413",
-        name: "Raspberry Pi Workshop II",
-        date: "Wed 3/31/21",
+        name: "Raspberry Pi Workshop III",
+        date: "Wed 5/12/21",
         location: "Zoom",
         time: "6:30 PM - 7:30 PM PST",
         description:
-          "This will be the second workshop in our Raspberry Pi Workshop series. We will be setting up the Raspberry Pi's and hopefully getting started with the basics of the project! We will be there to help troubleshoot any issues you have as well."
+          "This will be the third workshop in our Raspberry Pi Workshop series. We will be setting up the Raspberry Pi's and hopefully getting started with the basics of the project! We will be there to help troubleshoot any issues you have as well."
       },
       {
         eventUrl: "https://www.facebook.com/events/458610462141072",
