@@ -25,15 +25,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         time: "6:30 PM - 7:30 PM PST",
         description:
           "This will be the third workshop in our Raspberry Pi Workshop series. We will be setting up the Raspberry Pi's and hopefully getting started with the basics of the project! We will be there to help troubleshoot any issues you have as well."
-      },
-      {
-        eventUrl: "https://www.facebook.com/events/458610462141072",
-        name: "WATT Spring GM",
-        date: "Tues 4/6/21",
-        location: "Zoom",
-        time: "6:00 PM - 7:00 PM PST",
-        description:
-          "Come out to WATT's Spring GM to see what we have in store for Spring Quarter and to catch up with your fellow members after Spring break!"
       }
     ],
     officers: [
