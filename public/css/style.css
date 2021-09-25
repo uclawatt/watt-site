@@ -288,6 +288,20 @@ if it's not present, don't show loader */
   outline: none;
 }
 
+#teal-button {
+  background-color: #14806f;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 15px;
+  text-align: center;
+  transition: background-color 0.5s;
+  display: inline-block;
+  margin: 15px;
+  margin-top: 30px;
+  outline: none;
+}
+
 #home-button:hover {
   background-color: white;
   color: #14806f;
