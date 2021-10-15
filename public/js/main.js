@@ -21,102 +21,116 @@ document.addEventListener("DOMContentLoaded", function(event) {
     ],
     officers: [
       {
-        name: "Weslyn Clarke",
-        imgUrl: "img/boardmembers20/Weslyn20.jpg",
+        name: "Jasanpreet Pandher(she/her)",
+        imgUrl: "img/boardmembers20/JP20.jpg",
         role: "President",
         bio:
-          "Weslyn is a fourth year Electrical Engineering major. Last year, she served as Treasurer. During her free time, she enjoys reading fantasy and dystopian novels, binge watching television shows and anime, and nap!"
+          "Jasanpreet is a fourth year electrical engineering major. In the past, she’s held the position of Vice President and Technical Workshop Chair. During her free time, she enjoys going running, watching tv, and spending time with friends!"  
       },
       {
-        name: "Jasanpreet Pandher",
-        imgUrl: "img/boardmembers20/JP20.jpg",
+        name: "Neha Adhlakha(she/her)",
+        imgUrl: "img/boardmembers20/Neha20.JPG",
         role: "Vice President",
         bio:
-          "Jasanpreet is a third year Electrical Engineering major. Last year, she served as one of the Technical Workshop chairs, and this year she is stepping into the position of Vice President. During her free time, she loves to do photography, exercise, and listen to podcasts! "
+          "Neha is a fourth year Electrical Engineering major. During her free time, she’s been going swimming, learning how to sew, and having social distance picnics with her friends. She is excited to be Mentorship Chair this year!"
       },
       {
-        name: "Vani Sharma",
-        imgUrl: "img/boardmembers20/Vani20.jpg",
+        name: "Sophia Chen(she/her)",
+        imgUrl: "img/boardmembers20/Weslyn20.jpg",
         role: "Treasurer",
         bio:
-          "Vani is a second year Electrical Engineering major. In her free time she enjoys listening to music, trying new recipes, and watching TV. She looks forward to zooming with all the new WATT members! "
+          "Sophia is a second-year Electrical Engineering major. During her free time, she likes listening to audiobooks, eating UCLA food, and learning guitar. She also enjoys going on walks and hikes, watching the sunrise, and refusing to take elevators, even though she lives on the third floor!"
       },
       {
-        name: "Christina Lee",
-        imgUrl: "img/boardmembers20/Christina20.jpg",
+        name: "Justine Lin(she/her)",
+        imgUrl: "img/boardmembers20/Justine20.jpg",
         role: "Corporate Relations",
         bio:
-          "Christina is a third year Electrical Engineering major. In her free time, she enjoys writing letters to people, going on Youtube, or watching K-dramas. Recently during this quarantine, she’s been trying to exercise every morning and read as well! "
+          "Justine is a fourth year Electrical Engineering major. In her free time, she enjoys crocheting stuffed animals, playing tennis, and eating instant ramen >_<"
       },
       {
-        name: "Bonnie Liu",
-        imgUrl: "img/boardmembers20/Bonnie20.JPG",
-        role: "Events Coordinator",
+        name: "Sraavya Pradeep(she/her)",
+        imgUrl: "img/boardmembers20/Weslyn20.jpg",
+        role: "Social Chair",
         bio:
-          "Second year Computer Science major"
+          "Second Year"
       },
       {
-        name: "Brianna McColm",
-        imgUrl: "img/boardmembers20/Brianna20.jpg",
+        name: "Krisha Minocha(she/her)",
+        imgUrl: "img/boardmembers21/Krisha21.jpg",
+        role: "Advocacy & Wellness Chair",
+        bio:
+          "Krisha is a second year Computer Engineering major. In her free time she enjoys listening singing, dancing, trying new recipes, working out, and bingeing new Netflix shows! She looks forward to meeting everyone in person this year."
+      },
+      {
+        name: "Anreeta Saseetharran(she/her)",
+        imgUrl: "img/boardmembers21/Anreeta21.JPG",
         role: "Secretary",
         bio:
-          "Brianna is a second year Electrical Engineering major. During her free time, she enjoys swimming, hiking, and spending time outdoors. She’s excited to connect with incoming WATT members this year!"
+          "Anreeta is a fourth year Computer Engineering major. Last year, she served as a Technical Workshops chair for WATT. During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
       },
       {
-        name: "Helen Wang",
+        name: "Helen Wang(she/her)",
         imgUrl: "img/boardmembers20/Helen20.jpg",
-        role: "Publicity",
+        role: "Events Coordinator",
         bio:
-          "Helen is a second year Computer Science major. In quarantine, she’s been Zooming friends, sleeping 24/7, and petting her neighbourhood cats. She’s excited to (virtually) meet new WATT members this year!"
+          "Helen is a third year Computer Science major. In quarantine, she’s been Zooming friends, sleeping 24/7, and petting her neighbourhood cats. She’s excited to (virtually) meet new WATT members this year!"
       },
       {
-        name: "Katherine Stahnke",
+        name: "Katherine Stahnke(she/her)",
         imgUrl: "img/boardmembers20/Katherine20.png",
         role: "Social Chair",
         bio:
           "Second year Electrical Engineering major"
       },
       {
-        name: "Tammie Yang",
-        imgUrl: "img/boardmembers20/Tammie20.jpg",
-        role: "Social Chair",
+        name: "Ameya Tilaye(she/her)",
+        imgUrl: "img/boardmembers20/Weslyn20.jpg",
+        role: "Co-Mentorship Chair",
         bio:
-          "Fourth year Electrical Engineering major"
+        "Ameya is a fifth year Electrical Engineering major. In her free time, she enjoys exploring her neighborhood,playing online chess, listening to music, art and design, and creating new characters and storylines for her first novel. She's excited to be one of the two Mentorship Chairs this year."
       },
       {
-        name: "Nisha Sharma",
-        imgUrl: "img/boardmembers20/Nisha20.JPG",
-        role: "Advocacy and Wellness Chair",
+        name: "Isabella Jordan(she/her)",
+        imgUrl: "img/boardmembers20/Weslyn20.jpg",
+        role: "Co-Mentorship Chair",
         bio:
-          "Fifth year Electrical Engineering major"
+          "Isabella is a second year Electrical Engineering major. In her free time, she enjoys going to the beach, watching Netflix, wakesurfing, and watching football. She’s super excited for WATT to make the transition to in person and to meet everyone!"
       },
       {
-        name: "Neha Adhlakha",
-        imgUrl: "img/boardmembers20/Neha20.JPG",
-        role: "Mentorship Chair",
-        bio:
-          "Neha is a third year Electrical Engineering major. During her free time, she’s been going swimming, learning how to sew, and having social distance picnics with her friends. She is excited to be Mentorship Chair this year!"
-      },
-      {
-        name: "Anreeta Saseetharran",
-        imgUrl: "img/boardmembers20/Anreeta20.JPG",
-        role: "Workshop Chair",
-        bio:
-          "Anreeta is a third year Computer Engineering major. She served as a Technical Workshops chair for WATT last year, and is excited to continue in this role this year! During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
-      },
-      {
-        name: "Evelyn Chiappe",
-        imgUrl: "img/boardmembers20/Evelyn20.jpg",
-        role: "Workshop Chair",
-        bio:
-          "Third year Electrical Engineering major"
-      },
-      {
-        name: "Justine Lin",
-        imgUrl: "img/boardmembers20/Justine20.jpg",
+        name: "Ava Asmani(she/her)",
+        imgUrl: "img/boardmembers21/Ava21.jpg",
         role: "Webmaster",
         bio:
-          "Justine is a third year Electrical Engineering major. In quarantine, she’s enjoyed baking bread (unsuccessfully), embroidering, and Netflix Party-ing with friends. You can often find her online at 3am struggling with a circuits lab or binge-watching Masterchef."
+          "Ava is a second year Electrical Engineering major. In her free time, she enjoys rock climbing, going to the beach and watching Youtube. She has recently gotten into Web Development and is passionate about increasing IEEE WATT's accessibility."
+      },
+      {
+        name: "Brianna McColm(she/her)",
+        imgUrl: "img/boardmembers20/Brianna20.jpg",
+        role: "Co-Techincal Workshop Chair",
+        bio:
+          "Brianna is a third year Electrical Engineering major. During her free time, she enjoys swimming, hiking, and spending time outdoors. She’s excited to connect with incoming WATT members this year!"
+      },
+      {
+        name: "Amy Yu(she/her)",
+        imgUrl: "img/boardmembers21/Amy21.jpg",
+        role: "Co-Techincal Workshop Chair",
+        bio:
+          "Amy is a fourth year electrical engineering major from Fremont, CA. In her free time, she loves to cook, bake, and pet her cat. She’s very excited to be a Technical Workshops Chair and meet WATT members in person!"
+      },
+      {
+        name: "Maya Chatrathi(she/her)",
+        imgUrl: "img/boardmembers20/Weslyn20.jpg",
+        role: "Outreach Chair",
+        bio:
+          "Maya is a second year Electrical Engineering major. In her free time, she enjoys reading, listening to RPG podcasts, playing field hockey, and drinking way too much chai."
+      },
+      {
+        name: "Evyn Chiappe(she/they)",
+        imgUrl: "img/boardmembers20/Evelyn20.jpg",
+        role: "Senior Advisor",
+        bio:
+          "Third year Electrical Engineering major"
       },
    
     ],
