@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Amy Yu(she/her)",
-        imgUrl: "img/boardmembers21/Amy21.jpg",
+        imgUrl: "img/boardmembers21/Amy21.jpeg",
         role: "Co-Techincal Workshop Chair",
         bio:
           "Amy is a fourth year electrical engineering major from Fremont, CA. In her free time, she loves to cook, bake, and pet her cat. She’s very excited to be a Technical Workshops Chair and meet WATT members in person!"
