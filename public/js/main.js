@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     officers: [
       {
         name: "Jasanpreet Pandher(she/her)",
-        imgUrl: "img/boardmembers20/JP20.jpg",
+        imgUrl: "img/boardmembers20/JP_21_22.jpg",
         role: "President",
         bio:
           "Jasanpreet is a fourth year electrical engineering major. In the past, she’s held the position of Vice President and Technical Workshop Chair. During her free time, she enjoys going running, watching tv, and spending time with friends!"  
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Anreeta Saseetharran",
-        imgUrl: "img/boardmembers21/Anreeta21.JPG",
+        imgUrl: "img/boardmembers21/Anreeta_21_22.JPG",
         role: "Secretary",
         bio:
           "Anreeta(she/her) is a fourth year Computer Engineering major. Last year, she served as a Technical Workshops chair for WATT. During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Katherine Stahnke(she/her)",
-        imgUrl: "img/boardmembers20/Katherine20.png",
+        imgUrl: "img/boardmembers20/Katherine_21_22.png",
         role: "Social Chair",
         bio:
           "Second year Electrical Engineering major"
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Ava Asmani(she/her)",
-        imgUrl: "img/boardmembers21/Ava21.jpg",
+        imgUrl: "img/boardmembers21/Ava_21_22.jpg",
         role: "Webmaster",
         bio:
           "Ava is a second year Electrical Engineering major. In her free time, she enjoys rock climbing, going to the beach and watching Youtube. She has recently gotten into Web Development and is passionate about increasing IEEE WATT's accessibility."
