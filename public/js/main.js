@@ -29,35 +29,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Neha Adhlakha(she/her)",
-        imgUrl: "img/boardmembers21\Neha_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Neha_21_22.jpeg",
         role: "Vice President",
         bio:
           "Neha is a fourth year Electrical Engineering major. During her free time, she’s been going swimming, learning how to sew, and having social distance picnics with her friends. She is excited to be Mentorship Chair this year!"
       },
       {
         name: "Sophia Chen(she/her)",
-        imgUrl: "img/boardmembers21\Sophia_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Sophia_21_22.jpeg",
         role: "Treasurer",
         bio:
           "Sophia is a second-year Electrical Engineering major. During her free time, she likes listening to audiobooks, eating UCLA food, and learning guitar. She also enjoys going on walks and hikes, watching the sunrise, and refusing to take elevators, even though she lives on the third floor!"
       },
       {
         name: "Justine Lin(she/her)",
-        imgUrl: "boardmembers21\Justine_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Justine_21_22.jpeg",
         role: "Corporate Relations",
         bio:
           "Justine is a fourth year Electrical Engineering major. In her free time, she enjoys crocheting stuffed animals, playing tennis, and eating instant ramen >_<"
       },
       {
         name: "Sraavya Pradeep(she/her)",
-        imgUrl: "boardmembers21\Sraavya_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Sraavya_21_22.jpeg",
         role: "Social Chair",
         bio:
           "Second Year"
       },
       {
         name: "Krisha Minocha(she/her)",
-        imgUrl: "boardmembers21\Krisha_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Krisha_21_22.jpeg",
         role: "Advocacy & Wellness Chair",
         bio:
           "Krisha is a second year Computer Engineering major. In her free time she enjoys listening singing, dancing, trying new recipes, working out, and bingeing new Netflix shows! She looks forward to meeting everyone in person this year."
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Helen Wang(she/her)",
-        imgUrl: "boardmembers21\Helen_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Helen_21_22.jpeg",
         role: "Events Coordinator",
         bio:
           "Helen is a third year Computer Science major. In quarantine, she’s been Zooming friends, sleeping 24/7, and petting her neighbourhood cats. She’s excited to (virtually) meet new WATT members this year!"
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Ameya Tilaye",
-        imgUrl: "boardmembers21\Ameya_21_22.jpeg",
+        imgUrl: "img\boardmembers21\Ameya_21_22.jpeg",
         role: "Co-Mentorship Chair",
         bio:
         "Ameya is a fifth year Electrical Engineering major. In her free time, she enjoys exploring her neighborhood,playing online chess, listening to music, art and design, and creating new characters and storylines for her first novel. She's excited to be one of the two Mentorship Chairs this year."
