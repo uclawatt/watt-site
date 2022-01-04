@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Neha Adhlakha(she/her)",
-        imgUrl: "boardmembers21\Neha_21_22.jpeg",
+        imgUrl: "img/boardmembers21\Neha_21_22.jpeg",
         role: "Vice President",
         bio:
           "Neha is a fourth year Electrical Engineering major. During her free time, she’s been going swimming, learning how to sew, and having social distance picnics with her friends. She is excited to be Mentorship Chair this year!"
       },
       {
         name: "Sophia Chen(she/her)",
-        imgUrl: "boardmembers21\Sophia_21_22.jpeg",
+        imgUrl: "img/boardmembers21\Sophia_21_22.jpeg",
         role: "Treasurer",
         bio:
           "Sophia is a second-year Electrical Engineering major. During her free time, she likes listening to audiobooks, eating UCLA food, and learning guitar. She also enjoys going on walks and hikes, watching the sunrise, and refusing to take elevators, even though she lives on the third floor!"
@@ -63,11 +63,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Krisha is a second year Computer Engineering major. In her free time she enjoys listening singing, dancing, trying new recipes, working out, and bingeing new Netflix shows! She looks forward to meeting everyone in person this year."
       },
       {
-        name: "Anreeta Saseetharran(she/her)",
+        name: "Anreeta Saseetharran",
         imgUrl: "img/boardmembers21/Anreeta21.JPG",
         role: "Secretary",
         bio:
-          "Anreeta is a fourth year Computer Engineering major. Last year, she served as a Technical Workshops chair for WATT. During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
+          "Anreeta(she/her) is a fourth year Computer Engineering major. Last year, she served as a Technical Workshops chair for WATT. During her free time, she enjoys crafting, doodling, drinking tea, reading novels, and trying new recipes."
       },
       {
         name: "Helen Wang(she/her)",
