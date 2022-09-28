@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Katie Stahnke(she/they)",
-        imgUrl: "img/boardmembers21/Katherine_21_22.jpeg",
+        imgUrl: "img/boardmembers21/Katherine_21_22.jpg",
         role: "Internal Vice President",
         bio:
           "Katie is a fourth year computer engineering major and is excited to be WATT's IVP this year! Katie likes Phoebe Bridgers and reading about fairies :)"
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Anika Lima(she/her)",
-        imgUrl: "img/boardmembers22/anika_watt.jpeg",
+        imgUrl: "img/boardmembers22/anika_watt.jpg",
         role: "Mentorship Chair",
         bio:
           "Anika is a second year Electrical Engineering major. If she's not actively searching for Powell Cat, she's probably crocheting while vibing to music or watching kdramas!"
