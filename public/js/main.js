@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/boardmembers22/jenna_watt.jpg",
         role: "Treasurer",
         bio:
-        "Jenna is a fourth year Electrical Engineering major. When she has free time, she enjoys going on runs and long walks in the park, watching movies and corny sitcoms, and reading and journaling. Jenna is looking forward to the upcoming school year as a part of WATT! "
+        "Jenna is a fourth year electrical engineering major. In her free time, she enjoy watching movies, going on walks, and as with all engineers: climbing! She is excited to continue being treasurer for WATT for the second year."
       },
       {
         name: "Jacqueline Duong(she/her)",
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/boardmembers23/nidhi_watt.jpg",
         role: "Outreach Co-Chair",
         bio:
-          "Nidhi is a third year Electrical Engineering major who will is WATT's Outreach Co-Chair."
+          "Nidhi is a third year electrical engineering major. In her free time, she enjoys listening to music, exploring LA, spending time with family and friends, and playing golf. She looks forward to being the Co-Outreach Chair for WATT this year!"
       },
       {
         name: "Laura Huang",
