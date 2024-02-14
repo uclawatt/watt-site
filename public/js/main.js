@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/boardmembers23p2/ava.jpg",
         role: "Internal Vice President",
         bio:
-          "Ava is a 4th year Electrical Engineering major. She grew up in Orange County, California and was born in Toronto, Canada. Her favorite classes at UCLA have been EE 2 and EE 101B. In Ava’s free time, she enjoys snorkeling, watching movies, traveling and working out."
+          "Ava is a 4th year Electrical Engineering major and Public Affairs minor. She grew up in Orange County, California and was born in Toronto, Canada. Her favorite classes at UCLA have been EE 2 and EE 101B. In Ava’s free time, she enjoys snorkeling, watching movies, traveling and working out."
       },
       {
         name: "Jenna Kim(she/her)",
