@@ -3,3 +3,4 @@ access.log
 config.json
 .sass-cache
 package-lock.json
+yarn.lock
