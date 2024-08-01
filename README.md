@@ -26,3 +26,4 @@ Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu) :)
   - `nodemon`
   - Check the server at [http://localhost:5000/](localhost:5000).
   - To restart the server without exiting nodemon, type  `rs`. 
+
