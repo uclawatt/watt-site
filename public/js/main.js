@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Taruni Mananm",
-        imgUrl: "img/boardmember24/taruni.png",
+        imgUrl: "img/boardmember24/Taruni.png",
         role: "Technical Workshops",
         bio:
           "Taruni is a second-year Electrical Engineering major from San Diego, CA. Known for her love of Taco Bell, she jokingly says she lives there. On campus, she delights in exploring the various coffee spots, savoring each visit as a small daily adventure."
