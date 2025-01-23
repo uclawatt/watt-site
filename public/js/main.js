@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Alexa is a third-year Electrical Engineering major from San Diego, CA. With an impressive travel history of 25 countries, she brings a global perspective to her studies. On campus, she delights in visiting Jimmy's for a refreshing matcha latte, making it a favorite part of her day."
       },
       {
-        name: "Nikitha Ambatipudi (she/her)",
+        name: "Nikitha Ambatipudi",
         imgUrl: "img/boardmember24/headshots/jpg/Nikitha.jpg",
         role: "Internal Affairs",
         bio:

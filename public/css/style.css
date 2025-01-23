@@ -80,7 +80,7 @@ h5 {
 }
 
 .page-cover-photo {
-  background: linear-gradient(rgba(232, 228, 238, 0.5), rgba(232, 228, 238, 0.5)), var(--img);
+  background: linear-gradient(rgba(232, 228, 238, 0), rgba(232, 228, 238, 0)), var(--img);
   background-position: center 25%;
   background-repeat: no-repeat;
   background-size: cover;
