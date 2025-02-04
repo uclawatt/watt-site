@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Bitter);
+@import url(https://fonts.googleapis.com/css2?family=Indie+Flower);
 body {
   background-color: white;
   line-height: 1.428571;
@@ -15,6 +16,12 @@ h2 {
 
 h5 {
   margin-top: 0px;
+}
+
+.indie-flower-regular {
+  font-family: "Indie Flower", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .fam-card-description a .fa {
@@ -111,12 +118,12 @@ h5 {
 
 .home-page-cover {
   background-color: #14806f;
-  background-image: url(../img/WATT-website-banner.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/WATTBanner.png);
+  background-repeat: no-repeat; 
   background-attachment: fixed;
   background-position: center 50px;
   background-size: 100%;
-  height: 85vh;
+  height: 90vh;
   /*COLORS*/
   /*CENTER DIV!!*/
   display: flex;
@@ -257,6 +264,20 @@ if it's not present, don't show loader */
 #feedback-tab:hover {
   background: #f8f8f8;
   color: #442b55;
+}
+
+/* Defines container in which text on top of sticky notes (bg-img1.png) are written.
+This is somehow causing the home page to have more width than necessary. fix later -Harmo */
+.text-block-bg-img1 {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  color: black;
+  /* padding-left: 40px; */
+  /* padding-right: 800px;  */
+  width: 300px;
+  padding: 10px;
+  text-align: justify;
 }
 
 .about-cover-heading {
@@ -1207,6 +1228,45 @@ section.section > img.section-divider {
   font-weight: normal;
 }
 
+.handwritten-h1 {
+  text-align: center;
+  font-size: 8em;
+}
+
+.handwritten-h2 {
+  text-align: center;
+  font-size: 4em;
+}
+
+.handwritten-h3 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.text-block-bg-img2 {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  color: black;
+  /* padding-left: 40px; */
+  /* padding-right: 800px; */
+  width: 230px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.text-block-bg-img2b {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  color: black;
+  /* padding-left: 40px; */
+  /* padding-right: 800px; */
+  width: 230px;
+  padding: 10px;
+  text-align: justify;
+}
+
 .fam-card-house-name {
   font-weight: bold;
   color: #8d8d8d;
@@ -1400,6 +1460,10 @@ section.section > img.section-divider {
   width: 38%;
   display: inline-block;
   margin: 3%;
+}
+
+.custom-container1 {
+  width: auto;
 }
 
 /*SUBSCRIBE*/
