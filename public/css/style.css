@@ -2081,7 +2081,7 @@ table, tr, th, td {
 
 @media (max-width: 800px) {
   table, tr, th, td {
-    width: 80%;
+    width: 75%;
     font-size: smaller;
     padding: 10px;
   }
@@ -2089,16 +2089,8 @@ table, tr, th, td {
 
 @media (max-width: 600px) {
   table, tr, th, td {
-    width: 70%;
-    font-size: x-small;
-    padding: 7px;
-  }
-}
-
-@media (max-width: 300px) {
-  table, tr, th, td {
-    width: 60%;
-    font-size: x-small;
-    padding: 5px;
+    width: 50%;
+    font-size: xx-small;
+    padding: 2px;
   }
 }
