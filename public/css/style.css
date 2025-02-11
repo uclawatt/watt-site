@@ -117,13 +117,14 @@ h5 {
 }
 
 .home-page-cover {
-  background-color: #14806f;
-  background-image: url(../img/WATT.png);
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
-  background-position: center 50px;
-  background-size: 100%;
-  height: 90vh;
+  /* background-color: #14806f; */
+  /* background-color: #69D0B8; */
+  /* background-image: url(../img/WATT.png); */
+  /* background-repeat: no-repeat;  */
+  /* background-attachment: fixed; */
+  /* background-position: center 50px; */
+  /* background-size: 100%; */
+  /* height: 90vh; */
   /*COLORS*/
   /*CENTER DIV!!*/
   display: flex;
@@ -421,6 +422,39 @@ This is somehow causing the home page to have more width than necessary. fix lat
 
 .home-date {
   margin-right: 1%;
+}
+
+.home-mission {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Holds a row of whatwedo images */
+.home-whatwedo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-events {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-newsletter {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -1230,17 +1264,17 @@ section.section > img.section-divider {
 
 .handwritten-h1 {
   text-align: center;
-  font-size: 8em;
+  font-size: 8rem;
 }
 
 .handwritten-h2 {
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 .handwritten-h3 {
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .text-block-bg-img2 {
@@ -1253,6 +1287,7 @@ section.section > img.section-divider {
   width: 230px;
   padding: 10px;
   text-align: justify;
+  object-fit: contain;
 }
 
 .text-block-bg-img2b {
@@ -1463,7 +1498,34 @@ section.section > img.section-divider {
 }
 
 .custom-container1 {
-  width: auto;
+  /* width: auto; */
+  /* width: 33.3%; */
+  /* object-fit: fill; */
+  /* padding: 2%; */
+  /* gap: 10px; */
+  /* display: flex; */
+  /* max-width: 100%; */
+  /* flex: 1 1 auto; */
+  /* height: auto; */
+}
+
+.custom-container1 img {
+  /* max-width: 292px; */
+  /* object-fit: contain; */
+  width: 100%;
+  height: auto;
+}
+
+/* .custom-container1 iframe {
+  width: 200%;
+  height: 200%;
+  padding: 5%;
+} */
+
+.custom-calendar1 {
+  /* width: 100%; */
+  /* height: auto; */
+  align-items: center;
 }
 
 /*SUBSCRIBE*/
@@ -1959,3 +2021,84 @@ section.section > img.section-divider {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  .handwritten-h1 {
+    font-size: 4rem;
+  }
+
+  .handwritten-h2 {
+    font-size: 3rem;
+  }
+
+  .handwritten-h3 {
+    font-size: 2rem;
+  }
+
+  .custom-container1 iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-whatwedo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .home-mission {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .custom-container1 img {
+    max-width: 500px;
+  }
+}
+
+table, tr, th, td {
+  width: 100%;
+  font-size: medium;
+  padding: 15px; 
+}
+
+@media (max-width: 1024px) {
+  table, tr, th, td {
+    width: 90%;
+    font-size: smaller;
+  }
+
+  .custom-container1 iframe {
+    width: 150%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  table, tr, th, td {
+    width: 80%;
+    font-size: smaller;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  table, tr, th, td {
+    width: 70%;
+    font-size: x-small;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 300px) {
+  table, tr, th, td {
+    width: 60%;
+    font-size: x-small;
+    padding: 5px;
+  }
+}
