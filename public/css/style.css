@@ -42,6 +42,13 @@ h5 {
   font-weight: 500;
 }
 
+.responsive-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .green-card-title {
   color: #00d0af;
   font-size: medium;
@@ -74,7 +81,7 @@ h5 {
   background-color: white;
   padding: 2%;
   outline-style: solid;
-  outline-color: #00d0af;
+  outline-color: white;
   background-position: center center;
   margin-bottom: 25px;
 }
