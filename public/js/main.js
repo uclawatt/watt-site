@@ -265,11 +265,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   );
 
-  $("#sponsors-mount").html(
-    sponsorsTemplate({
-      sponsors: dataObj.sponsors
-    })
-  );
+  // $("#sponsors-mount").html(
+  //   sponsorsTemplate({
+  //     sponsors: dataObj.sponsors
+  //   })
+  // );
 
   $("#projects-mount").html(
     projectsTemplate({
