@@ -48,6 +48,10 @@ router.get("/team",function(req,res){
     res.render('team');
 });
 
+router.get("/lab",function(req,res){
+  res.render('lab');
+});
+
 router.get("/families",function(req,res){
     res.render('families');
 });

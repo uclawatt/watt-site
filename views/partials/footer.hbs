@@ -64,6 +64,7 @@
         <!--  SPONSORS HANDLEBARS SCRIPT -->
         <script id="sponsors-template" type="text/x-handlebars-template">
             \{{#each sponsors}}
+            {{!-- This is why multiple qualcomm sponsor logos render, one for each entry in sponsors --}}
             <img src="img/sponsors/qualcomm.png" alt="Qualcomm Logo" class="sponsor-img" width="400" />
             \{{/each}}
         </script>
