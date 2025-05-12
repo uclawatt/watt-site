@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/boardmember24/headshots/jpg/Eugenia.jpg",
         role: "Corporate Relations Co-Chair (She/Her)",
         bio:
-          "Eugenia is a third-year Electrical Engineering major from Los Altos, CA. She finds peace and inspiration during late-night walks on campus, accompanied by her favorite music. These tranquil strolls are her way of unwinding and reflecting."
+          "Eugenia is a third-year Electrical Engineering major from Los Altos, CA. She finds peace and inspiration during late night walks on campus, accompanied by her favorite music. These tranquil strolls are her way of unwinding and reflecting."
       },
       {
         name: "Megan Jacob",
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/boardmember24/headshots/jpg/Alexa.jpg",
         role: "Publicity (She/Her)",
         bio:
-          "Alexa is a third-year Electrical Engineering major from San Diego, CA. With an impressive travel history of 25 countries, she brings a global perspective to her studies. On campus, she delights in visiting Jimmy's for a refreshing matcha latte, making it a favorite part of her day."
+          "Alexa is a third-year Electrical Engineering major from San Diego, CA. With an impressive travel history of 25 countries, she brings a global perspective to her studies. The favorite part of her day is drinking a refreshing iced matcha latte."
       },
       {
         name: "Nikitha Ambatipudi",
