@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Alexa Fakhimi",
-        imgUrl: "img/boardmember24/headshots/jpg/Alexa.jpg",
+        imgUrl: "img/boardmember25/Alexa.jpg",
         role: "Publicity (She/Her)",
         bio:
           "Alexa is a third-year Electrical Engineering major from San Diego, CA. With an impressive travel history of 25 countries, she brings a global perspective to her studies. The favorite part of her day is drinking a refreshing iced matcha latte."
