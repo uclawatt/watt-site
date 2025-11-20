@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Amy Tran",
-        imgUrl: "img/boardmember24/headshots/jpg/Amy.jpg",
+        imgUrl: "img/boardmember25/Amy.png",
         role: "Outreach (She/Her)",
         bio:
         "Amy is a second-year Physiological Sciences major from Cerritos, CA. A big fan of motorsport, especially in formula categories, she enjoys getting a matcha from Kerckhoff and sitting on the patio, working and eavesdropping on campus."
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Diya Cowlagi",
-        imgUrl: "img/boardmember25/headshots/Diya.png",
+        imgUrl: "img/boardmember24/headshots/jpg/Diya.jpg",
         role: "Inclusive Excellence (She/Her)",
         bio:
           "Diya is a second-year Computer Engineering major hailing from Pittsburgh, PA. Not only is she a tech enthusiast, but she’s also a certified belayer, always ready for a rock-climbing adventure. On campus, you'll often find her soaking up the vibrant atmosphere at Kerckhoff."
