@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imgUrl: "img/boardmember25/Alexa.png",
         role: "Publicity (She/Her)",
         bio:
-          "Alexa is a third-year Electrical Engineering major from San Diego, CA. With an impressive travel history of 25 countries, she brings a global perspective to her studies. The favorite part of her day is drinking a refreshing iced matcha latte."
+          "Alexa is a third-year Electrical Engineering major from San Diego, CA. With a travel history of 25 countries, she brings a global perspective to her studies. The favorite part of her day is drinking a refreshing iced matcha latte."
       },
       {
         name: "Nikitha Ambatipudi",
