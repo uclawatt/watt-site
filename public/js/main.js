@@ -84,18 +84,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         "Sydney is a 3rd year Psychobiology student and aspiring dentist. She loves working with children and students, especially through WATT’s Outreach events! You can find her at the newest cafes trying a matcha latte with no sweetener or on the tennis courts destroying her friends:D"
       },
       {
-        name: "Heidi Hu",
-        imgUrl: "img/boardmember24/headshots/jpg/Heidi.jpg",
-        role: "Mentorship (She/Her)",
+        name: "Michelle Murillo",
+        imgUrl: "img/boardmember25/Michelle.jpg",
+        role: "Mentorship",
         bio:
-          "Heidi is a second-year Electrical Engineering major from Santa Clara, CA. She has a special fondness for Miffy, the beloved bunny character. Her favorite song is \"Peach Eyes\" by Wave to Earth, which adds a sweet touch to her day."
+          "Michelle is a fourth-year electrical engineering major from San Diego, CA. She loves going to concerts and cozying up on weekends. When she can, she’ll go hiking or plan future trips."
       },
       {
-        name: "Sydney Dang",
-        imgUrl: "img/boardmember24/headshots/jpg/Sydney.jpg",
-        role: "Mentorship (She/Her)",
+        name: "Kyra Koh",
+        imgUrl: "img/boardmember25/Kyra.jpg",
+        role: "Mentorship",
         bio:
-          "Sydney  is a second-year Cognitive Science major from Corona, CA. She’s an avid listener of Animal Crossing background music, finding its soothing tunes a perfect backdrop for her day. Her favorite song is \"Collision\" by Stray Kids, which adds a burst of energy to her playlist."
+          "Kyra is a third-year electrical engineering major from Singapore. She is a fan of trains, buses and bikes, as well as visiting food spots and museums in any city that she visits."
       },
       {
         name: "Diya Cowlagi",
