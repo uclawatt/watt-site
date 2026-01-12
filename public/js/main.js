@@ -35,25 +35,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Katie is a third-year electrical engineering major. She loves crafting, watching films, listening to music, and all things ocean-related, especially jellyfish! Her favorite WATT events are HogWATTs House events and outreach workshops."
       },
       {
-        name: "Christine Yang",
-        imgUrl: "img/boardmember24/headshots/jpg/Christine.jpg",
-        role: "External Vice President (She/Her)",
+        name: "Nina Kerr",
+        imgUrl: "img/boardmember25/Nina.png",
+        role: "External Vice President",
         bio:
-        "Christine is a spirited junior Electrical Engineering major from San Jose, CA. Standing at 5'1\", she proudly holds the title of the tallest in her family. On campus, she finds endless adventure in getting lost in Boelter for the millionth time, relishing every twist and turn along the way."
+        "Nina is a 3rd year computer engineering student. She loves spending time with her friends and family, being outdoors whether that means backpacking, skiing, or running, and finding fun new gluten free restaurants and bakeries to try in LA!"
       },
       {
         name: "Jessie Chan",
-        imgUrl: "img/boardmember24/headshots/jpg/Jessie.jpg",
-        role: "Technical Workshops (She/Her)",
+        imgUrl: "img/boardmember25/Jessie.png",
+        role: "Technical Workshops",
         bio:
-          "Jessie is a second-year Electrical Engineering major from Pleasanton, CA. Remarkably double-jointed in both elbows, she brings a unique flexibility to everything she does. Her favorite song is \"Bad\" by Wave to Earth, which never fails to energize her."
+          "Jessie is a third-year electrical engineering major. In her free time, she enjoys playing her musical instruments and baking."
       },
       {
-        name: "Taruni Mananm",
-        imgUrl: "img/boardmember24/headshots/jpg/Taruni.jpg",
-        role: "Technical Workshops (She/Her)",
+        name: "Emma Cao",
+        imgUrl: "img/boardmember25/Emma.png",
+        role: "Technical Workshops",
         bio:
-          "Taruni is a second-year Electrical Engineering major from San Diego, CA. Known for her love of Taco Bell, she jokingly says she lives there. On campus, she delights in exploring the various coffee spots, savoring each visit as a small daily adventure."
+          "Emma Cao is a second-year electrical engineering major from Palo Alto, CA. Her hobbies include going on long runs and playing all kinds of video games."
       },
       {
         name: "Eugenia Cho ",
