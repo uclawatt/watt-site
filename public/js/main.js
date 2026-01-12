@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Katie is a third-year electrical engineering major. She loves crafting, watching films, listening to music, and all things ocean-related, especially jellyfish! Her favorite WATT events are HogWATTs House events and outreach workshops."
       },
       {
-        name: "Christine Yang",
-        imgUrl: "img/boardmember24/headshots/jpg/Christine.jpg",
-        role: "External Vice President (She/Her)",
+        name: "Nina Kerr",
+        imgUrl: "img/boardmember25/Nina.png",
+        role: "External Vice President",
         bio:
-        "Christine is a spirited junior Electrical Engineering major from San Jose, CA. Standing at 5'1\", she proudly holds the title of the tallest in her family. On campus, she finds endless adventure in getting lost in Boelter for the millionth time, relishing every twist and turn along the way."
+        "Nina is a 3rd year computer engineering student. She loves spending time with her friends and family, being outdoors whether that means backpacking, skiing, or running, and finding fun new gluten free restaurants and bakeries to try in LA!"
       },
       {
         name: "Jessie Chan",
