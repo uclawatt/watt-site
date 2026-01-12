@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Jessie Chan",
-        imgUrl: "img/boardmember24/headshots/jpg/Jessie.jpg",
-        role: "Technical Workshops (She/Her)",
+        imgUrl: "img/boardmember25/Jessie.png",
+        role: "Technical Workshops",
         bio:
-          "Jessie is a second-year Electrical Engineering major from Pleasanton, CA. Remarkably double-jointed in both elbows, she brings a unique flexibility to everything she does. Her favorite song is \"Bad\" by Wave to Earth, which never fails to energize her."
+          "Jessie is a third-year electrical engineering major. In her free time, she enjoys playing her musical instruments and baking."
       },
       {
         name: "Taruni Mananm",
