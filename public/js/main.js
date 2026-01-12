@@ -99,24 +99,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Diya Cowlagi",
-        imgUrl: "img/boardmember24/headshots/jpg/Diya.jpg",
-        role: "Inclusive Excellence (She/Her)",
+        imgUrl: "img/boardmember25/Diya.jpg",
+        role: "Inclusive Excellence",
         bio:
-          "Diya is a second-year Computer Engineering major hailing from Pittsburgh, PA. Not only is she a tech enthusiast, but she’s also a certified belayer, always ready for a rock-climbing adventure. On campus, you'll often find her soaking up the vibrant atmosphere at Kerckhoff."
+          "Diya is a third-year applied math major from Pittsburgh, PA. She loves listening to audiobooks on Audible and watching reality TV!"
       },
       {
-        name: "Alexa Fakhimi",
-        imgUrl: "img/boardmember25/Alexa.png",
-        role: "Publicity (She/Her)",
+        name: "Amy Tran",
+        imgUrl: "img/boardmember25/Amy.jpg",
+        role: "Publicity",
         bio:
-          "Alexa is a third-year Electrical Engineering major from San Diego, CA. With a travel history of 25 countries, she brings a global perspective to her studies. The favorite part of her day is drinking a refreshing iced matcha latte."
+          "Amy is a third-year physiological science major and premed student. You can probably find her with a camera, listening to music, or doing all things nature-related! She also loves attending WATT’s cute workshops and outreach events at local schools!"
       },
       {
-        name: "Nikitha Ambatipudi",
-        imgUrl: "img/boardmember24/headshots/jpg/Nikitha.jpg",
-        role: "Internal Affairs (She/Her)",
+        name: "Zitong Wang",
+        imgUrl: "img/boardmember25/Zitong.jpg",
+        role: "Internal Affairs & Social",
         bio:
-          "Nikitha is a second-year Computer Engineering major from Glendale, CA. A true fan of pop culture, she and her family have named their cars after iconic Harry Potter and Star Wars characters. On campus, she loves diving into the excitement of various sporting events, cheering on her fellow Bruins."
+          "Zitong is a second-year electrical engineering major from Los Gatos, CA. She’s an avid fan of Chagee and honestly anything food related."
       },
       {
         name: "Saachi Bhayani",
