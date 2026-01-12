@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Jessie is a third-year electrical engineering major. In her free time, she enjoys playing her musical instruments and baking."
       },
       {
-        name: "Taruni Mananam",
-        imgUrl: "img/boardmember24/headshots/jpg/Taruni.jpg",
-        role: "Technical Workshops (She/Her)",
+        name: "Emma Cao",
+        imgUrl: "img/boardmember25/Emma.jpg",
+        role: "Technical Workshops",
         bio:
-          "Taruni is a second-year Electrical Engineering major from San Diego, CA. Known for her love of Taco Bell, she jokingly says she lives there. On campus, she delights in exploring the various coffee spots, savoring each visit as a small daily adventure."
+          "Emma Cao is a second-year electrical engineering major from Palo Alto, CA. Her hobbies include going on long runs and playing all kinds of video games."
       },
       {
         name: "Eugenia Cho ",
