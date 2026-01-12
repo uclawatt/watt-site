@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Jessie Chan",
-        imgUrl: "img/boardmember25/Jessie.png",
+        imgUrl: "img/boardmember25/Jessie1.png",
         role: "Technical Workshops",
         bio:
           "Jessie is a third-year electrical engineering major. In her free time, she enjoys playing her musical instruments and baking."
