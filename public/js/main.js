@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Heidi Hu",
-        imgUrl: "img/boardmember25/Heidi.jpeg",
+        imgUrl: "img/boardmember25/Heidi.jpg",
         role: "Corporate Relations",
         bio:
           "Heidi is a third-year electrical engineer major from Santa Clara, CA. She finds a lot of joy in trying new food spots, particularly for brunch, and going on hikes and walks out in nature!"
@@ -70,18 +70,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         "Priya is a second-year electrical engineering major from Knoxville, TN. She enjoys all outdoor activities, especially skiing and tennis. You might catch her out on a spontaneous midnight walk or sipping various teas in a lounge."
       },
       {
-        name: "Sophia Beninati",
-        imgUrl: "img/boardmember24/headshots/jpg/Sophia.jpg",
-        role: "Outreach (She/Her)",
+        name: "Bella McDonald",
+        imgUrl: "img/boardmember25/Bella.jpg",
+        role: "Outreach",
         bio:
-        "Sophia is a dynamic third-year Electrical Engineering major from Charlotte, NC. Impressively multilingual, she can speak German and Chinese (kind of). On campus, her favorite morning ritual is heading to Jimmy's for a delicious breakfast to kickstart her day."
+        "Bella is a 2nd year electrical engineering major. She always enjoys getting good food with friends, and she likes to spend time outside, so you can find her at the beach or Sunset Rec when the sun comes out."
       },
       {
-        name: "Amy Tran",
-        imgUrl: "img/boardmember25/Amy.png",
-        role: "Outreach (She/Her)",
+        name: "Sydney Dang",
+        imgUrl: "img/boardmember25/Sydney.jpg",
+        role: "Outreach",
         bio:
-        "Amy is a second-year Physiological Sciences major from Cerritos, CA. A big fan of motorsport, especially in formula categories, she enjoys getting a matcha from Kerckhoff and sitting on the patio, working and eavesdropping on campus."
+        "Sydney is a 3rd year Psychobiology student and aspiring dentist. She loves working with children and students, especially through WATT’s Outreach events! You can find her at the newest cafes trying a matcha latte with no sweetener or on the tennis courts destroying her friends:D"
       },
       {
         name: "Heidi Hu",
