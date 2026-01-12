@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     officers: [
       {
         name: "Eugenia Cho",
-        imgUrl: "img/boardmember25/Eugenia.jpg",
+        imgUrl: "img/boardmember25/Eugenia.png",
         role: "President",
         bio:
           "Eugenia is a fourth-year electrical engineering major from Los Altos, CA. She loves all things trinkets and has a growing Beli recommendation list."
       },
       {
-        name: "Anika Lima",
-        imgUrl: "img/boardmember24/headshots/jpg/Anika.jpg",
-        role: "Internal Vice President (She/Her)",
+        name: "Katie Wang",
+        imgUrl: "img/boardmember25/Katie.png",
+        role: "Internal Vice President",
         bio:
-          "Anika is a fourth-year Electrical Engineering major from Tustin, CA. Formerly a small crochet business owner, she brings creativity and passion to everything she does. On campus, she loves spending time at the botanical garden."
+          "Katie is a third-year electrical engineering major. She loves crafting, watching films, listening to music, and all things ocean-related, especially jellyfish! Her favorite WATT events are HogWATTs House events and outreach workshops."
       },
       {
         name: "Christine Yang",
