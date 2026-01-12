@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     ],
     officers: [
       {
-        name: "Jacqueline Duong",
-        imgUrl: "img/boardmember24/headshots/jpg/Jackie.jpg",
-        role: "President (She/Her)",
+        name: "Eugenia Cho",
+        imgUrl: "img/boardmember25/Eugenia.jpg",
+        role: "President",
         bio:
-          "Jacqueline is a fourth-year Electrical Engineering major from Yorba Linda, CA. With a passion for music, she is perpetually listening to Spotify. On campus, her favorite activity is relaxing at Spritzker Plaza, an experience she has cherished even though she has only done it once."
+          "Eugenia is a fourth-year electrical engineering major from Los Altos, CA. She loves all things trinkets and has a growing Beli recommendation list."
       },
       {
         name: "Anika Lima",
