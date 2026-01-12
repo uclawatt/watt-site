@@ -57,17 +57,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Heidi Hu",
-        imgUrl: "img/boardmember25/Heidi.jpg",
+        imgUrl: "img/boardmember25/Heidi.jpeg",
         role: "Corporate Relations",
         bio:
           "Heidi is a third-year electrical engineer major from Santa Clara, CA. She finds a lot of joy in trying new food spots, particularly for brunch, and going on hikes and walks out in nature!"
       },
       {
-        name: "Megan Jacob",
-        imgUrl: "img/boardmember24/headshots/jpg/Megan.jpg",
-        role: "Corporate Relations Co-Chair (She/Her)",
+        name: "Priya Soneji",
+        imgUrl: "img/boardmember25/Priya.jpg",
+        role: "Corporate Relations",
         bio:
-        "Megan is a third-year Computer Science major from San Ramon, CA. With an impressive track record of never breaking a bone, she embraces life's challenges with enthusiasm. On campus, her sanctuary is the sculpture garden."
+        "Priya is a second-year electrical engineering major from Knoxville, TN. She enjoys all outdoor activities, especially skiing and tennis. You might catch her out on a spontaneous midnight walk or sipping various teas in a lounge."
       },
       {
         name: "Sophia Beninati",
