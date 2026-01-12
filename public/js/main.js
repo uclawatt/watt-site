@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Emma Cao is a second-year electrical engineering major from Palo Alto, CA. Her hobbies include going on long runs and playing all kinds of video games."
       },
       {
-        name: "Eugenia Cho ",
-        imgUrl: "img/boardmember24/headshots/jpg/Eugenia.jpg",
-        role: "Corporate Relations Co-Chair (She/Her)",
+        name: "Heidi Hu",
+        imgUrl: "img/boardmember25/Heidi.jpg",
+        role: "Corporate Relations",
         bio:
-          "Eugenia is a third-year Electrical Engineering major from Los Altos, CA. She finds peace and inspiration during late night walks on campus, accompanied by her favorite music. These tranquil strolls are her way of unwinding and reflecting."
+          "Heidi is a third-year electrical engineer major from Santa Clara, CA. She finds a lot of joy in trying new food spots, particularly for brunch, and going on hikes and walks out in nature!"
       },
       {
         name: "Megan Jacob",
