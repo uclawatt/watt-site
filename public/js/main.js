@@ -119,46 +119,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Zitong is a second-year electrical engineering major from Los Gatos, CA. She’s an avid fan of Chagee and honestly anything food related."
       },
       {
-        name: "Saachi Bhayani",
-        imgUrl: "img/boardmember24/headshots/jpg/Saachi.jpg",
-        role: "Social (She/Her)",
-        bio:
-          "Saachi is an adventurous third-year Electrical Engineering major from Pleasanton, CA. Driven by curiosity and a sense of adventure, she once backpacked through Europe simply because she was bored. On campus, she enjoys relaxing in the Royce Hall arches, soaking in the architectural beauty and vibrant atmosphere."
-      },
-      {
         name: "Sophie Zhu",
-        imgUrl: "img/boardmember24/headshots/jpg/Sophie.jpg",
+        imgUrl: "img/boardmember25/Sophie.jpg",
         role: "Treasurer (She/Her)",
         bio:
-          "Sophie is a second-year Computer Science and Engineering major from Los Angeles, CA. She has successfully made every recipe she’s tried. Her favorite song is \"Car Crash\" by eaJ, which adds a unique rhythm to her life."
+          "Sophie is a third-year Computer Science and Engineering major from Los Angeles. She loves trying new restaurants, exploring, and making things, whether it’s baking, models, crocheting, or anything using her hands!"
       },
       {
-        name: "Nina Kerr",
-        imgUrl: "img/boardmember24/headshots/jpg/Nina.jpg",
-        role: "Secretary (She/Her)",
+        name: "Alexa Fakhimi",
+        imgUrl: "img/boardmember25/Alexa.jpg",
+        role: "Secretary & Webmaster",
         bio:
-          "Nina is a vibrant second-year Computer Engineering major from Menlo Park, CA. She has a passion for playing volleyball and discovering the best gluten-free restaurants. On campus, she loves having picnics with her friends on the lawn by the Tongva steps, where they enjoy the sunshine and each other's company."
+          "Alexa is a fourth-year electrical engineering major from San Diego, CA. In her free time, she likes to try new matcha places and restaurants, go outside, and hang out with friends."
       },
       {
-        name: "Katie Wang",
-        imgUrl: "img/boardmember24/headshots/jpg/Katie.jpg",
-        role: "Events Coordinator (She/Her)",
+        name: "Saachi Bhayani",
+        imgUrl: "mg/boardmember24/headshots/jpg/Saachi.jpg",
+        role: "Events Coordinator",
         bio:
-        "Katie is a second-year Electrical Engineering major from Modesto, CA. She loves collecting keychains. On campus, her favorite thing to do is to sit outside with friends. "
-      },
-      {
-        name: "Harmony Hsu",
-        imgUrl: "img/boardmember24/headshots/jpg/Harmony.jpg",
-        role: "Webmaster (She/Her)",
-        bio:
-          "Harmony is a third-year Electrical Engineering major from Palmdale, CA. A standout moment in her life is when she hit a golf ball on the driving range with such distance and speed that it qualified for the Professional Golfers' Association (PGA) tour."
+        "Saachi is a third-year Electrical Engineering major from Pleasanton, CA. The favorite part of her morning is her rejuvenating hot latte."
       },
       {
         name: "Ava Asamani",
         imgUrl: "img/boardmember24/headshots/jpg/Ava.jpg",
-        role: "Graduate Advisor (She/Her)",
+        role: "Graduate Advisor",
         bio:
-          "Ava is a first year M.S./Ph.D. student in Electrical and Computer Engineering. She finished her undergraduate degree in Electrical Engineering at UCLA in 2024. In her free time she enjoys hiking, traveling and watching movies. She is so excited to be WATT's graduate advisor this year!"
+          "Ava is a second year M.S./Ph.D. student in Electrical and Computer Engineering. She was an officer of WATT during her undergraduate degree and now helps out as a graduate advisor. Her PhD focuses on optimizing coding schemes of digital communication systems. In her free time she enjoys cooking, traveling and reading."
       }
       
    
