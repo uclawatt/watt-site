@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Saachi Bhayani",
-        imgUrl: "mg/boardmember24/headshots/jpg/Saachi.jpg",
+        imgUrl: "img/boardmember24/headshots/jpg/Saachi.jpg",
         role: "Events Coordinator",
         bio:
         "Saachi is a third-year Electrical Engineering major from Pleasanton, CA. The favorite part of her morning is her rejuvenating hot latte."
