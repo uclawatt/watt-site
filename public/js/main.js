@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       {
         name: "Sophie Zhu",
         imgUrl: "img/boardmember25/Sophie.jpg",
-        role: "Treasurer (She/Her)",
+        role: "Treasurer",
         bio:
           "Sophie is a third-year Computer Science and Engineering major from Los Angeles. She loves trying new restaurants, exploring, and making things, whether it’s baking, models, crocheting, or anything using her hands!"
       },
