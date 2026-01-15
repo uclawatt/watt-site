@@ -134,20 +134,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       {
         name: "Saachi Bhayani",
-        imgUrl: "img/boardmember24/headshots/jpg/Saachi.jpg",
+        imgUrl: "img/boardmember25/saachi.jpg",
         role: "Events Coordinator",
         bio:
         "Saachi is a fourth-year Electrical Engineering major from Pleasanton, CA. The favorite part of her morning is her rejuvenating hot latte."
       },
       {
         name: "Ava Asamani",
-        imgUrl: "img/boardmember24/headshots/jpg/Ava.jpg",
+        imgUrl: "img/boardmember25/ava.jpg",
         role: "Graduate Advisor",
         bio:
           "Ava is a second year M.S./Ph.D. student in Electrical and Computer Engineering. She was an officer of WATT during her undergraduate degree and now helps out as a graduate advisor. Her PhD focuses on optimizing coding schemes of digital communication systems. In her free time she enjoys cooking, traveling and reading."
       }
-      
-   
+         
     ],
     projects: [
       {
