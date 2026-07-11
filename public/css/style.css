@@ -1906,6 +1906,7 @@ body:before {
   background: rgba(246, 255, 252, 0.92);
   border: 0;
   box-shadow: 0 7px 24px rgba(43, 93, 154, 0.12);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
