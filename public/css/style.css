@@ -2999,4 +2999,100 @@ body :where(h1, h2, h3, h4, h5, h6, p, a, span, div, li, td, th, label, button, 
 
 .lab-page .lab-hours-table .highlight b { font-weight: 500; }
 
+/* Donation page: clearer hierarchy, focused giving action, and balanced layout. */
+.donate-page .page-content.fam-card {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 58px);
+  border: 2px solid rgba(65, 107, 179, 0.24);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(250, 255, 253, 0.96), rgba(235, 249, 255, 0.94));
+  box-shadow: 14px 14px 0 rgba(65, 107, 179, 0.1), 0 18px 38px rgba(38, 74, 145, 0.12);
+}
+
+.donate-page .donation-heading {
+  max-width: 720px;
+  margin: 0 auto 34px;
+  color: var(--watt-blue);
+  font-family: "Fredoka", "Montserrat", sans-serif;
+  font-size: clamp(2.2rem, 4.4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: center;
+  text-shadow: 2px 2px 0 rgba(160, 235, 222, 0.72);
+}
+
+.donate-page .home-whatwedo {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.85fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 56px);
+}
+
+.donate-page .home-whatwedo > .custom-container1 {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.donate-page .home-whatwedo > .custom-container1:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: 24px;
+  border: 2px solid rgba(27, 186, 171, 0.3);
+  border-radius: 20px;
+  background: rgba(217, 251, 243, 0.68);
+}
+
+.donate-page .home-whatwedo > .custom-container1:first-child img {
+  width: min(100%, 320px);
+  height: auto;
+  object-fit: contain;
+}
+
+.donate-page .home-whatwedo > .custom-container1:last-child {
+  padding: clamp(6px, 1vw, 14px);
+}
+
+.donate-page .fam-card-description {
+  margin: 0 0 16px;
+  color: #29446f;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.donation-link {
+  display: inline-block;
+  margin: 4px 0 20px;
+  padding: 13px 20px;
+  border: 2px solid var(--watt-blue);
+  border-radius: 999px;
+  color: #ffffff !important;
+  background: var(--watt-blue);
+  box-shadow: 5px 5px 0 rgba(65, 107, 179, 0.16);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.donation-link:hover,
+.donation-link:focus {
+  color: var(--watt-blue-deep) !important;
+  background: var(--watt-yellow);
+  box-shadow: 2px 2px 0 rgba(65, 107, 179, 0.16);
+  transform: translate(3px, 3px);
+}
+
+@media (max-width: 720px) {
+  .donate-page .home-whatwedo {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-page .home-whatwedo > .custom-container1:first-child {
+    min-height: 220px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
