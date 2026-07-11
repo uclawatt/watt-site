@@ -2863,4 +2863,55 @@ button {
   display: none;
 }
 
+/* One typeface across the site; icon fonts retain their own declarations. */
+body,
+body :where(h1, h2, h3, h4, h5, h6, p, a, span, div, li, td, th, label, button, input, textarea, select, option, legend, figcaption) {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* Make supporting text easier to read on the Mentorship and Board pages. */
+.team-page .person-card,
+.team-page .person-card p,
+.mentorship-page .fam-card-description,
+.mentorship-page .fam-card-heads {
+  font-size: 1.1rem;
+}
+
+/* Let each page's heading photo show through more clearly. */
+.page-cover-photo {
+  background: linear-gradient(rgba(232, 228, 238, 0.18), rgba(232, 228, 238, 0.18)), var(--img);
+}
+
+/* Remove the decorative X marks that were placed in page-body corners. */
+.page-body::before,
+.page-body::after {
+  display: none;
+}
+
+/* Lab page hierarchy and a roomier schedule. */
+.lab-page h1,
+.lab-page h2,
+.lab-page h3,
+.lab-page h4,
+.lab-page h5,
+.lab-page h6,
+.lab-page .card-title,
+.lab-page .green-card-title,
+.lab-page .dark-green-card-title {
+  font-family: "Fredoka", "Montserrat", sans-serif;
+}
+
+.lab-page .lab-hours-table {
+  border-spacing: 0;
+}
+
+.lab-page .lab-hours-table th,
+.lab-page .lab-hours-table td {
+  min-height: 76px;
+  padding: 28px 22px;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  vertical-align: middle;
+}
+
 /*# sourceMappingURL=style.css.map */
