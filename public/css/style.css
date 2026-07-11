@@ -2914,4 +2914,89 @@ body :where(h1, h2, h3, h4, h5, h6, p, a, span, div, li, td, th, label, button, 
   vertical-align: middle;
 }
 
+/* Lab hours layout based on the Boelter Hall schedule design. */
+.lab-page .lab-hours-heading {
+  max-width: 760px;
+  margin: 8px auto 34px;
+  color: #506db4;
+  font-family: "Fredoka", "Montserrat", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.04;
+  text-align: center;
+  text-shadow: 2px 2px 0 #ccefeb;
+}
+
+.lab-page .lab-hours-wrapper {
+  width: min(100%, 980px);
+  margin: 0 auto 32px;
+  padding: 0;
+  overflow-x: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(38, 74, 145, 0.12);
+}
+
+.lab-page .lab-hours-table {
+  width: 100%;
+  min-width: 720px;
+  overflow: hidden;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 14px;
+  background: #fafffd;
+  color: #173d91;
+  box-shadow: none;
+}
+
+.lab-page .lab-hours-table th,
+.lab-page .lab-hours-table td {
+  min-height: 0;
+  padding: 17px 14px;
+  border: 0;
+  border-right: 1px solid rgba(79, 109, 180, 0.16);
+  border-bottom: 1px solid rgba(79, 109, 180, 0.16);
+  background: #fafffd;
+  color: #173d91;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.12;
+  text-align: center;
+}
+
+.lab-page .lab-hours-table tr:last-child td { border-bottom: 0; }
+.lab-page .lab-hours-table th:last-child,
+.lab-page .lab-hours-table td:last-child { border-right: 0; }
+
+.lab-page .lab-hours-table th {
+  padding: 12px 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.lab-page .lab-hours-table th:first-child {
+  background: transparent !important;
+}
+
+.lab-page .lab-hours-table th:nth-child(2),
+.lab-page .lab-hours-table th:nth-child(4),
+.lab-page .lab-hours-table th:nth-child(6) {
+  background: #506db4 !important;
+}
+
+.lab-page .lab-hours-table th:nth-child(3),
+.lab-page .lab-hours-table th:nth-child(5) {
+  background: #80d7c6 !important;
+  color: #173d91;
+}
+
+.lab-page .lab-hours-table .highlight {
+  width: 21%;
+  background: #fff9df;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.lab-page .lab-hours-table .highlight b { font-weight: 500; }
+
 /*# sourceMappingURL=style.css.map */
