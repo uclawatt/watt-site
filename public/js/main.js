@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  document.addEventListener("error", function(event) {
+    var image = event.target;
+    if (image.tagName === "IMG") {
+      image.style.display = "none";
+      image.setAttribute("aria-hidden", "true");
+    }
+  }, true);
+
   // Animate loader off screen
   $(".se-pre-con").fadeOut(1250);
-
-
 
   var eventsSource = $("#events-template").html();
   var eventsTemplate = Handlebars.compile(eventsSource);
@@ -244,11 +250,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   );
 
-  $("#officers-mount").html(
-    officersTemplate({
-      officers: dataObj.officers
-    })
-  );
+  var officersMount = $("#officers-mount");
+  if (officersMount.length) {
+    var officerIndex = 0;
+    var officerBatchSize = 6;
+
+    function renderOfficerBatch() {
+      var officers = dataObj.officers.slice(officerIndex, officerIndex + officerBatchSize);
+      officersMount.append(officersTemplate({ officers: officers }));
+      officerIndex += officers.length;
+    }
+
+    renderOfficerBatch();
+
+    if (officerIndex < dataObj.officers.length && "IntersectionObserver" in window) {
+      var officerSentinel = document.createElement("div");
+      officerSentinel.className = "officer-load-sentinel";
+      officersMount.append(officerSentinel);
+
+      var officerObserver = new IntersectionObserver(function(entries) {
+        if (!entries[0].isIntersecting) return;
+        officerObserver.unobserve(officerSentinel);
+        officerSentinel.remove();
+        renderOfficerBatch();
+
+        if (officerIndex < dataObj.officers.length) {
+          officersMount.append(officerSentinel);
+          officerObserver.observe(officerSentinel);
+        }
+      }, { rootMargin: "700px 0px" });
+
+      officerObserver.observe(officerSentinel);
+    } else if (officerIndex < dataObj.officers.length) {
+      officersMount.append(officersTemplate({ officers: dataObj.officers.slice(officerIndex) }));
+    }
+  }
 
   // $("#sponsors-mount").html(
   //   sponsorsTemplate({
