@@ -3,7 +3,6 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
 // var path = require("path");
-var fs = require('fs')
 var logger = require("morgan");
 var mg = require('nodemailer-mailgun-transport');
 var bodyParser = require('body-parser');
@@ -11,7 +10,7 @@ var nconf = require('nconf');
 // var auth =  require('./config.json');
 var app = express();
 var router = express.Router();
-var path = __dirname + '/views/';
+var path = require('path');
 var hbs = require('hbs');
 
 // include client-side assets and use the bodyParser
@@ -19,17 +18,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-// log requests to stdout and also
-// log HTTP requests to a file in combined format
-var accessLogStream = fs.createWriteStream(__dirname + '/access.log', { flags: 'a' });
-app.use(logger('dev'));
-app.use(logger('combined', { stream: accessLogStream }));
+// Vercel's deployment filesystem is read-only, so keep request logs on stdout.
+app.use(logger(process.env.VERCEL ? 'combined' : 'dev'));
 
 app.set('port', (process.env.PORT || 5000));
 
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
-hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 
 router.use(function (req,res,next) {
   console.log("/" + req.method);
@@ -129,12 +126,18 @@ router.get("/googlea2a112487327d175",function(req,res){
 
 app.use("/",router);
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("*",function(req,res){
     res.render('404');
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+// Start a local HTTP server only when this file is run directly. On Vercel the
+// exported Express app is invoked as a serverless function for each request.
+if (require.main === module) {
+  app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+  });
+}
+
+module.exports = app;
