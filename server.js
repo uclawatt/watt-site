@@ -9,13 +9,54 @@ var bodyParser = require('body-parser');
 var nconf = require('nconf');
 // var auth =  require('./config.json');
 var app = express();
+app.disable('x-powered-by');
 var router = express.Router();
 var path = require('path');
 var hbs = require('hbs');
+var mailgunAuth = process.env.MAILGUN_API_KEY && process.env.MAILGUN_DOMAIN ? {
+  auth: {
+    api_key: process.env.MAILGUN_API_KEY,
+    domain: process.env.MAILGUN_DOMAIN
+  }
+} : null;
+var contactRateLimit = new Map();
 
-// include client-side assets and use the bodyParser
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+function isContactRateLimited(ip) {
+  var now = Date.now();
+  var windowMs = 10 * 60 * 1000;
+  var limit = 5;
+  var record = contactRateLimit.get(ip);
+
+  if (!record || now - record.startedAt > windowMs) {
+    contactRateLimit.set(ip, { startedAt: now, count: 1 });
+    return false;
+  }
+
+  record.count += 1;
+  return record.count > limit;
+}
+
+// Baseline HTTP hardening for local and Vercel deployments.
+app.set('trust proxy', 1);
+app.use(function (req, res, next) {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+
+  if (process.env.VERCEL) {
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+    if (req.get('x-forwarded-proto') === 'http') {
+      return res.redirect(308, 'https://' + req.get('host') + req.originalUrl);
+    }
+  }
+
+  next();
+});
+
+app.use(bodyParser.urlencoded({ extended: false, limit: '20kb' }));
+app.use(bodyParser.json({ limit: '20kb' }));
 
 
 // Vercel's deployment filesystem is read-only, so keep request logs on stdout.
@@ -59,15 +100,33 @@ router.get("/contact",function(req,res){
 
 // http POST /contact
 router.post("/contact", function (req, res) {
+  if (isContactRateLimited(req.ip)) {
+    return res.status(429).send('Too many contact requests. Please try again later.');
+  }
+
+  var origin = req.get('origin');
+  if (origin && origin !== req.protocol + '://' + req.get('host')) {
+    return res.status(403).send('Invalid request origin.');
+  }
+
   var name = req.body.inputname;
   var email = req.body.inputemail;
   var comment = req.body.inputcomment;
   var isError = false;
 
-  console.log('\nCONTACT FORM DATA: '+ name + ' '+email + ' '+ comment+'\n');
+  if (typeof name !== 'string' || typeof email !== 'string' || typeof comment !== 'string' ||
+      name.trim().length < 1 || name.length > 120 || /[\r\n]/.test(name) || email.length > 254 || /[\r\n]/.test(email) || comment.trim().length < 1 || comment.length > 5000 ||
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return res.status(400).send('Please provide a valid name, email address, and message.');
+  }
+
+  console.log('Received a contact form submission.');
 
   // create transporter object capable of sending email using the default SMTP transport
-  var transporter = nodemailer.createTransport(mg(auth));
+  if (!mailgunAuth) {
+    return res.status(503).send('Contact form is not configured.');
+  }
+  var transporter = nodemailer.createTransport(mg(mailgunAuth));
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
@@ -82,10 +141,10 @@ router.post("/contact", function (req, res) {
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log('\nERROR: ' + error+'\n');
-      //   res.json({ yo: 'error' });
+      return res.status(502).send('Unable to send your message right now.');
     } else {
          console.log('\nRESPONSE SENT: ' + info.response+'\n');
-      //   res.json({ yo: info.response });
+      return res.status(200).send('Thank you for contacting WATT.');
     }
   });
 });
@@ -130,6 +189,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("*",function(req,res){
     res.render('404');
+});
+
+app.use(function (error, req, res, next) {
+  console.error('Request failed:', error.message);
+  if (res.headersSent) {
+    return next(error);
+  }
+  if (error.type === 'entity.too.large') {
+    return res.status(413).send('Request is too large.');
+  }
+  return res.status(500).send('Something went wrong. Please try again later.');
 });
 
 // Start a local HTTP server only when this file is run directly. On Vercel the
