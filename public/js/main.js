@@ -241,6 +241,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     ]
   };
 
+  // Use lower-resolution thumbnails for officer images to reduce bandwidth
+  if (dataObj.officers && dataObj.officers.length) {
+    dataObj.officers.forEach(function(o) {
+      if (typeof o.imgUrl === 'string') {
+        o.imgUrl = o.imgUrl.replace('img/boardmember25/', 'img/boardmember25/small/');
+      }
+    });
+  }
+
   $.each(dataObj.events, function(i, item) {
     reformatToPs(i, item);
   });
