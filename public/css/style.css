@@ -3198,4 +3198,108 @@ body :where(h1, h2, h3, h4, h5, h6, p, a, span, div, li, td, th, label, button, 
   }
 }
 
+/* Targeted phone fixes for Mentorship, Sponsorship, and page banners. */
+@media (max-width: 600px) {
+  .page-cover-photo {
+    height: clamp(210px, 58vw, 280px);
+    min-height: 0;
+    border-radius: 0 0 22px 22px;
+    background-position: center 38%;
+  }
+
+  .mentorship-page .page-content-outline {
+    padding: 16px;
+  }
+
+  .mentorship-page .page-content-outline .fam-pic {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .mentorship-page .mentor-main-pic {
+    max-width: 170px;
+  }
+
+  .mentorship-page .box {
+    display: block !important;
+    left: 50%;
+    margin: 0 0 -250px -300px;
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+
+  .mentorship-page .box + .page-content {
+    display: block !important;
+    width: 100%;
+    margin: 18px 0 28px !important;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .mentorship-page .box + .page-content .green-card-title {
+    margin-bottom: 18px !important;
+    text-align: center;
+  }
+
+  .mentorship-house-card {
+    gap: 14px;
+    margin: 20px 0;
+  }
+
+  .mentorship-house-card .fam-pic {
+    min-height: 0;
+    padding: 16px;
+  }
+
+  .mentorship-house-card .mentor-pic {
+    max-width: 150px;
+  }
+
+  .sponsor-page .page-content.fam-card,
+  .sponsor-page .home-join-card {
+    padding: 22px 18px;
+  }
+
+  .sponsor-page .sponsor-overview-img {
+    min-height: 220px;
+    margin-bottom: 18px;
+    background-position: center;
+  }
+
+  .sponsor-page .home-join-card > .home-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 22px 0;
+  }
+
+  .sponsor-page .home-join-card > .home-div > .col {
+    width: auto;
+    padding: 0;
+  }
+
+  .sponsor-page .sponsor-icon {
+    width: 34px;
+    margin-top: 2px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sponsor-page .sponsor-green-subtitle {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .sponsor-page .tiers-wrap {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sponsor-page .tiers-wrap img {
+    min-width: 680px;
+    max-width: none !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
