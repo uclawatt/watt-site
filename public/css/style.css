@@ -3302,4 +3302,50 @@ body :where(h1, h2, h3, h4, h5, h6, p, a, span, div, li, td, th, label, button, 
   }
 }
 
+/* Keep the complete mentorship content and banner imagery in view on phones. */
+@media (max-width: 600px) {
+  .page-cover-photo {
+    height: auto;
+    aspect-ratio: 2.4 / 1;
+    background-color: #eef9f7;
+    background-position: center;
+    background-size: 100% 100%, 100% auto;
+  }
+
+  .mentorship-page .house-points-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 4px;
+  }
+
+  .mentorship-page .house-points-section .box {
+    position: relative;
+    left: 50%;
+    display: block !important;
+    width: 600px;
+    max-width: none;
+    margin: 0 0 -250px -300px;
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+
+  .mentorship-page .house-points-section .box + .page-content {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 16px 0 28px !important;
+    padding: 18px 14px;
+  }
+
+  .mentorship-house-card .fam-pic,
+  .mentorship-house-card .fam-card-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mentorship-house-card .fam-card-text {
+    overflow-wrap: anywhere;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
