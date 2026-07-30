@@ -3095,4 +3095,107 @@ body :where(h1, h2, h3, h4, h5, h6, p, a, span, div, li, td, th, label, button, 
   }
 }
 
+/* Final phone layout pass. */
+@media (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    min-height: 48px;
+    padding: 14px 20px;
+  }
+
+  #navbar-brand {
+    max-width: calc(100vw - 76px);
+    font-size: 17px;
+  }
+
+  .page-cover-photo {
+    min-height: 250px;
+    height: 42vh;
+    padding-top: 0;
+    background-position: center center;
+  }
+
+  .home-page-cover {
+    min-height: 440px;
+    height: 66vh;
+  }
+
+  .watt-logo {
+    width: 94%;
+  }
+
+  .page-body {
+    width: calc(100% - 12px);
+    margin-top: -20px;
+    padding: 24px 14px 42px;
+  }
+
+  .page-wrapper {
+    padding: 20px 0;
+  }
+
+  .page-content,
+  .page-content-outline,
+  .fam-card,
+  .donate-page .page-content.fam-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  video,
+  iframe {
+    height: auto;
+  }
+
+  .team-page .person-card {
+    padding: 20px;
+  }
+
+  .team-page .person-card > .profile-picture {
+    width: 150px;
+    height: 150px;
+    flex-basis: 150px;
+  }
+
+  .mentorship-house-card .fam-card-text {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .lab-page .lab-hours-heading {
+    margin-bottom: 24px;
+    font-size: clamp(1.9rem, 10vw, 2.6rem);
+  }
+
+  .lab-page .lab-hours-wrapper {
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .donate-page .donation-heading {
+    margin-bottom: 24px;
+  }
+
+  .donation-link {
+    width: 100%;
+    padding: 14px 16px;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
