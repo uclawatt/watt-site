@@ -2713,13 +2713,13 @@ video {
   }
 
   .page-cover-photo {
-    min-height: 220px;
-    height: 32svh;
-    max-height: 300px;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 16 / 9;
     padding-top: 64px;
     background-position: center center;
-    background-size: contain;
-    background-color: #eaf7f5;
+    background-size: cover;
   }
 
   .home-mission,
