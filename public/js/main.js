@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("error", function(event) {
     var image = event.target;
     if (image.tagName === "IMG") {
@@ -7,25 +7,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }, true);
 
-  // Animate loader off screen
   $(".se-pre-con").fadeOut(1250);
 
-  var eventsSource = $("#events-template").html();
-  var eventsTemplate = Handlebars.compile(eventsSource);
+  var officersMount = $("#officers-mount");
+  if (!officersMount.length) return;
+
   var officersSource = $("#officers-template").html();
   var officersTemplate = Handlebars.compile(officersSource);
-  var projectsSource = $("#projects-template").html();
-  var projectsTemplate = Handlebars.compile(projectsSource);
-  var sponsorsSource = $("#sponsors-template").html();
-  var sponsorsTemplate = Handlebars.compile(sponsorsSource);
-  var gallerySource = $("#gallery-template").html();
-  var galleryTemplate = Handlebars.compile(gallerySource);
-
-  var dataObj = {
-    events: [
-     
-    ],
-    officers: [
+  var officers = [
       {
         name: "Eugenia Cho",
         imgUrl: "img/boardmember25/Eugenia.png",
@@ -153,174 +142,44 @@ document.addEventListener("DOMContentLoaded", function(event) {
           "Ava is a second year M.S./Ph.D. student in Electrical and Computer Engineering. She was an officer of WATT during her undergraduate degree and now helps out as a graduate advisor. Her PhD focuses on optimizing coding schemes of digital communication systems. In her free time she enjoys cooking, traveling and reading."
       }
          
-    ],
-    projects: [
-      {
-        name: "Audio Workshop",
-        date: "4/24/2017",
-        eventUrl: "https://www.facebook.com/events/1710673605899546/",
-        imgUrl: "img/eventphotos/audiows.jpg"
-      },
-      {
-        name: "RF Workshop",
-        date: "4/17/2017",
-        eventUrl: "https://www.facebook.com/events/556822414526173/",
-        imgUrl: "img/eventphotos/rfws2.jpg"
-      },
-      {
-        name: "Design Concepts Workshop",
-        date: "4/11/2017",
-        eventUrl: "https://www.facebook.com/events/1663298890350955/",
-        imgUrl: "img/eventphotos/designws.jpg"
-      },
-      {
-        name: "RF Workshop",
-        date: "2/22/2017",
-        eventUrl: "https://www.facebook.com/events/1199347506847311/",
-        imgUrl: "img/eventphotos/rfws.jpg"
-      },
-      {
-        name: "Valentine's Workshop",
-        date: "2/08/2017",
-        eventUrl: "https://www.facebook.com/events/185447715269874/",
-        imgUrl: "img/eventphotos/valentinesws.jpg"
-      },
-      {
-        name: "Wearables Workshop 2",
-        date: "11/10/2016",
-        eventUrl: "https://www.facebook.com/events/325982431127452/",
-        imgUrl: "img/eventphotos/wearablesws2.jpg"
-      },
-      {
-        name: "Wearables Workshop 1",
-        date: "10/28/2016",
-        eventUrl: "https://www.facebook.com/events/385779441753175/",
-        imgUrl: "img/eventphotos/wearablesws1.jpg"
-      }
-    ],
-    sponsors: [
-      {
-        imgUrl: "img/sponsors/qualcomm.png",
-        alt: "Qualcomm Logo"
-      },
-      {
-        imgUrl: "img/sponsors/northrop.png",
-        alt: "Northrup Logo"
-      },
-      {
-        imgUrl: "img/sponsors/google.png",
-        alt: "Google Logo"
-      },
-      {
-        imgUrl: "img/sponsors/intel.png",
-        alt: "Intel Logo"
-      },
-      {
-        imgUrl: "img/sponsors/oath.png",
-        alt: "Oath Logo"
-      },
-      {
-        imgUrl: "img/sponsors/uber.jpg",
-        alt: "Uber Logo"
-      },
-      {
-        imgUrl: "img/sponsors/cray.png",
-        alt: "Cray Logo"
-      },
-      {
-        imgUrl: "img/sponsors/symantec.png",
-        alt: "Symantec Logo"
-      }
-    ],
-    gallery: [
-      {
-        albumUrl:"https://www.flickr.com/photos/143450762@N06/albums/72157667740069068/player",
-        coverImg:"img/eventcovers/2018CookieSocial.jpg",
-        eventName:"2018 WATTxIEEE Cookie Social"
-      }
-    ]
-  };
+    ];
 
-  // Use lower-resolution thumbnails for officer images to reduce bandwidth
-  if (dataObj.officers && dataObj.officers.length) {
-    dataObj.officers.forEach(function(o) {
-      if (typeof o.imgUrl === 'string') {
-        o.imgUrl = o.imgUrl.replace('img/boardmember25/', 'img/boardmember25/small/');
-      }
-    });
+  officers.forEach(function(officer) {
+    officer.imgUrl = officer.imgUrl.replace('img/boardmember25/', 'img/boardmember25/small/');
+  });
+
+  var officerIndex = 0;
+  var officerBatchSize = 6;
+
+  function renderOfficerBatch() {
+    var officerBatch = officers.slice(officerIndex, officerIndex + officerBatchSize);
+    officersMount.append(officersTemplate({ officers: officerBatch }));
+    officerIndex += officerBatch.length;
   }
 
-  $.each(dataObj.events, function(i, item) {
-    reformatToPs(i, item);
-  });
-  $("#events-mount").html(
-    eventsTemplate({
-      events: dataObj.events
-    })
-  );
+  renderOfficerBatch();
 
-  var officersMount = $("#officers-mount");
-  if (officersMount.length) {
-    var officerIndex = 0;
-    var officerBatchSize = 6;
+  if (officerIndex >= officers.length || !("IntersectionObserver" in window)) {
+    officersMount.append(officersTemplate({ officers: officers.slice(officerIndex) }));
+    return;
+  }
 
-    function renderOfficerBatch() {
-      var officers = dataObj.officers.slice(officerIndex, officerIndex + officerBatchSize);
-      officersMount.append(officersTemplate({ officers: officers }));
-      officerIndex += officers.length;
-    }
+  var officerSentinel = document.createElement("div");
+  officerSentinel.className = "officer-load-sentinel";
+  officersMount.append(officerSentinel);
 
+  var officerObserver = new IntersectionObserver(function(entries) {
+    if (!entries[0].isIntersecting) return;
+
+    officerObserver.unobserve(officerSentinel);
+    officerSentinel.remove();
     renderOfficerBatch();
 
-    if (officerIndex < dataObj.officers.length && "IntersectionObserver" in window) {
-      var officerSentinel = document.createElement("div");
-      officerSentinel.className = "officer-load-sentinel";
+    if (officerIndex < officers.length) {
       officersMount.append(officerSentinel);
-
-      var officerObserver = new IntersectionObserver(function(entries) {
-        if (!entries[0].isIntersecting) return;
-        officerObserver.unobserve(officerSentinel);
-        officerSentinel.remove();
-        renderOfficerBatch();
-
-        if (officerIndex < dataObj.officers.length) {
-          officersMount.append(officerSentinel);
-          officerObserver.observe(officerSentinel);
-        }
-      }, { rootMargin: "700px 0px" });
-
       officerObserver.observe(officerSentinel);
-    } else if (officerIndex < dataObj.officers.length) {
-      officersMount.append(officersTemplate({ officers: dataObj.officers.slice(officerIndex) }));
     }
-  }
+  }, { rootMargin: "700px 0px" });
 
-  // $("#sponsors-mount").html(
-  //   sponsorsTemplate({
-  //     sponsors: dataObj.sponsors
-  //   })
-  // );
-
-  $("#projects-mount").html(
-    projectsTemplate({
-      projects: dataObj.projects
-    })
-  );
-
-  $("#gallery-mount").html(
-    galleryTemplate({
-      gallery: dataObj.gallery
-    })
-  );
-
+  officerObserver.observe(officerSentinel);
 });
-
-function reformatToPs(i, item) {
-  var list = item.description.split("*");
-  var html = "";
-  for (var i = 0; i < list.length; i++) {
-    html += "<p>" + list[i] + "</p>";
-  }
-  // html += '</ul>';
-  item.description = html;
-}

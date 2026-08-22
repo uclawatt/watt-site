@@ -207,16 +207,6 @@ if it's not present, don't show loader */
   width: 24px;
 }
 
-#feedback-tab {
-  background: rgb(166, 152, 171);
-  color: #f8f8f8;
-}
-
-#feedback-tab:hover {
-  background: #f8f8f8;
-  color: rgb(68, 43, 85);
-}
-
 .about-cover-heading {
   color: white;
   font-family: "Bitter";
@@ -2393,5 +2383,284 @@ h5 {
 
   .page-body .home-whatwedo .custom-container1 > img {
     min-height: 200px;
+  }
+}
+
+/* Responsive layout safeguards */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.page-body iframe {
+  max-width: 100%;
+}
+
+.video-wrapper,
+.gallery-container > iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.calendar-page iframe,
+.page-body iframe[src*="calendar.google.com"] {
+  width: 100%;
+  min-height: 640px;
+  aspect-ratio: auto;
+}
+
+.lab-hours-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lab-hours-table {
+  min-width: 720px;
+}
+
+.lab-page video {
+  width: min(360px, 100%);
+  height: auto;
+}
+
+.sponsor-img,
+.sponsor-img-wide {
+  max-width: calc(100% - 32px);
+  height: auto;
+}
+
+.img-err {
+  width: min(400px, 100%);
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .page-body .home-div {
+    display: flex;
+  }
+
+  .page-body .home-div > * + * {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default {
+    min-height: 64px;
+  }
+
+  .navbar-header {
+    min-height: 64px;
+  }
+
+  #navbar-brand {
+    height: 64px;
+    padding-top: 15px;
+    font-size: 1.32rem;
+    line-height: 34px;
+  }
+
+  #nav-logo {
+    width: 28px;
+    margin-right: 4px;
+  }
+
+  .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: var(--watt-border);
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--watt-blue);
+  }
+
+  .navbar-default .navbar-collapse {
+    max-height: calc(100vh - 64px);
+    border-color: rgba(39, 116, 174, 0.14);
+    background: rgba(255, 255, 255, 0.99);
+  }
+
+  .navbar-default .navbar-nav {
+    margin: 0 -15px 8px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    padding: 13px 22px;
+    font-size: 1.05rem;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    padding: 0 0 6px;
+    background: #f5fffc;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    padding: 10px 34px;
+    color: var(--watt-navy);
+    font-size: 1rem;
+  }
+
+  .home-page-cover {
+    min-height: 410px;
+    height: 66vh;
+    background-position: center 64px;
+  }
+
+  .page-cover-photo {
+    min-height: 280px;
+    height: 42vh;
+    padding-top: 64px;
+    background-position: center;
+  }
+
+  .page-cover-photo .page-heading {
+    max-width: calc(100% - 32px);
+    font-size: clamp(2.5rem, 13vw, 3.75rem);
+  }
+
+  .page-body {
+    width: calc(100% - 16px);
+    margin-top: -18px;
+    padding: 22px 12px 38px;
+  }
+
+  .page-body .page-wrapper {
+    padding: 16px 0;
+  }
+
+  .page-body .page-content,
+  .page-body .page-content-photo {
+    padding: 20px;
+  }
+
+  .page-body .home-div {
+    display: block;
+  }
+
+  .page-body .home-div > * {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page-body .home-div > * + * {
+    margin-top: 18px;
+  }
+
+  .page-body .home-div + .home-div {
+    margin-top: 28px;
+  }
+
+  .page-body .home-whatwedo {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .page-body .home-whatwedo .custom-container1 {
+    padding: 20px;
+  }
+
+  .page-body .home-whatwedo .custom-container1:has(img) {
+    padding: 0;
+  }
+
+  .projects-page .responsive-image-container {
+    margin-bottom: 24px;
+  }
+
+  .projects-page .project-section,
+  .sponsor-page .page-content.fam-card,
+  .sponsor-contact-panel {
+    padding: 22px;
+  }
+
+  .sponsor-page .home-join-card > .home-div {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 14px;
+    margin: 20px 0;
+    padding: 16px;
+  }
+
+  .sponsor-page .home-join-card > .home-div > * + * {
+    margin-top: 0;
+  }
+
+  .sponsor-page .sponsor-overview-img {
+    min-height: 220px;
+  }
+
+  .mentorship-page .box {
+    width: 100%;
+    max-width: 600px;
+    height: min(83vw, 500px);
+    margin: 0 auto;
+    transform-origin: top center;
+  }
+
+  .mentorship-page .mentor-main-pic,
+  .mentorship-page .mentor-pic {
+    float: none;
+    max-height: 180px;
+    margin: 0 auto;
+  }
+
+  .lab-hours-table {
+    font-size: 0.95rem;
+  }
+
+  .lab-hours-table th,
+  .lab-hours-table td {
+    padding: 12px 10px;
+  }
+
+  .contact-list {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-horizontal .control-label {
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  #navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .page-body .page-content,
+  .page-body .page-content-photo,
+  .projects-page .project-section,
+  .sponsor-page .page-content.fam-card,
+  .sponsor-contact-panel {
+    padding: 16px;
+  }
+
+  .card-title,
+  .green-card-title,
+  .dark-green-card-title,
+  .house-card-title,
+  .project-title,
+  .project-name,
+  .sponsor-yellow-title,
+  .sponsor-green-title {
+    font-size: 1.58rem;
   }
 }

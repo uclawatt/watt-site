@@ -1,13 +1,8 @@
 var express = require("express");
 var nodemailer = require('nodemailer');
-var smtpTransport = require('nodemailer-smtp-transport');
-var xoauth2 = require('xoauth2');
-// var path = require("path");
 var logger = require("morgan");
 var mg = require('nodemailer-mailgun-transport');
 var bodyParser = require('body-parser');
-var nconf = require('nconf');
-// var auth =  require('./config.json');
 var app = express();
 app.disable('x-powered-by');
 var router = express.Router();
