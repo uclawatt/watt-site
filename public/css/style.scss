@@ -2664,3 +2664,115 @@ video {
     font-size: 1.58rem;
   }
 }
+
+/* Phone image and footer refinement */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .navbar-header {
+    position: relative;
+  }
+
+  .navbar-toggle {
+    display: block !important;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    margin-right: 15px;
+    background: #f1fcfa;
+    border: 1px solid var(--watt-blue);
+  }
+
+  .home-page-cover {
+    min-height: 320px;
+    height: min(55svh, 440px);
+    background-position: center 50%;
+  }
+
+  .page-body {
+    box-sizing: border-box;
+  }
+
+  .home-page-cover:before {
+    bottom: 18px;
+    width: calc(100% - 36px);
+  }
+
+  .site-wrapper {
+    max-width: 92vw;
+  }
+
+  .watt-logo {
+    width: min(92vw, 520px);
+    max-height: 250px;
+    object-fit: contain;
+  }
+
+  .page-cover-photo {
+    min-height: 220px;
+    height: 32svh;
+    max-height: 300px;
+    padding-top: 64px;
+    background-position: center center;
+    background-size: contain;
+    background-color: #eaf7f5;
+  }
+
+  .home-mission,
+  .page-body .home-whatwedo {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home-mission .custom-container1,
+  .page-body .home-whatwedo .custom-container1 {
+    min-height: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .home-mission .custom-container1 > img,
+  .page-body .home-whatwedo .custom-container1 > img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain;
+  }
+
+  .footer-container {
+    min-height: 0;
+    padding: 24px 18px 26px;
+  }
+
+  .footer-block {
+    margin: 0;
+  }
+
+  .footer-text {
+    max-width: 300px;
+    margin: 0 auto 16px;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .footer-block a {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    border-radius: 50%;
+  }
+
+  .footer-block .social {
+    transform: none;
+    font-size: 1.7rem;
+  }
+}
