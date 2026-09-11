@@ -4366,8 +4366,7 @@ video {
   border-radius: 0;
 }
 
-/* Give the home banner a defined card edge. */
-.home-page-cover {
+ .watt-logo {
   overflow: hidden;
   border: 2px solid rgba(36, 66, 123, 0.5);
   border-radius: 24px;
