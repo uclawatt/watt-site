@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("error", function(event) {
     var image = event.target;
