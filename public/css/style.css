@@ -4353,7 +4353,7 @@ video {
 .home-mission > .custom-container1,
 .whatwedo-wrapper .home-whatwedo > .custom-container1,
 .newsletter-wrapper .home-whatwedo > .custom-container1 {
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid rgba(39, 116, 174, 0.28);
   border-radius: 14px;
   background: #ffffff;
@@ -4363,5 +4363,7 @@ video {
 .home-mission > .custom-container1 > img,
 .whatwedo-wrapper .home-whatwedo > .custom-container1 > img,
 .newsletter-wrapper .home-whatwedo > .custom-container1 > img {
-  border-radius: 0;
+  border: 1px solid rgba(39, 116, 174, 0.28);
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(15, 45, 82, 0.14);
 }
