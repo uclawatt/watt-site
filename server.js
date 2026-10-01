@@ -2,7 +2,6 @@ var express = require("express");
 var nodemailer = require('nodemailer');
 var logger = require("morgan");
 var mg = require('nodemailer-mailgun-transport');
-var bodyParser = require('body-parser');
 var app = express();
 app.disable('x-powered-by');
 var router = express.Router();
@@ -14,21 +13,43 @@ var mailgunAuth = process.env.MAILGUN_API_KEY && process.env.MAILGUN_DOMAIN ? {
     domain: process.env.MAILGUN_DOMAIN
   }
 } : null;
+var mailTransport = mailgunAuth ? nodemailer.createTransport(mg(mailgunAuth)) : null;
 var contactRateLimit = new Map();
+var contactRateLimitCleanupAt = 0;
+var CONTACT_RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+var CONTACT_RATE_LIMIT_MAX_ENTRIES = 5000;
+
+function pruneContactRateLimit(now) {
+  if (now < contactRateLimitCleanupAt) {
+    return;
+  }
+
+  contactRateLimit.forEach(function (record, ip) {
+    if (now - record.startedAt > CONTACT_RATE_LIMIT_WINDOW_MS) {
+      contactRateLimit.delete(ip);
+    }
+  });
+  contactRateLimitCleanupAt = now + CONTACT_RATE_LIMIT_WINDOW_MS;
+}
 
 function isContactRateLimited(ip) {
   var now = Date.now();
-  var windowMs = 10 * 60 * 1000;
-  var limit = 5;
   var record = contactRateLimit.get(ip);
 
-  if (!record || now - record.startedAt > windowMs) {
+  if (record && now - record.startedAt <= CONTACT_RATE_LIMIT_WINDOW_MS) {
+    record.count += 1;
+    return record.count > 5;
+  }
+
+  pruneContactRateLimit(now);
+  if (!record && contactRateLimit.size >= CONTACT_RATE_LIMIT_MAX_ENTRIES) {
+    contactRateLimit.delete(contactRateLimit.keys().next().value);
+  }
+
+  if (!record || now - record.startedAt > CONTACT_RATE_LIMIT_WINDOW_MS) {
     contactRateLimit.set(ip, { startedAt: now, count: 1 });
     return false;
   }
-
-  record.count += 1;
-  return record.count > limit;
 }
 
 // Baseline HTTP hardening for local and Vercel deployments.
@@ -50,11 +71,11 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(bodyParser.urlencoded({ extended: false, limit: '20kb' }));
-app.use(bodyParser.json({ limit: '20kb' }));
+app.use(express.static(path.join(__dirname, 'public'), {
+  maxAge: process.env.VERCEL ? '1h' : 0
+}));
 
-
-// Vercel's deployment filesystem is read-only, so keep request logs on stdout.
+// Static assets are handled above, leaving this log focused on page and API requests.
 app.use(logger(process.env.VERCEL ? 'combined' : 'dev'));
 
 app.set('port', (process.env.PORT || 5000));
@@ -63,11 +84,6 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
-
-router.use(function (req,res,next) {
-  console.log("/" + req.method);
-  next();
-});
 
 router.get("/",function(req,res){
     res.render('index');
@@ -78,7 +94,7 @@ router.get("/mission",function(req,res){
 });
 
 router.get("/team",function(req,res){
-    res.render('team');
+    res.render('team', { teamPage: true });
 });
 
 router.get("/lab",function(req,res){
@@ -94,7 +110,7 @@ router.get("/contact",function(req,res){
 });
 
 // http POST /contact
-router.post("/contact", function (req, res) {
+router.post("/contact", express.urlencoded({ extended: false, limit: '20kb' }), express.json({ limit: '20kb' }), function (req, res) {
   if (isContactRateLimited(req.ip)) {
     return res.status(429).send('Too many contact requests. Please try again later.');
   }
@@ -117,23 +133,19 @@ router.post("/contact", function (req, res) {
 
   console.log('Received a contact form submission.');
 
-  // create transporter object capable of sending email using the default SMTP transport
-  if (!mailgunAuth) {
+  if (!mailTransport) {
     return res.status(503).send('Contact form is not configured.');
   }
-  var transporter = nodemailer.createTransport(mg(mailgunAuth));
 
-  // setup e-mail data with unicode symbols
   var mailOptions = {
-    from: name +  " <" + email + ">", // sender address
-    to: 'tnkhan8042@gmail.com', // list of receivers
-    subject: 'Message from Website Contact page', // Subject line
+    from: name +  " <" + email + ">",
+    to: 'tnkhan8042@gmail.com',
+    subject: 'Message from Website Contact page',
     text: comment,
     err: isError
 
   };
-  // send mail with defined transport object
-  transporter.sendMail(mailOptions, function (error, info) {
+  mailTransport.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log('\nERROR: ' + error+'\n');
       return res.status(502).send('Unable to send your message right now.');
@@ -179,8 +191,6 @@ router.get("/googlea2a112487327d175",function(req,res){
 });
 
 app.use("/",router);
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("*",function(req,res){
     res.render('404');

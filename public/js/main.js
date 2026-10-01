@@ -1,15 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-  document.addEventListener("error", function(event) {
-    var image = event.target;
-    if (image.tagName === "IMG") {
-      image.style.display = "none";
-      image.setAttribute("aria-hidden", "true");
-    }
-  }, true);
-
-  $(".se-pre-con").fadeOut(1250);
-
   var officersMount = $("#officers-mount");
   if (!officersMount.length) return;
 
@@ -179,6 +169,8 @@ document.addEventListener("DOMContentLoaded", function() {
     if (officerIndex < officers.length) {
       officersMount.append(officerSentinel);
       officerObserver.observe(officerSentinel);
+    } else {
+      officerObserver.disconnect();
     }
   }, { rootMargin: "700px 0px" });
 

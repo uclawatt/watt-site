@@ -6,22 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "minAll": "uglifycss public/css/style.css > public/css/style.min.css && uglifyjs public/js/main.js --output public/js/main.min.js",
-    "minCSS": "uglifycss public/css/style.css > public/css/style.min.css",
-    "minJS": "uglifyjs public/js/main.js --output public/js/main.min.js"
+    "generate-thumbnails": "node generate-thumbs.js"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "body-parser": "^1.18.2",
     "express": "^4.16.3",
-    "handlebars": "^4.0.10",
     "hbs": "^4.0.1",
     "morgan": "^1.8.2",
     "nodemailer": "^9.0.3",
-    "nodemailer-mailgun-transport": "^2.1.5",
+    "nodemailer-mailgun-transport": "^2.1.5"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.0",
-    "sharp": "^0.35.3",
-    "uglifycss": "^0.0.29"
+    "sharp": "^0.35.3"
   },
   "engines": {
     "node": "20.9.0"
