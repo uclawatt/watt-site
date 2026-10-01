@@ -2,7 +2,7 @@
 
 ## Overview
 IEEE WATT's website!
-Check out our website live at [www.ieeewatt.ucla.edu](www.ieeewatt.ucla.edu) :) 
+Check out our website live at [https://ieeewatt.com/](https://ieeewatt.com/) :) 
 
 ## Built With
 - [Node.js](https://nodejs.org/en/): JavaScript run-time environment that executes JavaScript server-side code.
