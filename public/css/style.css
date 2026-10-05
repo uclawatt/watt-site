@@ -4347,3 +4347,12 @@ video {
   border-radius: 24px;
   box-shadow: 0 14px 30px rgba(15, 45, 82, 0.2);
 }
+
+.team-page .person-card {
+  min-height: 360px;
+  padding: 20px;
+}
+
+.team-page .person-card .officer-caption {
+  white-space: pre-line;
+}
