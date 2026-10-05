@@ -7,6 +7,24 @@ app.disable('x-powered-by');
 var router = express.Router();
 var path = require('path');
 var hbs = require('hbs');
+var boardMembers = [
+  { name: 'Alisa', image: 'img/board-members26/alisa.webp' },
+  { name: 'Ambreal', image: 'img/board-members26/ambreal.webp' },
+  { name: 'Angela', image: 'img/board-members26/angela.webp' },
+  { name: 'Bella', image: 'img/board-members26/bella.webp' },
+  { name: 'Caroline', image: 'img/board-members26/caroline.webp' },
+  { name: 'Diya', image: 'img/board-members26/diya.webp' },
+  { name: 'Emma', image: 'img/board-members26/emma.webp' },
+  { name: 'Jolie', image: 'img/board-members26/jolie.webp' },
+  { name: 'Karin', image: 'img/board-members26/karin.webp' },
+  { name: 'Katie T.', image: 'img/board-members26/katie-t.webp' },
+  { name: 'Katie W.', image: 'img/board-members26/katie-w.webp' },
+  { name: 'Michelle', image: 'img/board-members26/michelle.webp' },
+  { name: 'Nina', image: 'img/board-members26/nina.webp' },
+  { name: 'Priya', image: 'img/board-members26/priya.webp' },
+  { name: 'Sophie', image: 'img/board-members26/sophie.webp' },
+  { name: 'Zitong', image: 'img/board-members26/zitong.webp' }
+];
 var mailgunAuth = process.env.MAILGUN_API_KEY && process.env.MAILGUN_DOMAIN ? {
   auth: {
     api_key: process.env.MAILGUN_API_KEY,
@@ -94,7 +112,7 @@ router.get("/mission",function(req,res){
 });
 
 router.get("/team",function(req,res){
-    res.render('team', { teamPage: true });
+    res.render('team', { boardMembers: boardMembers });
 });
 
 router.get("/lab",function(req,res){

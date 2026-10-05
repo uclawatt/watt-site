@@ -1,0 +1,12 @@
+# Historical roster originals are retained locally but are not part of the live site.
+public/img/boardmember25
+public/img/boardmember26
+public/img/boardmember24
+public/img/boardmembers23
+public/img/boardmembers23p2
+public/img/boardmembers22
+public/img/boardmembers18
+public/img/boardmembers17
+# The archive page uses Google Photos embeds, not these local source photos.
+public/img/eventphotos
+yarn-error.log

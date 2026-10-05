@@ -8,26 +8,8 @@
             </div>
         </div>
 
-        {{#if teamPage}}
-        <script id="officers-template" type="text/x-handlebars-template">
-            \{{#each officers}}
-            <div class="col sm-12 md-8 lg-8 person-wrapper">
-                <div class="person-card">
-                    <img class="profile-picture" src="\{{this.imgUrl}}" loading="lazy" decoding="async" alt="\{{this.name}}">
-                    <h4>\{{this.name}}</h4>
-                    <h5>\{{this.role}}</h5>
-                    <p>\{{this.bio}}</p>
-                </div>
-            </div>
-            \{{/each}}
-        </script>
-        {{/if}}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        {{#if teamPage}}
-        <script type='text/javascript' src='js/handlebars-v4.0.11.js'></script>
-        <script type='text/javascript' src='js/main.js'></script>
-        {{/if}}
     </body>
 
 </html>

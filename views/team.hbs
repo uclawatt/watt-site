@@ -5,13 +5,22 @@
 <div class="page-body team-page">
     <div class="page-wrapper">
         <div class="page-content">
-            <div class="card-title">2025-2026 Board Members</div>
+            <div class="card-title">2026-2027 Board Members</div>
             <section class="section">
                 <div class="section-container">
                     <div class="container team-container column">
                         <div class="container team-container constrained">
                             <div class="grid align-start">
-                                <div id="officers-mount"></div>
+                                <div id="officers-mount">
+                                    {{#each boardMembers}}
+                                    <div class="col sm-12 md-8 lg-8 person-wrapper">
+                                        <div class="person-card">
+                                            <img class="profile-picture" src="{{image}}" width="480" height="640" loading="lazy" decoding="async" alt="Portrait of {{name}}">
+                                            <h4>{{name}}</h4>
+                                        </div>
+                                    </div>
+                                    {{/each}}
+                                </div>
                             </div>
                         </div>
                     </div>

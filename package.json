@@ -4,9 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "generate-thumbnails": "node generate-thumbs.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -14,10 +12,6 @@
     "morgan": "^1.8.2",
     "nodemailer": ">=10.0.9",
     "nodemailer-mailgun-transport": "^2.1.5"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0",
-    "sharp": "^0.35.3"
   },
   "engines": {
     "node": "24.x"
