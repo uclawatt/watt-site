@@ -17,6 +17,8 @@
                                         <div class="person-card">
                                             <img class="profile-picture" src="{{image}}" width="480" height="640" loading="lazy" decoding="async" alt="Portrait of {{name}}">
                                             <h4>{{name}}</h4>
+                                            {{#if role}}<h5>{{role}}</h5>{{/if}}
+                                            {{#if caption}}<p class="officer-caption">{{caption}}</p>{{/if}}
                                         </div>
                                     </div>
                                     {{/each}}

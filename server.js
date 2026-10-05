@@ -8,22 +8,92 @@ var router = express.Router();
 var path = require('path');
 var hbs = require('hbs');
 var boardMembers = [
-  { name: 'Alisa', image: 'img/board-members26/alisa.webp' },
-  { name: 'Ambreal', image: 'img/board-members26/ambreal.webp' },
-  { name: 'Angela', image: 'img/board-members26/angela.webp' },
-  { name: 'Bella', image: 'img/board-members26/bella.webp' },
-  { name: 'Caroline', image: 'img/board-members26/caroline.webp' },
-  { name: 'Diya', image: 'img/board-members26/diya.webp' },
-  { name: 'Emma', image: 'img/board-members26/emma.webp' },
-  { name: 'Jolie', image: 'img/board-members26/jolie.webp' },
-  { name: 'Karin', image: 'img/board-members26/karin.webp' },
-  { name: 'Katie T.', image: 'img/board-members26/katie-t.webp' },
-  { name: 'Katie W.', image: 'img/board-members26/katie-w.webp' },
-  { name: 'Michelle', image: 'img/board-members26/michelle.webp' },
-  { name: 'Nina', image: 'img/board-members26/nina.webp' },
-  { name: 'Priya', image: 'img/board-members26/priya.webp' },
-  { name: 'Sophie', image: 'img/board-members26/sophie.webp' },
-  { name: 'Zitong', image: 'img/board-members26/zitong.webp' }
+  {
+    name: 'Katie W.',
+    image: 'img/board-members26/katie-w.webp',
+    role: 'President',
+    caption: 'I love watching movies, listening to alternative music, learning new crafts, and collecting keychains!\n4th year EE from Modesto, CA. '
+  },
+  {
+    name: 'Priya',
+    image: 'img/board-members26/priya.webp',
+    role: 'External Vice President',
+    caption: 'I enjoy all things outdoors and sports, especially hiking and skiing. You might catch me out on a spontaneous midnight walk or sipping various teas in the lab!\n3rd year EE from Knoxville, TN. '
+  },
+  { name: 'Zitong',
+    role: 'Internal Vice President', 
+    image: 'img/board-members26/zitong.webp' },
+  {
+    name: 'Alisa',
+    image: 'img/board-members26/alisa.webp',
+    role: 'Technical Workshops Co-Chair',
+    caption: 'Hello! Alisa here, come chat with me about anything WATT City, technical workshops you want to see, music, good food, or MMA :)\n2nd year EE from Qingdao, China.'
+  },
+  {
+    name: 'Katie T.',
+    image: 'img/board-members26/katie-t.webp',
+    role: 'Technical Workshops Co-Chair',
+    caption: 'I enjoy trying new bakeries and watching sunrise/sunsets!\n2nd year EE from San Jose, CA.'
+  },
+  { name: 'Angela', 
+    role: 'Co Corporate Relations',
+    image: 'img/board-members26/angela.webp' },
+  {
+    name: 'Sophie',
+    image: 'img/board-members26/sophie.webp',
+    role: 'Co Corporate Relations',
+    caption: 'Hi! I’m Sophie and I love making things (models, origami, baking, literally anything with my hands), being outdoors, and exploring new places!\n4th year CSE from Los Angeles.'
+  },
+  { name: 'Bella', 
+    role: 'Outreach',
+    image: 'img/board-members26/bella.webp' },
+  {
+    name: 'Karin',
+    image: 'img/board-members26/karin.webp',
+    role: 'Mentorship Co-Chair',
+    caption: 'I love hiking, baking and exploring libraries a lot! In my free time you can find me running to different cafes or at a library.\n2nd year EE from Gilroy, CA.'
+  },
+  
+  
+  {
+    name: 'Michelle',
+    image: 'img/board-members26/michelle.webp',
+    role: 'Mentorship Co-Chair',
+    caption: "Hello! I'm a senior electrical engineering major getting ready to graduate from San Diego. Outside of school I love traveling, being out in nature, music, and a good rom-com!"
+  },
+  { name: 'Caroline', 
+    role: 'EDI and Wellness Chair',
+    image: 'img/board-members26/caroline.webp' },
+  {
+    name: 'Emma',
+    image: 'img/board-members26/emma.webp',
+    role: 'Publicity Chair',
+    caption: "Hi! I'm Emma, a junior majoring in electrical engineering from Palo Alto, CA. In my free time, I enjoy junk journaling, collecting trinkets and stationery, and going on long runs."
+  },
+  { name: 'Nina', 
+    role: 'Internal Affairs & Social Chair',
+    image: 'img/board-members26/nina.webp' },
+  { name: 'Diya', 
+    role: 'Treasurer',
+    image: 'img/board-members26/diya.webp' },
+  {
+    name: 'Ambreal',
+    image: 'img/board-members26/ambreal.webp',
+    role: 'Secretary & Webmaster',
+    caption: 'I love watching movies and riding rollercoasters!\n2nd year CSE from Toronto, Canada.'
+  },
+  
+  
+  
+  
+  
+  {
+    name: 'Jolie',
+    image: 'img/board-members26/jolie.webp',
+    role: 'Events Coordinator',
+    caption: 'In my free time, I enjoy trying new restaurants and cafes, playing tennis, and crafting.'
+  },
+
 ];
 var mailgunAuth = process.env.MAILGUN_API_KEY && process.env.MAILGUN_DOMAIN ? {
   auth: {
