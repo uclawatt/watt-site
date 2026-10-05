@@ -91,7 +91,7 @@ var boardMembers = [
     name: 'Jolie',
     image: 'img/board-members26/jolie.webp',
     role: 'Events Coordinator',
-    caption: 'In my free time, I enjoy trying new restaurants and cafes, playing tennis, and crafting.'
+    caption: 'In my free time, I enjoy trying new restaurants and cafes, playing tennis, and crafting.\n2nd year EE from Orange County, CA.'
   },
 
 ];
